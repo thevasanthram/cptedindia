@@ -1,6 +1,6 @@
 header {
-    background-color: #333;
-    color: white;
+    background-color: #0d0d0d; /* Dark gray or black background */
+    color: #f0f0f0; /* Light gray text */
     padding: 20px; /* Increased padding for a taller header */
   }
   
@@ -17,7 +17,7 @@ header {
   }
   
   nav ul li a {
-    color: white;
+    color: #f0f0f0; /* Light gray text */
     text-decoration: none;
     font-size: 1.2em; /* Increased font size for better visibility */
   }

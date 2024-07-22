@@ -1,8 +1,13 @@
+/* src/index.css or src/App.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .App {
   text-align: center;
+  background-color: #1c1c1c; /* Dark gray or black background */
+  color: #f0f0f0; /* Light gray text */
 }
 
 main {
   min-height: calc(100vh - 80px); /* Adjust based on header and footer height */
-  padding: 20px;
 }

@@ -1,12 +1,64 @@
 .home-page {
-    padding: 20px;
-  }
-  
-  .home-page h2 {
-    color: #333;
-  }
-  
-  .home-page p {
-    font-size: 1.2em;
-  }
-  
+  /* padding: 20px; */
+  background-color: #1c1c1c; /* Dark gray or black background */
+  color: #f0f0f0; /* Light gray text */
+}
+
+.home-page h2 {
+  color: #00bcd4; /* Vibrant cyan for headings */
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.home-page p {
+  font-size: 1.2em;
+  text-align: center;
+  color: #eeeeee; /* Light gray for paragraph text */
+}
+
+/* Styles for the carousel */
+.carousel {
+  /* width: 100vw; Full viewport width */
+  height: 60vh; /* Adjust this value to increase or decrease the height */
+  background: #333333; /* Dark gray background for carousel */
+  border-radius: 10px; /* Rounded corners */
+  padding: 0; /* Remove padding to let it fully expand */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+  overflow: hidden; /* Ensure no overflow */
+  position: relative; /* Positioning for full-width effect */
+}
+
+.carousel-slide {
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100%; /* Full height of carousel */
+  background: #00bcd4; /* Vibrant cyan background for carousel items */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn’t exceed dimensions */
+}
+
+.carousel-content {
+  color: #ffffff; /* White text for contrast */
+  text-align: center; /* Center text */
+}
+
+.carousel-content h3 {
+  font-size: 2em; /* Larger font size for headings */
+  margin-bottom: 15px;
+}
+
+.carousel-content p {
+  font-size: 1.5em; /* Larger font size for paragraph text */
+  line-height: 1.5;
+}
+
+/* Dots and arrows styling */
+.slick-dots li button:before {
+  color: #ffffff; /* White dots for the carousel */
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #00bcd4; /* Vibrant cyan arrows for navigation */
+}

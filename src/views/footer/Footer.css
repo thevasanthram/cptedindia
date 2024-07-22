@@ -1,7 +1,7 @@
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    background-color: #0d0d0d; /* Dark gray or black background */
+    color: #f0f0f0; /* Light gray text */
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
