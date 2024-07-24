@@ -1,64 +1,167 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #E0F7FA; /* Light blue background */
+  color: #003366; /* Navy blue text */
+  display: flex;
+  justify-content: left;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+.nav-item {
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #81D4FA; /* Sky blue on hover */
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #B0BEC5; /* Medium gray for sub-menu */
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  z-index: 1000;
+}
+
+.nav-item:hover .sub-menu {
+  display: block;
+}
+
+.sub-item {
+  padding: 10px 20px;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+.sub-item:hover {
+  background-color: #81D4FA; /* Sky blue on hover */
+}
+
 .home-page {
-  /* padding: 20px; */
-  background-color: #1c1c1c; /* Dark gray or black background */
-  color: #f0f0f0; /* Light gray text */
+  background-color: #FFFFFF; /* White background */
+  color: #B0BEC5; /* Medium gray text */
+  text-align: center;
 }
 
 .home-page h2 {
-  color: #00bcd4; /* Vibrant cyan for headings */
-  text-align: center;
-  /* margin-bottom: 20px; */
+  color: #00BCD4; /* Light blue heading */
+  margin-bottom: 20px;
 }
 
 .home-page p {
   font-size: 1.2em;
-  text-align: center;
-  color: #eeeeee; /* Light gray for paragraph text */
+  color: #EEEEEE; /* Light gray text */
 }
 
-/* Styles for the carousel */
 .carousel {
-  /* width: 100vw; Full viewport width */
-  height: 60vh; /* Adjust this value to increase or decrease the height */
-  background: #333333; /* Dark gray background for carousel */
-  border-radius: 10px; /* Rounded corners */
-  padding: 0; /* Remove padding to let it fully expand */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow for depth */
-  overflow: hidden; /* Ensure no overflow */
-  position: relative; /* Positioning for full-width effect */
+  width: 98vw;
+  height: 60vh;
+  background: rgba(51, 51, 51, 0.1); /* Very light gray background */
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slick-slider.slick-initialized {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+}
+
+.slick-slide {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-slide {
-  display: flex; /* Flexbox for centering content */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  height: 100%; /* Full height of carousel */
-  background: #00bcd4; /* Vibrant cyan background for carousel items */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px;
-  box-sizing: border-box; /* Ensure padding doesn’t exceed dimensions */
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
 }
 
-.carousel-content {
-  color: #ffffff; /* White text for contrast */
-  text-align: center; /* Center text */
+.carousel-slide.zoom-in {
+  transform: scale(1.1);
 }
 
-.carousel-content h3 {
-  font-size: 2em; /* Larger font size for headings */
-  margin-bottom: 15px;
+.carousel-slide.zoom-out {
+  transform: scale(0.9);
 }
 
-.carousel-content p {
-  font-size: 1.5em; /* Larger font size for paragraph text */
-  line-height: 1.5;
+.slide1 {
+  background: url('./../../images/bg1.png') no-repeat center center;
+  background-size: cover;
 }
 
-/* Dots and arrows styling */
-.slick-dots li button:before {
-  color: #ffffff; /* White dots for the carousel */
+.slide2 {
+  background: url('./../../images/bg2.png') no-repeat center center;
+  background-size: cover;
+}
+
+.slide3 {
+  background: url('./../../images/bg3.png') no-repeat center center;
+  background-size: cover;
+}
+
+.slide4 {
+  background: url('./../../images/bg4.png') no-repeat center center;
+  background-size: cover;
 }
 
 .slick-prev:before, .slick-next:before {
-  color: #00bcd4; /* Vibrant cyan arrows for navigation */
+  color: #00BCD4; /* Light blue for arrows */
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide {
+  animation: fadeIn 1s ease-in-out;
 }

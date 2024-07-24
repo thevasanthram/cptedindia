@@ -4,10 +4,54 @@
 
 .App {
   text-align: center;
-  background-color: #1c1c1c; /* Dark gray or black background */
-  color: #f0f0f0; /* Light gray text */
+  background-color: #FFFFFF; /* White background */
+  color: #B0BEC5; /* Medium gray text */
+}
+
+header, footer {
+  background-color: #E0F7FA; /* Light blue for header and footer */
+  padding: 20px;
 }
 
 main {
-  min-height: calc(100vh - 80px); /* Adjust based on header and footer height */
+  min-height: calc(100vh - 160px); /* Adjust based on header and footer height */
+}
+
+a {
+  color: #81D4FA; /* Sky blue for links and buttons */
+}
+
+a:hover {
+  color: #0288D1; /* Darker shade of sky blue for hover effect */
+}
+
+button {
+  background-color: #81D4FA; /* Sky blue for buttons */
+  border: none;
+  color: #FFFFFF; /* White text on buttons */
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0288D1; /* Darker shade of sky blue for hover effect */
+}
+
+.warning {
+  background-color: #FFCDD2; /* Light coral for warnings */
+  color: #B71C1C; /* Darker red for text */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.success {
+  background-color: #C8E6C9; /* Pale green for positive messages */
+  color: #388E3C; /* Darker green for text */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.border-accent {
+  border: 1px solid #F5F5F5; /* Soft gray for borders and accents */
 }

@@ -1,28 +1,33 @@
 header {
-    background-color: #0d0d0d; /* Dark gray or black background */
-    color: #f0f0f0; /* Light gray text */
-    padding: 20px; /* Increased padding for a taller header */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Use flexbox for better alignment */
-    justify-content: center; /* Center the navigation items */
-  }
-  
-  nav ul li {
-    margin: 0 20px; /* Increased margin for more spacing */
-  }
-  
-  nav ul li a {
-    color: #f0f0f0; /* Light gray text */
-    text-decoration: none;
-    font-size: 1.2em; /* Increased font size for better visibility */
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #E0F7FA; /* Light blue background */
+  color: #333333; /* Dark gray text */
+  padding: 20px; /* Increased padding for a taller header */
+}
+
+#header_elements {
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+  margin: 0 20px; /* Increased margin for more spacing */
+}
+
+nav ul li a {
+  color: #333333; /* Dark gray text */
+  text-decoration: none;
+  font-size: 1.2em; /* Increased font size for better visibility */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #81D4FA; /* Sky blue for hover effect */
+}

@@ -1,10 +1,9 @@
 footer {
-    background-color: #0d0d0d; /* Dark gray or black background */
-    color: #f0f0f0; /* Light gray text */
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
-  
+  background-color: #E0F7FA; /* Light blue background */
+  color: #333333; /* Dark gray text */
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
