@@ -1,33 +1,141 @@
-header {
-  background-color: #E0F7FA; /* Light blue background */
-  color: #333333; /* Dark gray text */
-  padding: 20px; /* Increased padding for a taller header */
+  header {
+    background-color: #F5F5F0;
+    color: #333333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center; /* Center align header content */
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    white-space: nowrap;
+    min-width: 50%;
+  }
+
+  .acronym {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+
+  .full-text {
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+.scrolled .full-text {
+  opacity: 0.8; /* Hide the full text when scrolled */
 }
 
-#header_elements {
-  display: flex; /* Use flexbox for better alignment */
-  justify-content: flex-end; /* Align items to the right */
+.scrolled .acronym {
+  font-size: 1.5em; /* Optionally reduce the font size */
 }
 
-nav ul {
+.navbar {
+  background-color: #F5F5F0; /* Light beige background */
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.navbar-menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox for better alignment */
-  justify-content: center; /* Center the navigation items */
+  display: flex;
+  justify-content: end;
 }
 
-nav ul li {
-  margin: 0 20px; /* Increased margin for more spacing */
+.navbar-item {
+  position: relative;
+  margin-right: 20px;
+  white-space: nowrap; /* Prevent wrapping for navbar items */
 }
 
-nav ul li a {
-  color: #333333; /* Dark gray text */
+.navbar-item a {
+  color: #5b5b5b; /* Charcoal gray text */
   text-decoration: none;
-  font-size: 1.2em; /* Increased font size for better visibility */
+  font-size: 1em;
+  padding: 10px;
+  display: block;
+  white-space: nowrap; /* Prevent wrapping for links */
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  color: #81D4FA; /* Sky blue for hover effect */
+.navbar-item a:hover {
+  color: #000000; /* Dusty rose for hover effect */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.dropdown,
+.sub-dropdown,
+.sub-sub-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #F5F5F0; /* Light beige background */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure dropdown is above other content */
+  white-space: nowrap; /* Prevent wrapping inside dropdowns */
+}
+
+.navbar-item:hover > .dropdown {
+  display: block;  
+}
+
+.dropdown-item:hover > .sub-dropdown {
+  display: block;
+}
+
+.sub-dropdown-item:hover > .sub-sub-dropdown {
+  display: block;
+}
+
+.dropdown {
+  top: 100%;
+  left: 0;
+  min-width: 200px; /* Set a minimum width to accommodate content */
+}
+
+.sub-dropdown {
+  top: 0;
+  left: 100%;
+  min-width: 200px; /* Set a minimum width to accommodate content */
+}
+
+.sub-sub-dropdown {
+  top: 0;
+  left: 100%;
+  min-width: 200px; /* Set a minimum width to accommodate content */
+}
+
+.dropdown-item,
+.sub-dropdown-item {
+  position: relative;
+}
+
+.dropdown a,
+.sub-dropdown a,
+.sub-sub-dropdown a {
+  color: #333333; /* Charcoal gray text */
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  white-space: nowrap; /* Prevent wrapping inside links */
+}
+
+.dropdown a:hover,
+.sub-dropdown a:hover,
+.sub-sub-dropdown a:hover {
+  background-color: #D8BFD8; /* Dusty rose for hover effect */
 }
