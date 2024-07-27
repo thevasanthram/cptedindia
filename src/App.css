@@ -8,11 +8,6 @@
   color: #333333; /* Charcoal gray text */
 }
 
-header, footer {
-  background-color: #F5F5F0; /* Light beige for header and footer */
-  /* padding: 20px; */
-}
-
 main {
   min-height: calc(100vh - 160px); /* Adjust based on header and footer height */
 }
