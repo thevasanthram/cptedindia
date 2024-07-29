@@ -5,8 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Header from "./../header/Header";
-import Footer from "./../footer/Footer";
 import objectiveImage from "./../../images/objective_img.gif";
 import aimsImage from "./../../images/aims_img.gif";
 
@@ -47,7 +45,6 @@ const Home = () => {
 
   return (
     <div id="home_page">
-      <Header />
       {/* Carousel Component */}
       <div className="carousel">
         <Slider {...settings}>
@@ -103,8 +100,6 @@ const Home = () => {
           </ul>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

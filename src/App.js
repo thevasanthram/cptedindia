@@ -3,11 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./views/home/Home";
 import Profile from "./views/profile/Profile";
 import About from "./views/about/About";
+
+import Header from "./views/header/Header";
+import Footer from "./views/footer/Footer";
+
 import "./App.css";
 
 function App() {
   return (
     <Router>
+      <Header />
       <div className="App">
         <main>
           <Routes>
@@ -19,6 +24,7 @@ function App() {
         </main>
         {/* <Footer /> */}
       </div>
+      <Footer />
     </Router>
   );
 }

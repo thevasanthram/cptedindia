@@ -25,7 +25,15 @@ header {
   font-weight: 700;
   margin-right: 10px;
   /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); Text shadow added */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) /* Text shadow added */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow added */
+  text-decoration: none;
+  color: #333333;
+}
+
+.acronym:hover{
+  color: #333333;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Text shadow added */
+  border-bottom: 2px solid #333333;
 }
 
 .full-text {

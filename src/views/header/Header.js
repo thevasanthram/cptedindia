@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // Ensure this import is present
 import "./Header.css";
 
 const renderMenuItems = (items, level = 0, selected, setSelected) => {
@@ -29,12 +30,26 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
               setSelected(newSelected);
             }}
           >
-            <a
+            {/* <a
               href={`#${key.toLowerCase().replace(/ /g, "-")}`}
-              className={`${key.toLowerCase().replace(/ /g, "-")}`}
+              className={`${key
+                .toLowerCase()
+                .replace(/ /g, "-")} sub_options_class`}
             >
               {key}
-            </a>
+            </a> */}
+            <Link
+              to={
+                Object.keys(value).length === 0
+                  ? `/${key.toLowerCase().replace(/ /g, "-")}`
+                  : `#${key.toLowerCase().replace(/ /g, "-")}`
+              }
+              className={`${key
+                .toLowerCase()
+                .replace(/ /g, "-")} sub_options_class`}
+            >
+              {key}
+            </Link>
             {Object.keys(value).length > 0 &&
               renderMenuItems(value, level + 1, selected, setSelected)}
           </li>
@@ -110,7 +125,9 @@ const Header = () => {
   return (
     <header className={scrolled ? "scrolled" : ""}>
       <div className="header-content">
-        <span className="acronym">CPTED</span>
+        <Link to="/" className="acronym">
+          CPTED
+        </Link>
         <span className="full-text">
           Crime Prevention through Environmental Design
         </span>
@@ -126,7 +143,15 @@ const Header = () => {
               onMouseEnter={() => setHoveredMain(key)}
               onMouseLeave={() => setHoveredMain(null)}
             >
-              <a href={`#${key.toLowerCase().replace(/ /g, "-")}`}>{key}</a>
+              <Link
+                to={
+                  Object.keys(value).length === 0
+                    ? `/${key.toLowerCase().replace(/ /g, "-")}`
+                    : `#${key.toLowerCase().replace(/ /g, "-")}`
+                }
+              >
+                {key}
+              </Link>
               {Object.keys(value).length > 0 &&
                 renderMenuItems(value, 0, selected, setSelected)}
             </li>
