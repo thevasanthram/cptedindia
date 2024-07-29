@@ -24,16 +24,34 @@ header {
   font-size: 2em;
   font-weight: 700;
   margin-right: 10px;
-  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); Text shadow added */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow added */
   text-decoration: none;
   color: #333333;
+  position: relative; /* Ensure positioning context for pseudo-element */
+}
+
+.acronym::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 1s;
 }
 
 .acronym:hover{
-  color: #333333;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Text shadow added */
-  border-bottom: 2px solid #333333;
+  color: #000000;
+}
+
+.acronym:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform 1s;
+  background-color: #000000;
 }
 
 .full-text {
