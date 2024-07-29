@@ -171,6 +171,7 @@
   transform: translateY(20px); /* Start position for animation */
   animation: fadeInUp 1s ease-out forwards; /* Animation */
   animation-delay: 1.5s; /* Delay to make title appear last */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* List styling */
@@ -273,7 +274,8 @@
 .cpted-india-title {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #333; /* Darker text color */
+  color: #333;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Text styling */

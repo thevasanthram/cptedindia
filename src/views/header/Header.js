@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 
-const renderMenuItems = (items, level = 0) => {
+const renderMenuItems = (items, level = 0, selected, setSelected) => {
   const className =
     level === 0
       ? "dropdown"
@@ -10,32 +10,44 @@ const renderMenuItems = (items, level = 0) => {
       : "sub-sub-dropdown";
   return (
     <ul className={className}>
-      {Object.entries(items).map(([key, value]) => (
-        <li
-          className={`dropdown-item ${
-            level === 1
-              ? "sub-dropdown-item"
-              : level === 2
-              ? "sub-sub-dropdown-item"
-              : ""
-          }`}
-          key={key}
-        >
-          <a
-            href={`#${key.toLowerCase().replace(/ /g, "-")}`}
-            className={`${key.toLowerCase().replace(/ /g, "-")}`}
+      {Object.entries(items).map(([key, value]) => {
+        const itemClass =
+          level === 1
+            ? "sub-dropdown-item"
+            : level === 2
+            ? "sub-sub-dropdown-item"
+            : "dropdown-item";
+        const isSelected =
+          selected[level] === key || selected.slice(0, level + 1).includes(key);
+        return (
+          <li
+            className={`${itemClass} ${isSelected ? "selected-sub" : ""}`}
+            key={key}
+            onMouseEnter={() => {
+              const newSelected = [...selected];
+              newSelected[level] = key;
+              setSelected(newSelected);
+            }}
           >
-            {key}
-          </a>
-          {Object.keys(value).length > 0 && renderMenuItems(value, level + 1)}
-        </li>
-      ))}
+            <a
+              href={`#${key.toLowerCase().replace(/ /g, "-")}`}
+              className={`${key.toLowerCase().replace(/ /g, "-")}`}
+            >
+              {key}
+            </a>
+            {Object.keys(value).length > 0 &&
+              renderMenuItems(value, level + 1, selected, setSelected)}
+          </li>
+        );
+      })}
     </ul>
   );
 };
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [selected, setSelected] = useState([]);
+  const [hoveredMain, setHoveredMain] = useState(null);
 
   const handleScroll = () => {
     setScrolled(window.scrollY > 50); // Adjust the scroll position as needed
@@ -106,9 +118,17 @@ const Header = () => {
       <nav className="navbar">
         <ul className="navbar-menu">
           {Object.entries(navBarDivisions).map(([key, value]) => (
-            <li className="navbar-item" key={key}>
+            <li
+              className={`navbar-item ${
+                hoveredMain === key ? "selected-main" : ""
+              }`}
+              key={key}
+              onMouseEnter={() => setHoveredMain(key)}
+              onMouseLeave={() => setHoveredMain(null)}
+            >
               <a href={`#${key.toLowerCase().replace(/ /g, "-")}`}>{key}</a>
-              {Object.keys(value).length > 0 && renderMenuItems(value)}
+              {Object.keys(value).length > 0 &&
+                renderMenuItems(value, 0, selected, setSelected)}
             </li>
           ))}
         </ul>

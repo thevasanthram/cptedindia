@@ -1,37 +1,40 @@
-  header {
-    background-color: #F5F5F0;
-    color: #333333;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center; /* Center align header content */
-    transition: all 0.5s ease;
-    z-index: 1000;
-  }
+header {
+  background-color: #F5F5F0;
+  color: #333333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; /* Center align header content */
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
 
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 30px;
-    white-space: nowrap;
-    min-width: 50%;
-  }
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  white-space: nowrap;
+  min-width: 50%;
+}
 
-  .acronym {
-    font-size: 2em;
-    font-weight: 700;
-    margin-right: 10px;
-  }
+.acronym {
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 10px;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); Text shadow added */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) /* Text shadow added */
+}
 
-  .full-text {
-    font-size: 1.5em;
-    font-weight: 400;
-    transition: opacity 0.5s ease;
-    opacity: 1;
-  }
+.full-text {
+  font-size: 1.5em;
+  font-weight: 400;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) /* Text shadow added */
+}
 
 .scrolled .full-text {
   opacity: 0.8; /* Hide the full text when scrolled */
@@ -70,9 +73,16 @@
   white-space: nowrap; /* Prevent wrapping for links */
 }
 
-.navbar-item a:hover {
-  color: #000000; /* Dusty rose for hover effect */
+.navbar-item:hover > a,
+.selected-main > a {
+  color: #000000; /* Charcoal gray text */
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.selected-sub > a,
+.selected-sub > a:hover {
+  background-color: #D8BFD8; /* Dusty rose background for selected sub-items */
+  color: #333333; /* Charcoal gray text */
 }
 
 .dropdown,
@@ -90,7 +100,7 @@
 }
 
 .navbar-item:hover > .dropdown {
-  display: block;  
+  display: block;
 }
 
 .dropdown-item:hover > .sub-dropdown {
@@ -138,4 +148,9 @@
 .sub-dropdown a:hover,
 .sub-sub-dropdown a:hover {
   background-color: #D8BFD8; /* Dusty rose for hover effect */
+}
+
+.selected-sub {
+  background-color: #D8BFD8; /* Dusty rose background for selected sub-items */
+  color: #333333; /* Charcoal gray text */
 }
