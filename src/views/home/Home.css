@@ -90,12 +90,12 @@
   }
   
   .slick-prev {
-    left: 10px;
+    left: 0px !important;
     z-index: 1;
   }
   
   .slick-next {
-    right: 10px;
+    right: 0px !important;
     z-index: 1;
   }
   
@@ -116,18 +116,18 @@
   
 
  /* General card styling */
-.objective-card {
-  display: flex;
+ .objective-card {
   align-items: center;
-  background-color: #F5F5F0; /* Light Beige for the card background */
+  animation: fadeInUp 1s ease-out forwards;
+  background-color: #f5f5f0;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  box-shadow: 0 4px 8px #0000001a;
+  display: flex;
+  margin: 20px auto 3% auto;
   max-width: 85%;
-  margin: 20px auto;
-  opacity: 0; /* Start hidden for animation */
-  transform: translateY(20px); /* Start position for animation */
-  animation: fadeInUp 1s ease-out forwards; /* Animation */
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(20px);
 }
 
 /* Image container styling */
