@@ -30,19 +30,11 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
               setSelected(newSelected);
             }}
           >
-            {/* <a
-              href={`#${key.toLowerCase().replace(/ /g, "-")}`}
-              className={`${key
-                .toLowerCase()
-                .replace(/ /g, "-")} sub_options_class`}
-            >
-              {key}
-            </a> */}
             <Link
               to={
                 Object.keys(value).length === 0
-                  ? `/${key.toLowerCase().replace(/ /g, "-")}`
-                  : `#${key.toLowerCase().replace(/ /g, "-")}`
+                  ? `/menu/${key.toLowerCase().replace(/ /g, "-")}`
+                  : `#`
               }
               className={`${key
                 .toLowerCase()
@@ -113,8 +105,8 @@ const Header = () => {
       Recommendations: {},
     },
     "MOU/Partners": {
-      College: {},
       Schools: {},
+      Colleges: {},
       "Private Groups": {},
       "Recognized Institutes": {},
       "Government Department": {},
@@ -146,8 +138,8 @@ const Header = () => {
               <Link
                 to={
                   Object.keys(value).length === 0
-                    ? `/${key.toLowerCase().replace(/ /g, "-")}`
-                    : `#${key.toLowerCase().replace(/ /g, "-")}`
+                    ? `/menu/${key.toLowerCase().replace(/ /g, "-")}`
+                    : `#`
                 }
               >
                 {key}
