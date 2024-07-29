@@ -148,9 +148,11 @@ header {
 .sub-dropdown a:hover,
 .sub-sub-dropdown a:hover {
   background-color: #D8BFD8; /* Dusty rose for hover effect */
+  /* box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3); */
 }
 
 .selected-sub {
   background-color: #D8BFD8; /* Dusty rose background for selected sub-items */
   color: #333333; /* Charcoal gray text */
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3);
 }
