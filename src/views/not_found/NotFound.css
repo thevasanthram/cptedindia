@@ -1,20 +1,24 @@
-.menu-bar-handler {
-    padding: 20px;
-    text-align: center;
-    margin: 5.4% auto auto auto;
-}
-
-  .not-found {
-    background-color: #faf9f6; /* Soft Ivory background */
-    color: #333333; /* Charcoal Gray text */
+.not-found {
+    background-color: #faf9f6;
+    color: #333333;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
     animation: fadeIn 1.5s ease-in-out;
-  }
+}
   
   .not-found .illustration {
     margin-bottom: 20px;
+  }
+  
+  .not-found img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
   }
   
   .not-found h1 {
@@ -53,4 +57,3 @@
       opacity: 1;
     }
   }
-  

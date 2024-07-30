@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
 import componentsMap from "./MenuBarComponents"; // Import your components mapping
+import NotFound from "./../not_found/NotFound"; // Import the NotFound component
+import "./MenuBarHandler.css"; // Import your CSS for styling
 
 const capitalizeWords = (str) => {
   return str
@@ -31,16 +32,12 @@ const MenuBarHandler = () => {
     .replace(/\(/g, "")
     .replace(/\)/g, "");
 
-  console.log("componentName: ", componentName);
-
   // Get the component from the map
   const DynamicComponent = componentsMap[componentName] || null;
 
   return (
-    <div>
-      <h1>Menu Item</h1>
-      <p>Selected Item: {formattedName}</p>
-      {DynamicComponent ? <DynamicComponent /> : <p>Component not found</p>}
+    <div className="menu-bar-handler">
+      {DynamicComponent ? <DynamicComponent /> : <NotFound />}
     </div>
   );
 };
