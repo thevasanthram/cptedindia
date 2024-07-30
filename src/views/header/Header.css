@@ -28,6 +28,7 @@ header {
   text-decoration: none;
   color: #333333;
   position: relative; /* Ensure positioning context for pseudo-element */
+  transition: all 0.1s ease;
 }
 
 .acronym::after {

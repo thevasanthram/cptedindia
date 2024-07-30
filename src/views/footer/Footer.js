@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaEnvelope,
   FaPhone,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -52,7 +53,16 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="mailto:info@cptedindia.com">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:office@cptedindia.com">
                 <FaEnvelope />
               </a>
             </li>
