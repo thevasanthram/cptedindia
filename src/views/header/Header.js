@@ -111,7 +111,9 @@ const Header = () => {
       "Recognized Institutes": {},
       "Government Department": {},
     },
-    "Contact US": {},
+    "Contact US": {
+      "Founder & CEO": {},
+    },
   };
 
   return (
