@@ -101,7 +101,7 @@ const FounderCEO = () => {
             </div>
           ))}
         </div>
-        <button className="slider-button next" onClick={handleNext}>
+        <button className="slider-button next" onClick={handleNext}>98
           &gt;
         </button>
       </div>
