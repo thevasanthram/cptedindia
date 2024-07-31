@@ -13,6 +13,9 @@ const capitalizeWords = (str) => {
       if (word.toLowerCase() === "cpted") {
         return "CPTED";
       }
+      if (word.toLowerCase() === "ceo") {
+        return "CEO";
+      }
       if (word.toLowerCase() === "(gold") {
         return "(Gold";
       }
@@ -31,6 +34,8 @@ const MenuBarHandler = () => {
     .replace(/&/g, "")
     .replace(/\(/g, "")
     .replace(/\)/g, "");
+
+  console.log("componentName: ", componentName);
 
   // Get the component from the map
   const DynamicComponent = componentsMap[componentName] || null;

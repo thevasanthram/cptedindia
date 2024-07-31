@@ -84,7 +84,7 @@ const Home = () => {
           <img src={objectiveImage} alt="Objective" />
         </div>
         <div className="objective-content">
-          <h2 className="objective-title">Our Objective</h2>
+          <h2 className="objective-title">Our Mission</h2>
           <ul className="objective-list">
             <li className="objective-text">
               <strong>Provide high-level service</strong> to customers without

@@ -1,0 +1,76 @@
+.third-party-vendor-training-container {
+  background-color: #e6f7ff; /* Light Blue */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.training-title {
+  color: #1e90ff; /* Dodger Blue */
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  animation: slideInDown 1s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.training-title:hover {
+  color: #4682b4; /* Steel Blue */
+}
+
+.training-description {
+  font-size: 18px;
+  color: #333333; /* Charcoal Gray */
+  margin-top: 20px;
+  padding: 0 20px;
+  animation: slideInUp 1s ease-in-out;
+}
+
+.training-image-container {
+  margin-top: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.training-image {
+  width: 100%;
+  max-width: 400px; /* Adjust size as needed */
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
