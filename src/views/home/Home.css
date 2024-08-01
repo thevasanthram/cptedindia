@@ -97,11 +97,13 @@
 
 .home-slick-prev:before,
 .home-slick-next:before {
-  font-size: 24px;
+  font-size: 24px !important;
+  color: #fff !important; /* Ensure button text is white */
 }
 
-.home-slick-prev {
-  left: 10px !important;
+/* Ensure button styles are applied */
+.home-slick-prev.slick-prev {
+  left: 10px; /* Move inward from the left */
   z-index: 1;
   background-color: #3d1e81 !important; /* Bright color for prev button */
   color: #333333;
@@ -110,12 +112,12 @@
   transition: background-color 0.3s ease;
 }
 
-.home-slick-prev:hover {
+.home-slick-prev.slick-prev:hover {
   background-color: #e5534e; /* Darken on hover */
 }
 
-.home-slick-next {
-  right: 10px !important;
+.home-slick-next.slick-next {
+  right: 20px; /* Move inward from the right */
   z-index: 1;
   background-color: #3d1e81 !important; /* Bright color for next button */
   color: #333333;
@@ -124,7 +126,7 @@
   transition: background-color 0.3s ease;
 }
 
-.home-slick-next:hover {
+.home-slick-next.slick-next:hover {
   background-color: #e5534e; /* Darken on hover */
 }
 
