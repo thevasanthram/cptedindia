@@ -35,7 +35,7 @@ const MenuBarHandler = () => {
     .replace(/\(/g, "")
     .replace(/\)/g, "");
 
-  console.log("componentName: ", componentName);
+  // console.log("componentName: ", componentName);
 
   // Get the component from the map
   const DynamicComponent = componentsMap[componentName] || null;

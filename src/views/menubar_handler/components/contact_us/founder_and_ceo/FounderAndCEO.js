@@ -53,7 +53,7 @@ const FounderCEO = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === sliderData.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Slide change interval
+    }, 150000); // Slide change interval
 
     return () => clearInterval(interval);
   }, []);

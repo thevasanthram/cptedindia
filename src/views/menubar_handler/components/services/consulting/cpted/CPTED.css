@@ -1,4 +1,4 @@
-.cpted-container {
+.consulting-cpted-container {
   background-color: #faf9f6; /* Soft Ivory */
   padding: 30px;
   border-radius: 10px;
@@ -11,8 +11,8 @@
   overflow: hidden;
 }
 
-.cpted-title {
-  color: #333333; /* Slate Gray */
+.consulting-cpted-title {
+  color: #333333; /* Charcoal Gray */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -22,11 +22,11 @@
   transition: color 0.3s ease-in-out;
 }
 
-.cpted-title:hover {
-  color: #6c757d; /* Charcoal Gray */
+.consulting-cpted-title:hover {
+  color: #6c757d; /* Slate Gray */
 }
 
-.cpted-description {
+.consulting-cpted-description {
   font-size: 18px;
   color: #333333; /* Charcoal Gray */
   margin-top: 20px;
@@ -34,16 +34,16 @@
   animation: slideInUp 1s ease-in-out;
 }
 
-.cpted-description:hover {
+.consulting-cpted-description:hover {
   color: #6c757d; /* Slate Gray */
 }
 
-.image-container {
+.consulting-cpted-image-container {
   margin-top: 30px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.cpted-image {
+.consulting-cpted-image {
   width: 100%;
   max-width: 500px; /* Increased size */
   border-radius: 10px;

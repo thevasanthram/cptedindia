@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; // Ensure this import is present
 import "./Header.css";
 
+// Helper function to render menu items recursively
 const renderMenuItems = (items, level = 0, selected, setSelected) => {
   const className =
     level === 0
@@ -9,6 +10,7 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
       : level === 1
       ? "sub-dropdown"
       : "sub-sub-dropdown";
+
   return (
     <ul className={className}>
       {Object.entries(items).map(([key, value]) => {
@@ -20,6 +22,7 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
             : "dropdown-item";
         const isSelected =
           selected[level] === key || selected.slice(0, level + 1).includes(key);
+
         return (
           <li
             className={`${itemClass} ${isSelected ? "selected-sub" : ""}`}
@@ -33,7 +36,13 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
             <Link
               to={
                 Object.keys(value).length === 0
-                  ? `/menu/${key.toLowerCase().replace(/ /g, "-")}`
+                  ? key === "CPTED"
+                    ? `/menu/${selected[0]
+                        ?.toLowerCase()
+                        .replace(/ /g, "-")}_${key
+                        .toLowerCase()
+                        .replace(/ /g, "-")}`
+                    : `/menu/${key.toLowerCase().replace(/ /g, "-")}`
                   : `#`
               }
               className={`${key
@@ -51,6 +60,7 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
   );
 };
 
+// Main Header component
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [selected, setSelected] = useState([]);
@@ -120,7 +130,7 @@ const Header = () => {
     <header className={scrolled ? "scrolled" : ""}>
       <div className="header-content">
         <Link to="/" className="acronym">
-          CPTED
+          CPTEDINDIA
         </Link>
         <span className="full-text">
           Crime Prevention through Environmental Design

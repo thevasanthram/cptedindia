@@ -28,7 +28,7 @@ const Home = () => {
       slides[next].classList.add("home-slide-enter");
     },
     appendDots: (dots) => (
-      <div className="home-custom-dots-container">
+      <div className="home-custom-dots-container" id="custom-slick-dot">
         <ul className="home-custom-dots">
           {dots.map((dot, index) => (
             <li
@@ -65,7 +65,7 @@ const Home = () => {
             : "home-dot-symbol-5"
         }`}
       >
-        {/* Use symbol like `•` or any custom content */}
+        ●
       </div>
     ),
   };
@@ -77,7 +77,7 @@ const Home = () => {
           <div className="home-carousel-slide home-slide1 home-slide-enter">
             <div className="home-content-wrapper">
               <div className="home-cpted-india-content">
-                <h2 className="home-cpted-india-title">CPTED India Aims</h2>
+                <h2 className="home-cpted-india-title">CPTED</h2>
                 <p className="home-cpted-india-text">
                   CPTEDINDIA aims and ensures the fear of crime reduces with
                   implementation of crime prevention strategies, improves

@@ -1,9 +1,10 @@
 // components.js
 import CPTEDStandardsGoldSilver from "./components/services/certifications/cpted_standards_goldsilver/CPTEDStandardsGoldSilver";
 import Awards from "./components/recognitions/awards/Awards";
-import CPTED from "./components/services/consulting/cpted/CPTED";
+import Consulting_cpted from "./components/services/consulting/cpted/CPTED";
 import RiskManagement from "./components/services/consulting/risk_management/RiskManagement";
 import SecurityProjects from "./components/services/consulting/security_projects/SecurityProjects";
+import Training_cpted from "./components/services/training/cpted/CPTED";
 import CorporateSecurity from "./components/services/training/corporate_security/CorporateSecurity";
 import ProjectManagement from "./components/services/training/project_management/ProjectManagement";
 import InternalAudit from "./components/services/training/internal_audit/InternalAudit";
@@ -18,14 +19,16 @@ import DriverAndRoadSafety from "./components/services/training/driver_and_road_
 import GuardForceManagement from "./components/services/training/guard_force_management/GuardForceManagement";
 import CommandCenterOperations from "./components/services/training/command_center_operations/CommandCenterOperations";
 import FounderCEO from "./components/contact_us/founder_and_ceo/FounderAndCEO";
+
 // Import other components as needed
 
 const componentsMap = {
   CPTEDStandardsGoldSilver,
   Awards,
-  CPTED,
+  Consulting_cpted,
   RiskManagement,
   SecurityProjects,
+  Training_cpted,
   CorporateSecurity,
   ProjectManagement,
   InternalAudit,

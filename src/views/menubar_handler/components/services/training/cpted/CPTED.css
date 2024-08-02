@@ -1,15 +1,15 @@
-.cpted-container {
-  background-color: #f0f4f8; /* Light Blue */
-  padding: 40px;
+.training-cpted-container {
+  background-color: #f0fff0;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 900px;
+  max-width: 800px;
   margin: 60px auto;
   animation: fadeIn 1s ease-in-out;
 }
 
-.cpted-title {
+.training-cpted-title {
   color: #003366; /* Dark Blue */
   font-size: 26px;
   margin-bottom: 20px;
@@ -20,42 +20,48 @@
   transition: color 0.3s ease-in-out;
 }
 
-.cpted-title:hover {
+.training-cpted-title:hover {
   color: #004080; /* Lighter Blue */
 }
 
-.cpted-content {
+.training-cpted-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.cpted-description {
+.training-cpted-description {
   font-size: 18px;
   color: #333333; /* Charcoal Gray */
   margin-top: 20px;
   max-width: 800px;
   animation: slideInUp 1s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  line-height: 1.6; /* Adjust line height for readability */
+  text-align: left;
 }
 
-.cpted-description:hover {
-  color: #555555; /* Slightly lighter gray */
+.training-cpted-list {
+  text-align: left;
+  margin: 10px 0;
 }
 
-.cpted-image-container {
+.training-cpted-list-item {
+  margin: 10px 0;
+}
+
+.training-cpted-image-container {
   margin-top: 20px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.cpted-image {
+.training-cpted-image {
   width: 300px; /* Increased size */
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
-.cpted-image:hover {
+.training-cpted-image:hover {
   transform: scale(1.05);
 }
 

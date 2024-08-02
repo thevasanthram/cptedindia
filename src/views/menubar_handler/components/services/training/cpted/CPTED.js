@@ -1,23 +1,32 @@
 import React from "react";
 import "./CPTED.css";
-import workingGif from "./../../../../../images/working.gif"; // Update with actual path
+import workingGif from "./../../../../../../images/working.gif"; // Update with actual path
 
 function CPTED() {
   return (
-    <div className="cpted-container">
-      <h2 className="cpted-title">
-        CPTED - Crime Prevention Through Environmental Design
-      </h2>
-      <div className="cpted-content">
-        <p className="cpted-description">
-          CPTEDINDIA applies proactive methodologies and CPTED concepts to
-          implement crime prevention strategies. Involves us right from the
-          building design/discussion stage to get a holistic safety and security
-          design. Get a chance to grab the coveted “CPTED Gold Standard
-          Certification” to distinguish you as a market leader.
+    <div className="training-cpted-container">
+      <h2 className="training-cpted-title">CPTED Training</h2>
+      <div className="training-cpted-content">
+        <p className="training-cpted-description">
+          CPTED – Get trained from the experts to qualify for:
+          <br />
+          <span className="training-cpted-list">
+            <span className="training-cpted-list-item">
+              1. <strong>CPTED Certified Specialist</strong> (For beginners)
+            </span>
+            <br />
+            <span className="training-cpted-list-item">
+              2. <strong>CPTED Certified Professional</strong> (For
+              Professionals)
+            </span>
+          </span>
+          <br />
+          Both certifications require candidates to perform physical CPTED
+          Assessment and hence training is through offline mode only. We do
+          train group sessions.
         </p>
-        <div className="cpted-image-container">
-          <img src={workingGif} alt="CPTED" className="cpted-image" />
+        <div className="training-cpted-image-container">
+          <img src={workingGif} alt="CPTED" className="training-cpted-image" />
         </div>
       </div>
     </div>
