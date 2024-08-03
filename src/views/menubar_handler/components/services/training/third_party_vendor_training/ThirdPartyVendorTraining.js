@@ -1,6 +1,6 @@
 import React from "react";
 import "./ThirdPartyVendorTraining.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/third-party-vendor-training.gif"; // Update with actual path
 
 function ThirdPartyVendorTraining() {
   return (
@@ -16,7 +16,7 @@ function ThirdPartyVendorTraining() {
         <img
           src={workingImage}
           alt="Third Party Vendor Training"
-          className="training-image"
+          className="training-third-party-vendor-training-image"
         />
       </div>
     </div>

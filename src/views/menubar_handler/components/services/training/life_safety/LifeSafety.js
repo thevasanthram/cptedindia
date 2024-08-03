@@ -1,6 +1,6 @@
 import React from "react";
 import "./LifeSafety.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/life-safety.jpg"; // Update with actual path
 
 function LifeSafety() {
   return (
@@ -12,7 +12,7 @@ function LifeSafety() {
         arrives. Get trained and be a “Certified Life Saver”.
       </p>
       <div className="training-image-container">
-        <img src={workingImage} alt="Life Safety" className="training-image" />
+        <img src={workingImage} alt="Life Safety" className="training-life-safety-image" />
       </div>
     </div>
   );

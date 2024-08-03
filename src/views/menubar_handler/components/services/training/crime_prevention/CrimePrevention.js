@@ -1,6 +1,6 @@
 import React from "react";
 import "./CrimePrevention.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/crime_prevention.gif"; // Update with actual path
 
 function CrimePrevention() {
   return (
@@ -14,7 +14,7 @@ function CrimePrevention() {
         <img
           src={workingImage}
           alt="Crime Prevention"
-          className="training-image"
+          className="training-crime-prevention-image"
         />
       </div>
     </div>

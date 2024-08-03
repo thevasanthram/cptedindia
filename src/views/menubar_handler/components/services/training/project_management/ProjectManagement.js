@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectManagement.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/project_management.gif"; // Update with actual path
 
 function ProjectManagement() {
   return (
@@ -16,7 +16,7 @@ function ProjectManagement() {
         <img
           src={workingImage}
           alt="Project Management"
-          className="section-image"
+          className="section-project-management-image"
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./GuardForceManagement.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/gurad managemtn.gif"; // Update with actual path
 
 function GuardForceManagement() {
   return (
@@ -18,7 +18,7 @@ function GuardForceManagement() {
         <img
           src={workingImage}
           alt="Guard Force Management"
-          className="training-image"
+          className="training-guard-managemnt-image"
         />
       </div>
     </div>

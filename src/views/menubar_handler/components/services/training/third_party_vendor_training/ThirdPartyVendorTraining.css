@@ -38,9 +38,9 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.training-image {
+.training-third-party-vendor-training-image {
   width: 100%;
-  max-width: 400px; /* Adjust size as needed */
+  max-width: 700px;
   border-radius: 10px;
 }
 

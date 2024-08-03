@@ -1,6 +1,6 @@
 import React from "react";
 import "./SecurityProjects.css";
-import securityProjectsImage from "./../../../../../../images/award_medal.png"; // Update with actual path
+import securityProjectsImage from "./../../../../../../images/security_projects.png"; // Update with actual path
 
 function SecurityProjects() {
   return (
@@ -16,7 +16,7 @@ function SecurityProjects() {
         <img
           src={securityProjectsImage}
           alt="Security Projects"
-          className="section-image"
+          className="consulting-section-image"
         />
       </div>
     </div>

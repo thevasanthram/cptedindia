@@ -1,6 +1,6 @@
 import React from "react";
 import "./WorkPlaceViolence.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/work-place-violence.gif"; // Update with actual path
 
 function WorkPlaceViolence() {
   return (
@@ -15,7 +15,7 @@ function WorkPlaceViolence() {
         <img
           src={workingImage}
           alt="Work Place Violence"
-          className="training-image"
+          className="training-work-place-violence-image"
         />
       </div>
     </div>

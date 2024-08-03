@@ -1,6 +1,6 @@
 import React from "react";
 import "./CPTED.css";
-import workingGif from "./../../../../../../images/working.gif"; // Update with actual path
+import workingGif from "./../../../../../../images/training_cpted.gif"; // Update with actual path
 
 function CPTED() {
   return (

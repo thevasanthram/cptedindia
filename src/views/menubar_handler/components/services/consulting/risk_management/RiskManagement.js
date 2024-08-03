@@ -1,6 +1,6 @@
 import React from "react";
 import "./RiskManagement.css";
-import riskManagementImage from "./../../../../../../images/award_medal.png"; // Update with actual path
+import riskManagementImage from "./../../../../../../images/risk_management.gif"; // Update with actual path
 
 function RiskManagement() {
   return (
@@ -15,7 +15,7 @@ function RiskManagement() {
         <img
           src={riskManagementImage}
           alt="Risk Management"
-          className="section-image"
+          className="consulting-section-image"
         />
       </div>
     </div>

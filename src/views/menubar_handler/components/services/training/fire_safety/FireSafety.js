@@ -1,6 +1,6 @@
 import React from "react";
 import "./FireSafety.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/fire-safety.gif"; // Update with actual path
 
 function FireSafety() {
   return (
@@ -11,7 +11,11 @@ function FireSafety() {
         work. Learn about basic fire safety and immediate response plans.
       </p>
       <div className="training-image-container">
-        <img src={workingImage} alt="Fire Safety" className="training-image" />
+        <img
+          src={workingImage}
+          alt="Fire Safety"
+          className="training-fire-safety-image"
+        />
       </div>
     </div>
   );

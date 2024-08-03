@@ -1,6 +1,6 @@
 import React from "react";
 import "./CorporateSecurity.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/corporate-security.webp"; // Update with actual path
 
 function CorporateSecurity() {
   return (
@@ -15,7 +15,7 @@ function CorporateSecurity() {
         <img
           src={workingImage}
           alt="Corporate Security"
-          className="section-image"
+          className="section-corporate-security-image"
         />
       </div>
     </div>

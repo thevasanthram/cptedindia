@@ -56,7 +56,7 @@
 }
 
 .training-cpted-image {
-  width: 300px; /* Increased size */
+  width: 400px; /* Increased size */
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }

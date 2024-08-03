@@ -1,6 +1,6 @@
 import React from "react";
 import "./BusinessContinuity.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/business-continuity.gif"; // Update with actual path
 
 function BusinessContinuity() {
   return (
@@ -15,7 +15,7 @@ function BusinessContinuity() {
         <img
           src={workingImage}
           alt="Business Continuity"
-          className="training-image"
+          className="training-busines-continuity-image"
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./CommandCenterOperations.css";
-import workingImage from "./../../../../../../images/working.gif"; // Update with actual path
+import workingImage from "./../../../../../../images/command-center-operations.gif"; // Update with actual path
 
 function CommandCenterOperations() {
   return (
@@ -16,7 +16,7 @@ function CommandCenterOperations() {
         <img
           src={workingImage}
           alt="Command Center Operations"
-          className="training-image"
+          className="training-command-center-image"
         />
       </div>
     </div>
