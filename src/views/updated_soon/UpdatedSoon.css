@@ -1,0 +1,59 @@
+.updated-soon-container {
+  background-color: #faf9f6;
+  color: #333333;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.updated-soon-illustration {
+  margin-bottom: 20px;
+}
+
+.updated-soon-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.updated-soon-title {
+  font-size: 4em;
+  color: #d8bf68; /* Pale Gold for the title */
+  margin-bottom: 20px;
+}
+
+.updated-soon-text {
+  font-size: 1.2em;
+  color: #6c757d; /* Slate Gray text */
+  margin-bottom: 10px;
+}
+
+.updated-soon-button {
+  background-color: #d8bfd8; /* Dusty Rose for button */
+  color: #faf9f6; /* Soft Ivory text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.updated-soon-button:hover {
+  background-color: #c6a4c6; /* Slightly darker Dusty Rose */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

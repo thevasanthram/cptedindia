@@ -8,8 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import objectiveImage from "./../../images/objective_img.gif";
 import aimsImage from "./../../images/aims_img.gif";
 import SustainableGoals from "./../../images/sustainable_goals.png";
-import PositiveActivity from "./../../images/positive_activity.png";
-import CPTEDOriginAndTheory from "./../../images/cpted_origin_&_theory.png";
+import PositiveActivity from "./../../images/positive_activity.jpg";
+import CPTEDOriginAndTheory from "./../../images/cpted_origin_&_theory.jpg";
 
 const Home = () => {
   const settings = {

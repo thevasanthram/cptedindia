@@ -46,11 +46,11 @@
 
 .slide-caption {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 20px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Half-opacity black background */
-  color: #333; /* Charcoal gray text */
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
   padding: 15px;
   border-radius: 5px;
   text-align: left;

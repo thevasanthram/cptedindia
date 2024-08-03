@@ -12,9 +12,11 @@ function CPTED() {
         CPTEDINDIA applies proactive methodologies and CPTED concepts to
         implement crime prevention strategies. Involve us right from the
         building design/discussion stage to get a holistic safety and security
-        design. Get a chance to grab the coveted “CPTED Gold Standard
-        Certification” to distinguish you as a market leader.
+        design. Get a chance to grab the coveted <br />
+        <b>“CPTED Gold Standard Certification”</b> to distinguish you as a
+        market leader.
       </p>
+
       <div className="consulting-cpted-image-container">
         <img
           src={group_working}

@@ -19,6 +19,18 @@ import DriverAndRoadSafety from "./components/services/training/driver_and_road_
 import GuardForceManagement from "./components/services/training/guard_force_management/GuardForceManagement";
 import CommandCenterOperations from "./components/services/training/command_center_operations/CommandCenterOperations";
 import FounderCEO from "./components/contact_us/founder_and_ceo/FounderAndCEO";
+import PrintMedia from "./../updated_soon/UpdatedSoon";
+import Video from "./../updated_soon/UpdatedSoon";
+import Websites from "./../updated_soon/UpdatedSoon";
+import Appreciations from "./../updated_soon/UpdatedSoon";
+import Citations from "./../updated_soon/UpdatedSoon";
+import ServiceRenewals from "./../updated_soon/UpdatedSoon";
+import Recommendations from "./../updated_soon/UpdatedSoon";
+import Schools from "./../updated_soon/UpdatedSoon";
+import Colleges from "./../updated_soon/UpdatedSoon";
+import PrivateGroups from "./../updated_soon/UpdatedSoon";
+import RecognizedInstitutes from "./../updated_soon/UpdatedSoon";
+import GovernmentDepartment from "./../updated_soon/UpdatedSoon";
 
 // Import other components as needed
 
@@ -43,6 +55,18 @@ const componentsMap = {
   GuardForceManagement,
   CommandCenterOperations,
   FounderCEO,
+  PrintMedia,
+  Video,
+  Websites,
+  Appreciations,
+  Citations,
+  ServiceRenewals,
+  Recommendations,
+  Schools,
+  Colleges,
+  PrivateGroups,
+  RecognizedInstitutes,
+  GovernmentDepartment,
 };
 
 export default componentsMap;

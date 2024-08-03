@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./FounderAndCEO.css";
 
-import dinesh_standing from "./../../../../../images/contact_us/dinesh_standing.png";
-import dinesh_with_laptop from "./../../../../../images/contact_us/dinesh_with_laptop.png";
-import indian_achievers_awards_for_nation_building from "./../../../../../images/contact_us/indian_achievers_awards_for_nation_building.png";
-import launch_of_drug_free_tamilnadu from "./../../../../../images/contact_us/launch_of_drug_free_tamilnadu.png";
-import CPTED_presentation_chennai_trade_center from "./../../../../../images/contact_us/CPTED_presentation_chennai_trade_center.png";
-import Cpted_2023 from "./../../../../../images/contact_us/Cpted_2023.png";
-import Annual_General_Body_Meeting from "./../../../../../images/contact_us/Annual_General_Body_Meeting.png";
-import Safe_South_India_Panel_Discussion from "./../../../../../images/contact_us/Safe_South_India_Panel_Discussion.png";
-import Panel_Discussion_on_Disruptive_Technologies from "./../../../../../images/contact_us/Panel_Discussion_on_Disruptive_Technologies.png";
+import dinesh_standing from "./../../../../../images/contact_us/dinesh_standing.jpg";
+import dinesh_with_laptop from "./../../../../../images/contact_us/dinesh_with_laptop.jpg";
+import indian_achievers_awards_for_nation_building from "./../../../../../images/contact_us/indian_achievers_awards_for_nation_building.jpg";
+import launch_of_drug_free_tamilnadu from "./../../../../../images/contact_us/launch_of_drug_free_tamilnadu.jpg";
+import CPTED_presentation_chennai_trade_center from "./../../../../../images/contact_us/CPTED_presentation_chennai_trade_center.jpg";
+import Cpted_2023 from "./../../../../../images/contact_us/Cpted_2023.jpg";
+import Annual_General_Body_Meeting from "./../../../../../images/contact_us/Annual_General_Body_Meeting.jpg";
+import Safe_South_India_Panel_Discussion from "./../../../../../images/contact_us/Safe_South_India_Panel_Discussion.jpg";
+import Panel_Discussion_on_Disruptive_Technologies from "./../../../../../images/contact_us/Panel_Discussion_on_Disruptive_Technologies.jpg";
 
 const sliderData = [
-  { src: dinesh_standing, description: "Event 1 Description" },
-  { src: dinesh_with_laptop, description: "Event 2 Description" },
+  { src: dinesh_standing, description: "" },
+  { src: dinesh_with_laptop, description: "" },
   {
     src: indian_achievers_awards_for_nation_building,
     description: "Indian Achievers award for Nation Building",
   },
-  { src: launch_of_drug_free_tamilnadu, description: "Event 4 Description" },
+  { src: launch_of_drug_free_tamilnadu, description: "" },
   {
     src: CPTED_presentation_chennai_trade_center,
     description:
@@ -53,7 +53,7 @@ const FounderCEO = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === sliderData.length - 1 ? 0 : prevIndex + 1
       );
-    }, 150000); // Slide change interval
+    }, 4000); // Slide change interval
 
     return () => clearInterval(interval);
   }, []);
@@ -73,7 +73,7 @@ const FounderCEO = () => {
   return (
     <div className="founder-ceo-container">
       <h1 className="founder-title">
-        FOUNDER & CEO: <span className="highlight">Dinesh Elangovan</span>
+        President: <span className="highlight">Dinesh Elangovan</span>
       </h1>
       <div className="slider-container">
         <button className="slider-button prev" onClick={handlePrev}>
@@ -97,7 +97,9 @@ const FounderCEO = () => {
               key={index}
             >
               <img src={slide.src} alt={`Slide ${index + 1}`} />
-              <div className="slide-caption">{slide.description}</div>
+              {slide.description && (
+                <div className="slide-caption">{slide.description}</div>
+              )}
             </div>
           ))}
         </div>
