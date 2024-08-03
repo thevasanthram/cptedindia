@@ -1,311 +1,187 @@
-/* Home.css */
+/* Home Component Styles */
+.home-carousel {
+  width: 98vw;
+  height: 85vh;
+  background: #f5f5f0;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+  margin: 5.6% auto;
+}
 
-#home_content {
-    background-color: #F5F5F0;
-    margin-top: 60px; /* Adjust based on header height */
-    padding: 10px 0;
-    display: block;
-    width: 99vw;
-  }
-  
-  .carousel {
-    width: 98vw;
-    height: 80vh;
-    background: #F5F5F0;
-    padding: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    position: relative;
-    margin: 5.6% auto;
-  }
-  
-  .slick-slider.slick-initialized {
-    height: 100%;
-    background-color: #F5F5F0
-  }
-  
-  .slick-list {
-    height: 100%;
-  }
-  
-  .slick-track {
-    height: 100%;
-  }
-  
-  .slick-slide {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carousel-slide {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide.zoom-in-left {
-    transform: scale(1.1);
-  }
-  
-  .carousel-slide.zoom-out-left {
-    transform: scale(0.9);  
-  }
-  
-  .carousel-slide.zoom-in-right {
-    transform: scale(1.1);
-  }
-  
-  .carousel-slide.zoom-out-right {
-    transform: scale(0.9);  
-  }
-  
-  .slide1 {
-    background: url('./../../images/bg1.png') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .slide2 {
-    background: url('./../../images/bg2.png') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .slide3 {
-    background: url('./../../images/bg3.png') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .slide4 {
-    background: url('./../../images/bg4.png') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .slick-prev:before, .slick-next:before {
-    color: #00BCD4; /* Light blue for arrows */
-  }
-  
-  .slick-prev {
-    left: 0px !important;
-    z-index: 1;
-  }
-  
-  .slick-next {
-    right: 0px !important;
-    z-index: 1;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-slide {
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-
- /* General card styling */
- .objective-card {
-  align-items: center;
-  animation: fadeInUp 1s ease-out forwards;
+.home-slick-slider.slick-initialized {
+  height: 100%;
   background-color: #f5f5f0;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px #0000001a;
+}
+
+.home-slick-list {
+  height: 100%;
+}
+
+.home-slick-track {
+  height: 100%;
+}
+
+.home-slick-slide {
+  height: 100%;
   display: flex;
-  margin: 20px auto 3% auto;
-  max-width: 85%;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(20px);
+  justify-content: center;
+  align-items: center;
 }
 
-/* Image container styling */
-.objective-image {
-  flex: 1 1;
-  padding: 20px;
-  background-color: #FAF9F6;
-  max-width: 40%;
-  opacity: 0; /* Start hidden for animation */
-  transform: translateX(-20px); /* Start position for animation */
-  animation: fadeInLeft 1s ease-out forwards; /* Animation */
-  animation-delay: 0.5s; /* Delay to make image appear first */
-}
-
-.objective-image img {
+.home-carousel-slide {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Content container styling */
-.objective-content {
-  flex: 2 1;
-  padding: 20px;
-  color: #333333;
-  max-width: 50%;
-  text-align: left;
-  opacity: 0; /* Start hidden for animation */
-  transform: translateX(20px); /* Start position for animation */
-  animation: fadeInRight 1s ease-out forwards; /* Animation */
-  animation-delay: 1s; /* Delay to make content appear after image */
-}
-
-/* Title styling */
-.objective-title {
-  font-size: 2em;
-  margin-bottom: 15px;
-  color: #46484a;
-  opacity: 0; /* Start hidden for animation */
-  transform: translateY(20px); /* Start position for animation */
-  animation: fadeInUp 1s ease-out forwards; /* Animation */
-  animation-delay: 1.5s; /* Delay to make title appear last */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-/* List styling */
-.objective-list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-/* Text styling */
-.objective-text {
-  font-size: 1.2em;
-  margin: 10px 0;
-  color: #333333; /* Charcoal Gray text color */
-  opacity: 0; /* Start hidden for animation */
-  transform: translateY(10px); /* Start position for animation */
-  animation: fadeInUp 1s ease-out forwards; /* Animation */
-}
-
-/* Animation for fading in and moving up */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animation for fading in and moving left */
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Animation for fading in and moving right */
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-
-
-
-/* General container styling */
-.cpted-india-container {
-  background-color: #f0f8ff;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1200px;
-  margin: 5% auto;
-  overflow: hidden;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   position: relative;
 }
 
-/* Flexbox row for image and content */
-.cpted-india-row {
+.home-carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Adjusted to maintain aspect ratio */
+}
+
+.home-content-wrapper {
   display: flex;
   align-items: center;
-}
-
-/* Content container styling */
-.cpted-india-content {
-  flex: 1;
-  padding: 20px;
-  animation: fade-in-left 1s ease-in-out forwards;
-  opacity: 0;
-}
-
-/* Image container styling */
-.cpted-india-image {
-  flex: 1;
-  padding: 20px;
-  animation: fade-in-right 1s ease-in-out forwards;
-  opacity: 0;
-}
-
-.cpted-india-image img {
+  justify-content: space-between;
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Title styling */
-.cpted-india-title {
+.home-cpted-india-content,
+.home-objective-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-cpted-india-image,
+.home-objective-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-cpted-india-image img,
+.home-objective-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain; /* Adjusted to maintain aspect ratio */
+}
+
+.home-cpted-india-title,
+.home-objective-title {
   font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
+  margin-bottom: 15px;
+  color: #333333;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Text styling */
-.cpted-india-text {
+.home-cpted-india-text,
+.home-objective-text {
   font-size: 1.2em;
-  margin: 20px 0;
+  color: #333333;
+  margin: 10px 0;
   line-height: 1.5;
-  color: #666; /* Medium text color */
+  text-align: left;
 }
 
-/* Animation for fading in from the left */
-@keyframes fade-in-left {
-  0% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
 }
 
-/* Animation for fading in from the right */
-@keyframes fade-in-right {
-  0% {
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.slick-prev {
+  left: 10px !important;
+  z-index: 1;
+  background-color: #3d1e81 !important; /* Bright color for prev button */
+  color: #333333;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover {
+  background-color: #e5534e; /* Darken on hover */
+}
+
+.slick-next {
+  right: 10px !important;
+  z-index: 1;
+  background-color: #3d1e81 !important; /* Bright color for next button */
+  color: #333333;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.slick-next:hover {
+  background-color: #e5534e; /* Darken on hover */
+}
+
+.home-slide-caption {
+  position: absolute;
+  bottom: 19px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Custom Dot Navigation */
+.home-slick-dots {
+  position: absolute;
+  bottom: 20px !important; /* Adjust to move dots up */
+  width: 100%;
+  text-align: center;
+  z-index: 20; /* Ensure dots are above other elements */
+}
+
+.home-slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.home-slick-dots li button:before {
+  font-size: 20px !important; /* Adjust size of dots */
+  color: black !important; /* Change color of dots to black */
+}
+
+.home-slick-dots li.slick-active button:before {
+  color: #ff6347 !important; /* Change color for active dot */
+  font-size: 24px !important; /* Slightly larger for emphasis */
+}
+
+#custom-slick-dot {
+  color: #333;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.home-dot-symbol:hover {
+  transform: scale(1.5);
+  transition: all 0s ease-in-out;
+  color: #333;
+}
+
+.home-dot-symbol:hover {
+  /* font-size: 20px; */
+  transform: scale(1.75);
 }
