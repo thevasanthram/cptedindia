@@ -161,10 +161,18 @@
 
 .home-cpted-india-image img,
 .home-objective-image img {
-  width: 100%;
+  width: 110%;
   height: auto;
   border-radius: 10px;
   object-fit: contain; /* Adjusted to maintain aspect ratio */
+}
+
+.home-objective-image {
+  width: 105%;
+}
+
+.home-cpted-india-image {
+  width: 120%;
 }
 
 .home-cpted-india-title,
