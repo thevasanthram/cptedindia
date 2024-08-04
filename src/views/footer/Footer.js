@@ -54,7 +54,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/dinesh-elangovan-cia-ssb-cdt-pmp-cpted-0220952a/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
