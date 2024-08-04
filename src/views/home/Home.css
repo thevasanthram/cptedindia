@@ -167,14 +167,6 @@
   object-fit: contain; /* Adjusted to maintain aspect ratio */
 }
 
-.home-objective-image {
-  width: 105%;
-}
-
-.home-cpted-india-image {
-  width: 120%;
-}
-
 .home-cpted-india-title,
 .home-objective-title {
   font-size: 2em;
@@ -283,6 +275,7 @@
 }
 
 .home-slick-dots li.slick-active button:before {
+  color: #ff6347; /* Color for active dot */
   font-size: 24px; /* Larger size for active dot */
 }
 
@@ -323,4 +316,16 @@
 
 .home-slide-enter {
   animation: fadeIn 1s ease-in-out;
+}
+
+#custom-slick-dot {
+  color: #333;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }
