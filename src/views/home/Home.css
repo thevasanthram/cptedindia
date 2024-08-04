@@ -1,4 +1,92 @@
-/* Home Component Styles */
+/* Container styling for the home section */
+.home-container {
+  display: flex;
+  width: 98vw;
+  height: 85vh;
+  margin: 5.6% auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background: #f5f5f0;
+  overflow: hidden;
+  gap: 5px;
+}
+
+/* Award container styling */
+.home-award-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.home-award-title {
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f0;
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  z-index: 1;
+}
+
+.home-award-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  animation: slideAwards 25s linear infinite; /* Increased duration for slower motion */
+  /* animation-delay: 2s; Reduced delay at the start */
+  width: 100%;
+  height: calc(100% - 40px); /* Adjust height to avoid overlapping with title */
+}
+
+@keyframes slideAwards {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0); /* Show the first image */
+  }
+  40% {
+    transform: translateY(-100%); /* Move to the second image */
+  }
+  70% {
+    transform: translateY(-100%); /* Hold the second image */
+  }
+  85% {
+    transform: translateY(-200%); /* Move to the third image */
+  }
+  100% {
+    transform: translateY(-200%); /* Hold the third image */
+  }
+  110% {
+    transform: translateY(-200%); /* Wait before reversing */
+  }
+  120% {
+    transform: translateY(-100%); /* Move back to the second image */
+  }
+  130% {
+    transform: translateY(0); /* Return to the first image */
+  }
+  150% {
+    transform: translateY(0); /* Hold the first image after returning */
+  }
+}
+
+.home-award-image {
+  width: 80%;
+  margin: 10px 0;
+}
+
 .home-carousel {
   width: 98vw;
   height: 85vh;
@@ -7,7 +95,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   position: relative;
-  margin: 5.6% auto;
+  /* margin: 5.6% auto; */
 }
 
 .home-slick-slider.slick-initialized {
@@ -56,6 +144,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .home-cpted-india-content,
@@ -140,6 +229,7 @@
 }
 
 /* Custom Dot Navigation */
+/* Custom Dot Navigation */
 .home-slick-dots {
   position: absolute;
   bottom: 20px !important; /* Adjust to move dots up */
@@ -156,6 +246,7 @@
 .home-slick-dots li button:before {
   font-size: 20px !important; /* Adjust size of dots */
   color: black !important; /* Change color of dots to black */
+  transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and size changes */
 }
 
 .home-slick-dots li.slick-active button:before {
@@ -163,25 +254,65 @@
   font-size: 24px !important; /* Slightly larger for emphasis */
 }
 
-#custom-slick-dot {
-  color: #333;
+/* Custom Dot Navigation */
+.home-slick-dots {
   position: absolute;
-  bottom: 0px;
-  display: block;
+  bottom: 20px; /* Adjust to move dots up */
   width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
   text-align: center;
+  z-index: 20; /* Ensure dots are above other elements */
+}
+
+.home-slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.home-slick-dots li button:before {
+  font-size: 20px; /* Default size of dots */
+  color: black; /* Default color of dots */
+  transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and size changes */
+}
+
+.home-slick-dots li.slick-active button:before {
+  font-size: 24px; /* Larger size for active dot */
+}
+
+.home-dot-symbol {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for scale and color changes */
+  animation: pulse 2s infinite; /* Apply pulse animation */
 }
 
 .home-dot-symbol:hover {
-  transform: scale(1.5);
-  transition: all 0s ease-in-out;
+  transform: scale(1.75);
   color: #333;
 }
 
-.home-dot-symbol:hover {
-  /* font-size: 20px; */
-  transform: scale(1.75);
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home-slide-enter {
+  animation: fadeIn 1s ease-in-out;
 }
