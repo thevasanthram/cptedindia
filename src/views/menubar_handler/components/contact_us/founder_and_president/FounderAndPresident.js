@@ -55,7 +55,7 @@ const FounderAndPresident = () => {
       <div className="profile-container">
         <h1>About Us</h1>
         <p>
-          Dinesh Elangovan is a Competent expert, Critical thinker, and
+          <b>Dinesh Elangovan</b> is a Competent expert, Critical thinker, and
           Strategic Leader with 20 years of experience in multiple domains. A
           strong believer that education and experience are key to handling and
           delivering strong results. Dinesh also wears multiple hats such as a
@@ -86,27 +86,33 @@ const FounderAndPresident = () => {
         <p>
           Notable Recognitions include:
           <ul>
-            <li>All India Gold medalist in crime research.</li>
             <li>
-              OSAC Distinguished Achievement Individual Award (Only Indian &
-              Asian to receive this honor).
+              <b>All India Gold medalist</b> in crime research.
             </li>
             <li>
-              DRI International Awards of Excellence (The third Indian to
+              <b> OSAC Distinguished Achievement Individual Award</b>(Only
+              Indian & Asian to receive this honor).
+            </li>
+            <li>
+              <b>DRI International Awards of Excellence</b> (The third Indian to
               receive this honor).
             </li>
             <li>
-              Indian Achievers Award for Community Development and Nation
-              Building.
+              <b>
+                Indian Achievers Award for Community Development and Nation
+                Building
+              </b>
+              .
             </li>
             <li>
-              OSAC Country Chapter Achievement Award (Only chapter in India
-              under the leadership of Dinesh to receive this award).
+              <b>OSAC Country Chapter Achievement Award</b> (Only chapter in
+              India under the leadership of Dinesh to receive this award).
             </li>
             <li>
-              The International Loss Prevention Magazine mentioned him under two
-              categories: "Outstanding Community Champion" & "Social Justice
-              Warrior".
+              <b>The International Loss Prevention Magazine</b> mentioned him
+              under two categories:{" "}
+              <b>"Outstanding Community Champion" & "Social Justice Warrior"</b>
+              .
             </li>
           </ul>
         </p>
