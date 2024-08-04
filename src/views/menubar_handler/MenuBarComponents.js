@@ -18,7 +18,7 @@ import ThirdPartyVendorTraining from "./components/services/training/third_party
 import DriverAndRoadSafety from "./components/services/training/driver_and_road_safety/DriverAndRoadSafety";
 import GuardForceManagement from "./components/services/training/guard_force_management/GuardForceManagement";
 import CommandCenterOperations from "./components/services/training/command_center_operations/CommandCenterOperations";
-import FounderCEO from "./components/contact_us/founder_and_ceo/FounderAndCEO";
+import FounderPresident from "./components/contact_us/founder_and_president/FounderAndPresident";
 import PrintMedia from "./../updated_soon/UpdatedSoon";
 import Video from "./../updated_soon/UpdatedSoon";
 import Websites from "./../updated_soon/UpdatedSoon";
@@ -54,7 +54,7 @@ const componentsMap = {
   DriverAndRoadSafety,
   GuardForceManagement,
   CommandCenterOperations,
-  FounderCEO,
+  FounderPresident,
   PrintMedia,
   Video,
   Websites,

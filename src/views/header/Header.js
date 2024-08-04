@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"; // Ensure this import is present
 import "./Header.css";
 
 // Helper function to render menu items recursively
-const renderMenuItems = (items, level = 0, selected, setSelected) => {
+const renderMenuItems = (key, items, level = 0, selected, setSelected) => {
   const className =
     level === 0
       ? "dropdown"
@@ -11,8 +11,14 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
       ? "sub-dropdown"
       : "sub-sub-dropdown";
 
+  // console.log("selected: ", selected);
+
+  const ContactUsClassName = key === "Contact Us" ? "contact-us-dropdown" : "";
+
+  console.log("ContactUsClassName: ", ContactUsClassName);
+
   return (
-    <ul className={className}>
+    <ul className={`${className} ${ContactUsClassName}`}>
       {Object.entries(items).map(([key, value]) => {
         const itemClass =
           level === 1
@@ -52,7 +58,7 @@ const renderMenuItems = (items, level = 0, selected, setSelected) => {
               {key}
             </Link>
             {Object.keys(value).length > 0 &&
-              renderMenuItems(value, level + 1, selected, setSelected)}
+              renderMenuItems(key, value, level + 1, selected, setSelected)}
           </li>
         );
       })}
@@ -121,8 +127,8 @@ const Header = () => {
       "Recognized Institutes": {},
       "Government Department": {},
     },
-    "Contact US": {
-      "Founder & CEO": {},
+    "Contact Us": {
+      "Founder & President": {},
     },
   };
 
@@ -157,7 +163,7 @@ const Header = () => {
                 {key}
               </Link>
               {Object.keys(value).length > 0 &&
-                renderMenuItems(value, 0, selected, setSelected)}
+                renderMenuItems(key, value, 0, selected, setSelected)}
             </li>
           ))}
         </ul>

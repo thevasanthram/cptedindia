@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./CPTEDStandardsGoldSilver.css";
 import goldCertification from "./../../../../../../images/gold_certification.png";
 import silverCertification from "./../../../../../../images/silver_certification.png";
-import logo1 from "./../../../../../../images/msme.png";
-import logo2 from "./../../../../../../images/indian_green_building_council.png";
-import logo3 from "./../../../../../../images/fsai.png";
+import logo1 from "./../../../../../../images/msme.jpg";
+import logo2 from "./../../../../../../images/indian_green_building_council.jpg";
+import logo3 from "./../../../../../../images/fsai.jpg";
 
 const CPTEDStandardsGoldSilver = () => {
   const [modalImage, setModalImage] = useState(null);

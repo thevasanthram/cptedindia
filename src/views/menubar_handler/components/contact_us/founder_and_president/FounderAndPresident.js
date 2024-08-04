@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./FounderAndCEO.css";
+import "./FounderAndPresident.css";
 
 import dinesh_standing from "./../../../../../images/contact_us/dinesh_standing.jpg";
 import dinesh_with_laptop from "./../../../../../images/contact_us/dinesh_with_laptop.jpg";

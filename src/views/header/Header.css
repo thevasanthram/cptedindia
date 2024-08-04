@@ -118,13 +118,13 @@ header {
 .sub-sub-dropdown {
   display: none;
   position: absolute;
-  background-color: #f5f5f0; /* Light beige background */
+  background-color: #f5f5f0;
   list-style-type: none;
   padding: 0;
   margin: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure dropdown is above other content */
-  white-space: nowrap; /* Prevent wrapping inside dropdowns */
+  z-index: 1000;
+  white-space: nowrap;
 }
 
 .navbar-item:hover > .dropdown {
@@ -143,6 +143,10 @@ header {
   top: 100%;
   left: 0;
   min-width: 200px; /* Set a minimum width to accommodate content */
+}
+
+.contact-us-dropdown {
+  left: -106%;
 }
 
 .sub-dropdown {
