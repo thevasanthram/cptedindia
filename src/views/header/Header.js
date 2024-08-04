@@ -15,7 +15,7 @@ const renderMenuItems = (key, items, level = 0, selected, setSelected) => {
 
   const ContactUsClassName = key === "Contact Us" ? "contact-us-dropdown" : "";
 
-  console.log("ContactUsClassName: ", ContactUsClassName);
+  // console.log("ContactUsClassName: ", ContactUsClassName);
 
   return (
     <ul className={`${className} ${ContactUsClassName}`}>

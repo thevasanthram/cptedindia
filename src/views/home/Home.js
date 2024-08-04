@@ -10,11 +10,12 @@ import aimsImage from "./../../images/aims_img.gif";
 import SustainableGoals from "./../../images/sustainable_goals.png";
 import PositiveActivity from "./../../images/positive_activity.jpg";
 import CPTEDOriginAndTheory from "./../../images/cpted_origin_&_theory.jpg";
+import CPTEDLocalPride from "./../../images/cpted-local-pride.jpg";
 import Award1 from "./../../images/awards/award-img-1.jpg";
 import Award2 from "./../../images/awards/award-img-2.jpeg";
 import Award3 from "./../../images/awards/award-img-3.jpg";
 import Award4 from "./../../images/awards/award-img-4.jpeg";
-import Award5 from "./../../images/awards/award-img-5.jpeg";
+import Award5 from "./../../images/awards/award-img-5.jpg";
 
 const Home = () => {
   const settings = {
@@ -132,6 +133,13 @@ const Home = () => {
               />
             </div>
             <div className="home-carousel-slide home-slide5">
+              <img
+                src={CPTEDLocalPride}
+                alt="CPTED - Local Pride"
+                className="home-carousel-image"
+              />
+            </div>
+            <div className="home-carousel-slide home-slide6">
               <img
                 src={CPTEDOriginAndTheory}
                 alt="CPTED Origin and Theory"
