@@ -2,7 +2,7 @@
 
 .founder-and-president-container {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden; /* Prevent overflow for the slider container */
   font-family: "Arial", sans-serif; /* Or any other font you prefer */
 }
@@ -28,14 +28,18 @@
   position: relative;
 }
 
+.about-us-slide-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .slider-container img {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 0;
-  left: 0;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  object-fit: cover; /* Ensure images cover the container */
+  object-fit: cover;
 }
 
 .slide-image {

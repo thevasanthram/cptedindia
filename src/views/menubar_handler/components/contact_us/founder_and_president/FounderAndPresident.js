@@ -40,14 +40,16 @@ const FounderAndPresident = () => {
       <div className="slider-container-wrapper">
         <div className="slider-container">
           {images.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Slide ${index + 1}`}
-              className={`slide-image ${
-                index === currentImage ? "active" : ""
-              }`}
-            />
+            <div className="about-us-slide-image-wrapper">
+              <img
+                key={index}
+                src={src}
+                alt={`Slide ${index + 1}`}
+                className={`slide-image ${
+                  index === currentImage ? "active" : ""
+                }`}
+              />
+            </div>
           ))}
         </div>
       </div>
