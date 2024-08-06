@@ -11,6 +11,8 @@ import Cpted_2023 from "./../../../../../images/contact_us/Cpted_2023.png";
 import Annual_General_Body_Meeting from "./../../../../../images/contact_us/Annual_General_Body_Meeting.png";
 import Safe_South_India_Panel_Discussion from "./../../../../../images/contact_us/Safe_South_India_Panel_Discussion.png";
 import Panel_Discussion_on_Disruptive_Technologies from "./../../../../../images/contact_us/Panel_Discussion_on_Disruptive_Technologies.png";
+import jyoti_nivas_college_image1 from "./../../../../../images/jyoti-nivas-college-image1.jpeg";
+import jyoti_nivas_college_image2 from "./../../../../../images/jyoti-nivas-college-image2.jpg";
 
 const images = [
   dinesh_standing,
@@ -22,6 +24,8 @@ const images = [
   Annual_General_Body_Meeting,
   Safe_South_India_Panel_Discussion,
   Panel_Discussion_on_Disruptive_Technologies,
+  jyoti_nivas_college_image1,
+  jyoti_nivas_college_image2,
 ];
 
 const FounderAndPresident = () => {
