@@ -1,4 +1,5 @@
-.training-container {
+/* Base Styles */
+.internal-audit-container {
   background-color: #f0fff0; /* Honeydew */
   padding: 30px;
   border-radius: 10px;
@@ -9,8 +10,8 @@
   animation: fadeIn 1s ease-in-out;
 }
 
-.section-title {
-  color: #4169e1; /* Lime Green */
+.internal-audit-title {
+  color: #4169e1; /* Royal Blue */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -21,11 +22,11 @@
   transition: color 0.3s ease-in-out;
 }
 
-.section-title:hover {
-  color: #4682b4; /* Forest Green */
+.internal-audit-title:hover {
+  color: #4682b4; /* Steel Blue */
 }
 
-.section-description {
+.internal-audit-description {
   font-size: 18px;
   color: #333333; /* Charcoal Gray */
   margin-top: 20px;
@@ -33,17 +34,18 @@
   animation: slideInUp 1s ease-in-out;
 }
 
-.image-container {
+.internal-audit-image-container {
   margin-top: 30px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.section-internal-audit-image {
+.internal-audit-image {
   width: 100%;
   max-width: 550px; /* Adjust size as needed */
   border-radius: 10px;
 }
 
+/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -72,5 +74,94 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Media Queries */
+/* Large screens (1280px and above) */
+@media (max-width: 1280px) {
+  .internal-audit-container {
+    padding: 25px;
+    margin: 6% auto;
+  }
+
+  .internal-audit-title {
+    font-size: 22px;
+  }
+
+  .internal-audit-description {
+    font-size: 16px;
+  }
+
+  .internal-audit-image {
+    max-width: 500px;
+  }
+}
+
+/* Medium screens (1024px and above) */
+@media (max-width: 1024px) {
+  .internal-audit-container {
+    padding: 20px;
+    margin: 8% auto;
+  }
+
+  .internal-audit-title {
+    font-size: 20px;
+  }
+
+  .internal-audit-description {
+    font-size: 15px;
+  }
+
+  .internal-audit-image {
+    max-width: 450px;
+  }
+}
+
+/* Tablet screens (820px and above) */
+@media (max-width: 820px) {
+  .internal-audit-container {
+    padding: 15px;
+    margin: 10% auto;
+    width: 80%;
+    height: 70vh;
+  }
+
+  .internal-audit-title {
+    font-size: 28px;
+  }
+
+  .internal-audit-description {
+    font-size: 26px;
+    margin-top: 10%;
+  }
+
+  .internal-audit-image {
+    margin-top: 11%;
+    max-width: 90%;
+  }
+}
+
+/* Mobile screens (480px and above) */
+@media (max-width: 480px) {
+  .internal-audit-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 70vh;
+  }
+
+  .internal-audit-title {
+    font-size: 25px;
+  }
+
+  .internal-audit-description {
+    font-size: 24px;
+    margin-top: 15%;
+  }
+
+  .internal-audit-image {
+    margin-top: 6%;
+    max-width: 150%;
   }
 }

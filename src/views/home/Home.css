@@ -329,3 +329,182 @@
   list-style: none;
   text-align: center;
 }
+
+/* Media Queries */
+/* Large screens (1280px and below) */
+@media (max-width: 1280px) {
+  .home-container {
+    width: 96vw;
+    height: 80vh;
+    margin: 4.5% auto;
+  }
+
+  .home-award-container {
+    width: 25%;
+  }
+
+  .home-award-title {
+    font-size: 1.3rem;
+  }
+
+  .home-award-image {
+    width: 70%;
+  }
+
+  .home-carousel {
+    width: 96vw;
+    height: 80vh;
+  }
+
+  .home-carousel-slide {
+    height: 75vh;
+  }
+
+  .home-slide-caption {
+    bottom: 15px;
+    font-size: 12px;
+  }
+}
+
+/* Medium screens (1024px and below) */
+@media (max-width: 1024px) {
+  .home-container {
+    width: 94vw;
+    height: 75vh;
+    margin: 4% auto;
+  }
+
+  .home-award-container {
+    width: 30%;
+  }
+
+  .home-award-title {
+    font-size: 1.2rem;
+  }
+
+  .home-award-image {
+    width: 60%;
+  }
+
+  .home-carousel {
+    width: 94vw;
+    height: 75vh;
+  }
+
+  .home-carousel-slide {
+    height: 70vh;
+  }
+
+  .home-slide-caption {
+    bottom: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Tablets (820px and below) */
+@media (max-width: 820px) {
+  .home-container {
+    width: 90vw;
+    height: 70vh;
+    margin: 3.5% auto;
+    flex-direction: column;
+  }
+
+  .home-award-container {
+    width: 40%;
+  }
+
+  .home-award-title {
+    font-size: 1rem;
+  }
+
+  .home-award-image {
+    width: 50%;
+  }
+
+  .home-carousel {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .home-carousel-slide {
+    height: 65vh;
+  }
+
+  .home-slide-caption {
+    bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .home-container {
+    width: 88vw;
+    height: 65vh;
+    margin: 3% auto;
+    flex-direction: column;
+  }
+
+  .home-award-container {
+    width: 45%;
+  }
+
+  .home-award-title {
+    font-size: 0.9rem;
+  }
+
+  .home-award-image {
+    width: 45%;
+  }
+
+  .home-carousel {
+    width: 88vw;
+    height: 65vh;
+  }
+
+  .home-carousel-slide {
+    height: 60vh;
+  }
+
+  .home-slide-caption {
+    bottom: 8px;
+    font-size: 18px;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .home-container {
+    width: 85vw;
+    height: 60vh;
+    margin: 2.5% auto;
+    flex-direction: column;
+  }
+
+  .home-award-container {
+    width: 100%;
+  }
+
+  .home-award-title {
+    font-size: 0.8rem;
+  }
+
+  .home-award-image {
+    width: 100%;
+  }
+
+  .home-carousel {
+    width: 85vw;
+    height: 60vh;
+  }
+
+  .home-carousel-slide {
+    height: 55vh;
+  }
+
+  .home-slide-caption {
+    bottom: 5px;
+    font-size: 20px;
+  }
+}

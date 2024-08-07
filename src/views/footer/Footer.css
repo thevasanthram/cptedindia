@@ -19,17 +19,20 @@
   animation-delay: 0.5s;
 }
 
-.about-us, .contact-us {
+.about-us,
+.contact-us {
   flex: 1;
   padding: 20px;
 }
 
-.about-us h2, .contact-us h2 {
+.about-us h2,
+.contact-us h2 {
   color: #d8bf68; /* Pale gold for headers */
   margin-bottom: 10px;
 }
 
-.about-us p, .contact-us address {
+.about-us p,
+.contact-us address {
   color: #d0e3d8; /* Soft sage for text */
 }
 
@@ -99,5 +102,123 @@ footer p {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Tablet devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 15px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .about-us,
+  .contact-us {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .social-icons {
+    gap: 2em;
+  }
+
+  .social-icons a {
+    font-size: 1.3em;
+  }
+
+  footer p {
+    margin-top: 15px;
+    padding-top: 8px;
+  }
+}
+
+/* Mobile devices (max-width: 767px) */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 10px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .about-us,
+  .contact-us {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-us h2,
+  .contact-us h2 {
+    font-size: 1.2em;
+  }
+
+  .about-us p,
+  .contact-us address {
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    gap: 1.5em;
+  }
+
+  .social-icons a {
+    font-size: 1.2em;
+  }
+
+  footer p {
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 0.9em;
+  }
+}
+
+/* Smaller mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 5px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  .about-us,
+  .contact-us {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .about-us h2,
+  .contact-us h2 {
+    font-size: 1em;
+  }
+
+  .about-us p,
+  .contact-us address {
+    font-size: 0.8em;
+  }
+
+  .social-icons {
+    gap: 1em;
+  }
+
+  .social-icons a {
+    font-size: 1em;
+  }
+
+  footer p {
+    margin-top: 5px;
+    padding-top: 3px;
+    font-size: 0.8em;
   }
 }

@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-.section-title {
+.security-projects-section-title {
   color: #333333; /* Slate Gray */
   font-size: 24px;
   margin-bottom: 20px;
@@ -22,11 +22,11 @@
   transition: color 0.3s ease-in-out;
 }
 
-.section-title:hover {
+.security-projects-section-title:hover {
   color: #6c757d; /* Charcoal Gray */
 }
 
-.section-description {
+.security-projects-section-description {
   font-size: 18px;
   color: #333333; /* Charcoal Gray */
   margin-top: 20px;
@@ -34,16 +34,16 @@
   animation: slideInUp 1s ease-in-out;
 }
 
-.section-description:hover {
+.security-projects-section-description:hover {
   color: #6c757d; /* Slate Gray */
 }
 
-.image-container {
+.security-projects-image-container {
   margin-top: 30px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.consulting-section-image {
+.consulting-security-projects-section-image {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
@@ -77,5 +77,123 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Media Queries */
+/* Large screens (1280px and above) */
+@media (max-width: 1280px) {
+  .security-projects-container {
+    padding: 25px;
+    margin: 6% auto;
+    width: 75%;
+  }
+
+  .security-projects-section-title {
+    font-size: 22px;
+  }
+
+  .security-projects-section-description {
+    font-size: 16px;
+  }
+
+  .consulting-security-projects-section-image {
+    max-width: 350px;
+  }
+}
+
+/* Medium screens (1024px and above) */
+@media (max-width: 1024px) {
+  .security-projects-container {
+    padding: 20px;
+    margin: 8% auto;
+    width: 75%;
+  }
+
+  .security-projects-section-title {
+    font-size: 20px;
+  }
+
+  .security-projects-section-description {
+    font-size: 15px;
+  }
+
+  .consulting-security-projects-section-image {
+    max-width: 300px;
+  }
+}
+
+/* Tablet screens (820px and above) */
+@media (max-width: 820px) {
+  .security-projects-container {
+    padding: 15px;
+    margin: 10% auto;
+    width: 80%;
+    height: 80vh;
+  }
+
+  .security-projects-section-title {
+    margin-top: 10%;
+    font-size: 30px;
+  }
+
+  .security-projects-section-description {
+    font-size: 27px;
+    margin-top: 10%;
+  }
+
+  .consulting-security-projects-section-image {
+    margin-top: 11%;
+    max-width: 90%;
+  }
+}
+
+/* Tablet screens (768px and above) */
+@media (max-width: 768px) {
+  .security-projects-container {
+    padding: 15px;
+    margin: 10% auto;
+    width: 80%;
+    height: 80vh;
+  }
+
+  .security-projects-section-title {
+    margin-top: 10%;
+    font-size: 30px;
+  }
+
+  .security-projects-section-description {
+    font-size: 26px;
+    margin-top: 6%;
+  }
+
+  .consulting-security-projects-section-image {
+    margin-top: 8%;
+    max-width: 85%;
+  }
+}
+
+/* Mobile screens (480px and above) */
+@media (max-width: 480px) {
+  .security-projects-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 90vh;
+  }
+
+  .security-projects-section-title {
+    margin-top: 10%;
+    font-size: 23px;
+  }
+
+  .security-projects-section-description {
+    font-size: 22px;
+    margin-top: 10%;
+  }
+
+  .consulting-security-projects-section-image {
+    margin-top: 6%;
+    max-width: 100%;
   }
 }

@@ -129,3 +129,194 @@
     opacity: 1;
   }
 }
+
+/* Media Queries */
+/* Laptop devices (max-width: 1280px) */
+@media (max-width: 1280px) {
+  .awards-slider-container {
+    max-width: 70%;
+    height: 76vh;
+    margin: 30px auto;
+  }
+
+  .awards-container {
+    width: 93%; /* Adjust width for laptops */
+    height: 88%; /* Adjust height for laptops */
+    padding: 18px; /* Adjust padding for laptops */
+    top: 5%;
+  }
+
+  .awards-title {
+    font-size: 30px; /* Adjust font size for laptops */
+  }
+
+  .dri-logo,
+  .award-photo,
+  .certification-emblem {
+    width: 180px; /* Adjust size for laptops */
+    height: 180px; /* Adjust size for laptops */
+    margin: 18px; /* Adjust margin for laptops */
+  }
+
+  .awards-description {
+    font-size: 19px; /* Adjust font size for laptops */
+    max-width: 93%; /* Adjust width for laptops */
+  }
+
+  .slider-button {
+    padding: 9px 18px; /* Adjust padding for laptops */
+  }
+}
+
+/* Tablet devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .awards-slider-container {
+    max-width: 75%;
+    height: 70vh;
+    margin-top: 8%;
+  }
+
+  .awards-container {
+    width: 90%; /* Adjust width for tablets */
+    height: 85%; /* Adjust height for tablets */
+    padding: 15px; /* Adjust padding for tablets */
+    top: 0;
+  }
+
+  .awards-title {
+    font-size: 24px; /* Adjust font size for tablets */
+  }
+
+  .dri-logo,
+  .award-photo,
+  .certification-emblem {
+    width: 145px;
+    height: 145px;
+    margin: 15px;
+  }
+
+  .awards-description {
+    font-size: 14px; /* Adjust font size for tablets */
+    max-width: 95%; /* Adjust width for tablets */
+  }
+
+  .slider-button {
+    padding: 5px 10px;
+  }
+}
+
+/* Mobile devices (max-width: 820px) */
+@media (max-width: 820px) {
+  .awards-slider-container {
+    max-width: 85%;
+    height: 80vh;
+    margin-top: 10%;
+  }
+
+  .awards-container {
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+    top: 0%;
+  }
+
+  .awards-title {
+    font-size: 28px;
+    margin-top: 15%;
+  }
+
+  .dri-logo,
+  .award-photo,
+  .certification-emblem {
+    width: 140px;
+    height: 140px;
+    margin: 5%;
+    margin-top: 10%;
+  }
+
+  .awards-description {
+    font-size: 26px;
+    max-width: 80%;
+    margin-top: 5%;
+  }
+
+  .slider-button {
+    padding: 6px 12px;
+  }
+}
+
+/* Mobile devices (max-width: 767px) */
+@media (max-width: 768px) {
+  .awards-slider-container {
+    max-width: 90%;
+    height: 82vh;
+    margin-top: 10%;
+  }
+
+  .awards-container {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    top: 0%;
+  }
+
+  .awards-title {
+    font-size: 35px;
+  }
+
+  .dri-logo,
+  .award-photo,
+  .certification-emblem {
+    width: 160px;
+    height: 160px;
+    margin: 25px;
+  }
+
+  .awards-description {
+    font-size: 25px;
+    max-width: 80%;
+  }
+
+  .slider-button {
+    padding: 7px 10px;
+  }
+}
+
+/* Smaller mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .awards-slider-container {
+    max-width: 95%;
+    height: 80vh;
+    margin-top: 19%;
+  }
+
+  .awards-container {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    top: 0%;
+  }
+
+  .awards-title {
+    font-size: 25px;
+  }
+
+  .dri-logo,
+  .award-photo,
+  .certification-emblem {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    margin-top: 10%;
+  }
+
+  .awards-description {
+    font-size: 18px;
+    max-width: 80%;
+    margin-top: 10%;
+  }
+
+  .slider-button {
+    padding: 5px 5px;
+  }
+}

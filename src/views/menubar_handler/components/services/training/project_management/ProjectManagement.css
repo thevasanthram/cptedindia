@@ -1,4 +1,5 @@
-.training-container {
+/* Base Styles */
+.project-management-container {
   background-color: #e6f7ff; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
@@ -9,7 +10,7 @@
   animation: fadeIn 1s ease-in-out;
 }
 
-.section-title {
+.project-management-title {
   color: #1e90ff; /* Dodger Blue */
   font-size: 24px;
   margin-bottom: 20px;
@@ -21,11 +22,11 @@
   transition: color 0.3s ease-in-out;
 }
 
-.section-title:hover {
+.project-management-title:hover {
   color: #4682b4; /* Steel Blue */
 }
 
-.section-description {
+.project-management-description {
   font-size: 18px;
   color: #333333; /* Charcoal Gray */
   margin-top: 20px;
@@ -33,17 +34,18 @@
   animation: slideInUp 1s ease-in-out;
 }
 
-.image-container {
+.project-management-image-container {
   margin-top: 30px;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.section-project-management-image {
+.project-management-image {
   width: 100%;
   max-width: 500px; /* Adjust size as needed */
   border-radius: 10px;
 }
 
+/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -72,5 +74,94 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Media Queries */
+/* Large screens (1280px and above) */
+@media (max-width: 1280px) {
+  .project-management-container {
+    padding: 25px;
+    margin: 6% auto;
+  }
+
+  .project-management-title {
+    font-size: 22px;
+  }
+
+  .project-management-description {
+    font-size: 16px;
+  }
+
+  .project-management-image {
+    max-width: 450px;
+  }
+}
+
+/* Medium screens (1024px and above) */
+@media (max-width: 1024px) {
+  .project-management-container {
+    padding: 20px;
+    margin: 8% auto;
+  }
+
+  .project-management-title {
+    font-size: 20px;
+  }
+
+  .project-management-description {
+    font-size: 15px;
+  }
+
+  .project-management-image {
+    max-width: 400px;
+  }
+}
+
+/* Tablet screens (820px and above) */
+@media (max-width: 820px) {
+  .project-management-container {
+    padding: 15px;
+    margin: 10% auto;
+    width: 80%;
+    height: 80vh;
+  }
+
+  .project-management-title {
+    font-size: 28px;
+  }
+
+  .project-management-description {
+    font-size: 26px;
+    margin-top: 10%;
+  }
+
+  .project-management-image {
+    margin-top: 11%;
+    max-width: 90%;
+  }
+}
+
+/* Mobile screens (480px and above) */
+@media (max-width: 480px) {
+  .project-management-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 95vh;
+  }
+
+  .project-management-title {
+    font-size: 25px;
+  }
+
+  .project-management-description {
+    font-size: 24px;
+    margin-top: 15%;
+  }
+
+  .project-management-image {
+    margin-top: 6%;
+    max-width: 100%;
   }
 }

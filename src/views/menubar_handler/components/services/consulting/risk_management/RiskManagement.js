@@ -5,17 +5,17 @@ import riskManagementImage from "./../../../../../../images/risk_management.gif"
 function RiskManagement() {
   return (
     <div className="risk-management-container">
-      <h2 className="section-title">Risk Management</h2>
-      <p className="section-description">
+      <h2 className="risk-management-section-title">Risk Management</h2>
+      <p className="risk-management-section-description">
         A structured way of managing possible activities that could cause harm.
         Our experts can guide you to form an effective risk management framework
         for your firm.
       </p>
-      <div className="image-container">
+      <div className="risk-management-image-container">
         <img
           src={riskManagementImage}
           alt="Risk Management"
-          className="consulting-section-image"
+          className="consulting-risk-management-section-image"
         />
       </div>
     </div>

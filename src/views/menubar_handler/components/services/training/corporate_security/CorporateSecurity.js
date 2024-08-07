@@ -4,18 +4,18 @@ import workingImage from "./../../../../../../images/corporate-security.webp"; /
 
 function CorporateSecurity() {
   return (
-    <div className="training-container">
-      <h2 className="section-title">Corporate Security</h2>
-      <p className="section-description">
+    <div className="corporate-security-container">
+      <h2 className="corporate-security-title">Corporate Security</h2>
+      <p className="corporate-security-description">
         Learn from our experts and leaders who were on ground with corporate
         work experience. Understand from theories, live examples, case studies
         and on ground stimulation exercises.
       </p>
-      <div className="image-container">
+      <div className="corporate-security-image-container">
         <img
           src={workingImage}
           alt="Corporate Security"
-          className="section-corporate-security-image"
+          className="corporate-security-image"
         />
       </div>
     </div>

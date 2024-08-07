@@ -139,12 +139,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 15%;
 }
 
 .contact-info {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 8%;
   gap: 2rem;
 }
 
@@ -163,4 +163,179 @@
 .contact-info a:hover {
   text-decoration: underline; /* Add underline on hover */
   color: #693d69;
+}
+
+/* Media Queries */
+@media (max-width: 1280px) {
+  .contact-info {
+    align-items: center;
+    margin-bottom: 0%;
+    gap: 1rem; /* Adjust gap for contact info */
+  }
+
+  .contact-info-wrapper {
+    gap: 1rem; /* Adjust gap for contact info wrapper */
+    margin-bottom: 20%;
+  }
+}
+
+/* Tablet devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .founder-and-president-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .slider-container-wrapper {
+    width: 98%;
+    height: 75vh;
+    position: relative;
+    padding: 10px;
+    margin-top: 3%;
+  }
+
+  .slider-container {
+    height: 100%; /* Ensure slider container uses full height */
+  }
+
+  .profile-container {
+    width: 96%;
+    height: auto;
+    padding: 20px; /* Adjust padding for tablets */
+    margin-top: 20px; /* Add margin to separate sections */
+    max-width: 100%; /* Ensure content doesn't overflow */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .profile-container h1 {
+    font-size: 2em; /* Adjust font size for h1 */
+  }
+
+  .profile-container h2 {
+    font-size: 1.5em; /* Adjust font size for h2 */
+  }
+
+  .profile-container p {
+    font-size: 0.9em; /* Adjust font size for paragraphs */
+  }
+
+  .contact-info {
+    /* flex-direction: column; */
+    align-items: center;
+    margin-bottom: 0%;
+    gap: 1rem; /* Adjust gap for contact info */
+  }
+
+  .contact-info-wrapper {
+    /* flex-direction: column; */
+    gap: 1rem; /* Adjust gap for contact info wrapper */
+    margin-bottom: 0%;
+  }
+}
+
+/* Mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .founder-and-president-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .slider-container-wrapper {
+    width: 98%;
+    height: 40vh;
+    position: relative;
+    padding: 10px;
+    margin-top: 6%;
+  }
+
+  .slider-container {
+    height: 100%; /* Ensure slider container uses full height */
+  }
+
+  .profile-container {
+    width: 100%;
+    height: auto;
+    padding: 15px; /* Adjust padding for mobiles */
+    margin-top: 15px; /* Add margin to separate sections */
+    max-width: 100%; /* Ensure content doesn't overflow */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .profile-container h1 {
+    font-size: 1.75em; /* Adjust font size for h1 */
+  }
+
+  .profile-container h2 {
+    font-size: 1.25em; /* Adjust font size for h2 */
+  }
+
+  .profile-container p {
+    font-size: 0.85em; /* Adjust font size for paragraphs */
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem; /* Adjust gap for contact info */
+  }
+
+  .contact-info-wrapper {
+    flex-direction: column;
+    gap: 0.8rem; /* Adjust gap for contact info wrapper */
+  }
+}
+
+/* Smaller mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .founder-and-president-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .slider-container-wrapper {
+    width: 96%;
+    height: 30vh; /* Adjust height for smaller mobiles */
+    position: relative; /* Adjust position for smaller mobiles */
+    padding: 10px; /* Add padding to prevent overflow */
+    margin-top: 12%;
+  }
+
+  .slider-container {
+    height: 100%; /* Ensure slider container uses full height */
+  }
+
+  .profile-container {
+    width: 96%;
+    height: auto;
+    padding: 10px; /* Adjust padding for smaller mobiles */
+    margin-top: 10px; /* Add margin to separate sections */
+    max-width: 100%; /* Ensure content doesn't overflow */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .profile-container h1 {
+    font-size: 1.5em; /* Adjust font size for h1 */
+  }
+
+  .profile-container h2 {
+    font-size: 1.1em; /* Adjust font size for h2 */
+  }
+
+  .profile-container p {
+    font-size: 0.8em; /* Adjust font size for paragraphs */
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Adjust gap for contact info */
+  }
+
+  .contact-info-wrapper {
+    flex-direction: column;
+    gap: 0.5rem; /* Adjust gap for contact info wrapper */
+  }
 }
