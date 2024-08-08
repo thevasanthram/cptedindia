@@ -56,11 +56,31 @@ const Home = () => {
         <div className="home-award-container">
           <h2 className="home-award-title">Awards</h2>
           <div className="home-award-wrapper">
-            <img src={Award1} alt="Award 1" className="home-award-image" />
-            <img src={Award2} alt="Award 2" className="home-award-image" />
-            <img src={Award3} alt="Award 3" className="home-award-image" />
-            <img src={Award4} alt="Award 4" className="home-award-image" />
-            <img src={Award5} alt="Award 5" className="home-award-image" />
+            <img
+              src={Award1}
+              alt="Award 1"
+              className="home-award-image home-award-image-1"
+            />
+            <img
+              src={Award2}
+              alt="Award 2"
+              className="home-award-image home-award-image-2"
+            />
+            <img
+              src={Award3}
+              alt="Award 3"
+              className="home-award-image home-award-image-3"
+            />
+            <img
+              src={Award4}
+              alt="Award 4"
+              className="home-award-image home-award-image-4"
+            />
+            <img
+              src={Award5}
+              alt="Award 5"
+              className="home-award-image home-award-image-5"
+            />
           </div>
         </div>
         <div className="home-carousel">

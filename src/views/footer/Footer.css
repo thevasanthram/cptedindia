@@ -139,6 +139,10 @@ footer p {
 
 /* Mobile devices (max-width: 767px) */
 @media (max-width: 768px) {
+  ::selection {
+    background-color: transparent;
+  }
+
   .footer-container {
     padding: 10px 0;
   }
