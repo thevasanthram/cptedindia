@@ -1,5 +1,6 @@
+/* Base Styles */
 .work-place-violence-container {
-  background-color: #e6f7ff; /* Light Blue */
+  background-color: #f0fff0; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,7 +11,7 @@
 }
 
 .training-title {
-  color: #1e90ff; /* Dodger Blue */
+  color: #4169e1; /* Dodger Blue */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -44,6 +45,7 @@
   border-radius: 10px;
 }
 
+/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -126,7 +128,7 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 90vh;
+    height: 85vh;
   }
 
   .training-title {
@@ -139,8 +141,29 @@
   }
 
   .training-work-place-violence-image {
-    margin-top: 11%;
     max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-place-violence-container {
+    padding: 15px;
+    margin: 10% auto;
+    width: 80%;
+    height: 86vh;
+  }
+
+  .training-title {
+    font-size: 28px;
+  }
+
+  .training-description {
+    font-size: 26px;
+    margin-top: 10%;
+  }
+
+  .training-work-place-violence-image {
+    max-width: 80%;
   }
 }
 

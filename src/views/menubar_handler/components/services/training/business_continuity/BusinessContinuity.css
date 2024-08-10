@@ -18,11 +18,12 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   animation: slideInDown 1s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .training-title:hover {
   color: #4682b4; /* Steel Blue */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .training-description {
@@ -30,7 +31,14 @@
   color: #333333; /* Charcoal Gray */
   margin-top: 20px;
   padding: 0 20px;
+  line-height: 1.6; /* Improved readability */
+  letter-spacing: 0.5px;
   animation: slideInUp 1s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.training-description:hover {
+  color: #4169e1; /* Dodger Blue */
 }
 
 .training-image-container {
@@ -42,6 +50,11 @@
   width: 100%;
   max-width: 500px; /* Adjust size as needed */
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.training-busines-continuity-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 @keyframes fadeIn {
@@ -131,11 +144,11 @@
 
   .training-title {
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .training-description {
-    font-size: 27px;
+    font-size: 26px;
     margin-top: 10%;
   }
 

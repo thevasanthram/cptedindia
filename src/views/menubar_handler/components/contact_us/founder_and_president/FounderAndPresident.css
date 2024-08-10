@@ -304,7 +304,7 @@
     height: 30vh; /* Adjust height for smaller mobiles */
     position: relative; /* Adjust position for smaller mobiles */
     padding: 10px; /* Add padding to prevent overflow */
-    margin-top: 12%;
+    margin-top: -4%;
   }
 
   .slider-container {
@@ -335,7 +335,8 @@
   .contact-info {
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem; /* Adjust gap for contact info */
+    gap: 0.5rem;
+    margin-bottom: 15%;
   }
 
   .contact-info-wrapper {

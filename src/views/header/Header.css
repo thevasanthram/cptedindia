@@ -427,6 +427,10 @@ header {
   }
 
   .menu-list-item .menu-link {
+    font-size: 1rem;
+  }
+
+  .submenu-list-container {
     font-size: 0.8rem;
   }
 }

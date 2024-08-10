@@ -1,5 +1,6 @@
+/* Base Styles */
 .guard-force-management-container {
-  background-color: #e6f7ff; /* Light Blue */
+  background-color: #f0fff0; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,7 +11,7 @@
 }
 
 .training-title {
-  color: #1e90ff; /* Dodger Blue */
+  color: #4169e1; /* Dodger Blue */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -18,11 +19,12 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   animation: slideInDown 1s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .training-title:hover {
   color: #4682b4; /* Steel Blue */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .training-description {
@@ -31,6 +33,13 @@
   margin-top: 20px;
   padding: 0 20px;
   animation: slideInUp 1s ease-in-out;
+  line-height: 1.6; /* Improved readability */
+  text-align: left;
+  transition: color 0.3s ease-in-out;
+}
+
+.training-description:hover {
+  color: #4169e1; /* Dodger Blue */
 }
 
 .training-image-container {
@@ -38,12 +47,18 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.training-guard-managemnt-image {
-  width: 100%;
+.training-guard-management-image {
+  width: 60%;
   max-width: 400px; /* Adjust size as needed */
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
+.training-guard-management-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Keyframes for animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -126,7 +141,7 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 80vh;
+    height: 81vh;
   }
 
   .training-title {
@@ -139,9 +154,8 @@
     margin-top: 10%;
   }
 
-  .training-guard-management-image {
-    margin-top: 11%;
-    max-width: 90%;
+  .training-guard-managemnt-image {
+    width: 70%;
   }
 }
 
@@ -151,7 +165,7 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 80vh;
+    height: 90vh;
   }
 
   .training-title {
@@ -164,9 +178,8 @@
     margin-top: 6%;
   }
 
-  .training-guard-management-image {
-    margin-top: 8%;
-    max-width: 85%;
+  .training-guard-managemnt-image {
+    max-width: 70%;
   }
 }
 
@@ -176,7 +189,7 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 80vh;
+    height: 85vh;
   }
 
   .training-title {
@@ -189,8 +202,7 @@
     margin-top: 15%;
   }
 
-  .training-guard-management-image {
-    margin-top: 8%;
-    max-width: 100%;
+  .training-guard-managemnt-image {
+    min-width: 92%;
   }
 }

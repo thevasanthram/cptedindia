@@ -1,6 +1,6 @@
 /* Base Styles */
 .internal-audit-container {
-  background-color: #f0fff0; /* Honeydew */
+  background-color: #f0fff0; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -11,7 +11,7 @@
 }
 
 .internal-audit-title {
-  color: #4169e1; /* Royal Blue */
+  color: #4169e1; /* Dodger Blue */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -19,11 +19,12 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   animation: slideInDown 1s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .internal-audit-title:hover {
   color: #4682b4; /* Steel Blue */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .internal-audit-description {
@@ -32,6 +33,8 @@
   margin-top: 20px;
   padding: 0 20px;
   animation: slideInUp 1s ease-in-out;
+  line-height: 1.6; /* Improved readability */
+  text-align: left;
 }
 
 .internal-audit-image-container {
@@ -43,6 +46,11 @@
   width: 100%;
   max-width: 550px; /* Adjust size as needed */
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.internal-audit-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Keyframes */
@@ -128,7 +136,7 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 70vh;
+    height: 60vh;
   }
 
   .internal-audit-title {
@@ -146,13 +154,20 @@
   }
 }
 
+/* Tablet screens (820px and above) */
+@media (max-width: 768px) {
+  .internal-audit-container {
+    height: 62vh;
+  }
+}
+
 /* Mobile screens (480px and above) */
 @media (max-width: 480px) {
   .internal-audit-container {
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 55vh;
+    height: 45vh;
   }
 
   .internal-audit-title {
@@ -160,7 +175,7 @@
   }
 
   .internal-audit-description {
-    font-size: 18px;
+    font-size: 17.6px;
     margin-top: 15%;
   }
 

@@ -1,5 +1,5 @@
 .training-cpted-container {
-  background-color: #f0fff0;
+  background-color: #f0fff0; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,7 +10,7 @@
 }
 
 .training-cpted-title {
-  color: #003366; /* Dark Blue */
+  color: #4169e1; /* Dodger Blue */
   font-size: 26px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -21,7 +21,7 @@
 }
 
 .training-cpted-title:hover {
-  color: #004080; /* Lighter Blue */
+  color: #4682b4; /* Steel Blue */
 }
 
 .training-cpted-content {
@@ -172,7 +172,7 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 75vh;
+    height: 81vh;
   }
 
   .training-cpted-title {
@@ -181,13 +181,13 @@
   }
 
   .training-cpted-description {
-    font-size: 26px;
+    font-size: 25px;
     margin-top: 6%;
   }
 
   .training-cpted-image {
-    margin-top: 8%;
-    max-width: 85%;
+    margin-top: -8%;
+    max-width: 100%;
   }
 }
 
@@ -197,7 +197,7 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 85vh;
+    height: 75vh;
   }
 
   .training-cpted-title {
