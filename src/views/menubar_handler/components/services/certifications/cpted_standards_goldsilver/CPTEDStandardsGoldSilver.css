@@ -230,9 +230,14 @@
     margin-top: 18%;
   }
 
+  .cpted-header {
+    font-size: 1.3em;
+  }
+
   .cpted-certifications {
     flex-direction: column;
     align-items: center;
+    gap: 2em;
   }
 
   .cpted-certification {
@@ -243,6 +248,7 @@
   .cpted-logos {
     flex-direction: column;
     align-items: center;
+    gap: 1em;
   }
 
   .cpted-logo {

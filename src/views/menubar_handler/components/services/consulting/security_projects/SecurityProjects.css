@@ -183,16 +183,16 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 90vh;
+    height: 75vh;
   }
 
   .security-projects-section-title {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 23px;
   }
 
   .security-projects-section-description {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 10%;
   }
 

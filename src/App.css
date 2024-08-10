@@ -8,12 +8,6 @@
   color: #333333; /* Charcoal gray text */
 }
 
-main {
-  min-height: calc(
-    100vh - 160px
-  ); /* Adjust based on header and footer height */
-}
-
 a {
   color: #d8bfd8; /* Dusty rose for links and buttons */
 }

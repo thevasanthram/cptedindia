@@ -176,7 +176,7 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 100vh;
+    height: 80vh;
   }
 
   .training-title {
@@ -185,7 +185,7 @@
   }
 
   .training-description {
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 15%;
   }
 

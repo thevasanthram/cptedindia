@@ -152,15 +152,18 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 95vh;
+    height: 75vh;
+    margin-top: 20%;
+    margin-bottom: 5%;
   }
 
   .project-management-title {
-    font-size: 25px;
+    margin-top: 15%;
+    font-size: 24px;
   }
 
   .project-management-description {
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 15%;
   }
 
