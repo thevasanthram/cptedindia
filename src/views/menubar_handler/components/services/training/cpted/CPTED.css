@@ -197,7 +197,7 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 75vh;
+    height: 80vh;
   }
 
   .training-cpted-title {
@@ -211,7 +211,7 @@
   }
 
   .training-cpted-image {
-    margin-top: 0%;
+    margin-top: -5%;
     max-width: 100%;
   }
 }
