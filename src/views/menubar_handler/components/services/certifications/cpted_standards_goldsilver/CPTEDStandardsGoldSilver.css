@@ -231,7 +231,8 @@
   }
 
   .cpted-header {
-    font-size: 1.3em;
+    margin-top: -5%;
+    font-size: 1.25em;
   }
 
   .cpted-certifications {
