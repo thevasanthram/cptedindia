@@ -77,6 +77,10 @@
 
 /* Medium screens (1024px and below) */
 @media (max-width: 1024px) {
+  ::selection {
+    background-color: transparent;
+  }
+
   .not-found h1 {
     font-size: 3em;
   }

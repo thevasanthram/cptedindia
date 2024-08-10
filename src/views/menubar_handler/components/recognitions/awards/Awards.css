@@ -84,7 +84,7 @@
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 0;
 }
 
 .prev-button {
@@ -170,6 +170,10 @@
 
 /* Tablet devices (max-width: 1024px) */
 @media (max-width: 1024px) {
+  ::selection {
+    background-color: transparent;
+  }
+
   .awards-slider-container {
     max-width: 75%;
     height: 70vh;

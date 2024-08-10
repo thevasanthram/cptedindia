@@ -1,56 +1,56 @@
 .menu-bar-handler {
-    /* padding: 20px; */
-    text-align: center;
-    margin: 5.4% auto auto auto;
+  /* padding: 20px; */
+  text-align: center;
+  margin: 5.4% auto auto auto;
+  width: 95%;
 }
 
-  .not-found {
-    background-color: #faf9f6; /* Soft Ivory background */
-    color: #333333; /* Charcoal Gray text */
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.5s ease-in-out;
+.not-found {
+  background-color: #faf9f6; /* Soft Ivory background */
+  color: #333333; /* Charcoal Gray text */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.not-found .illustration {
+  margin-bottom: 20px;
+}
+
+.not-found h1 {
+  font-size: 4em;
+  color: #d8bf68; /* Pale Gold for the 404 */
+  margin-bottom: 20px;
+}
+
+.not-found p {
+  font-size: 1.2em;
+  color: #6c757d; /* Slate Gray text */
+  margin-bottom: 10px;
+}
+
+.not-found button {
+  background-color: #d8bfd8; /* Dusty Rose for button */
+  color: #faf9f6; /* Soft Ivory text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.not-found button:hover {
+  background-color: #c6a4c6; /* Slightly darker Dusty Rose */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  .not-found .illustration {
-    margin-bottom: 20px;
+  100% {
+    opacity: 1;
   }
-  
-  .not-found h1 {
-    font-size: 4em;
-    color: #d8bf68; /* Pale Gold for the 404 */
-    margin-bottom: 20px;
-  }
-  
-  .not-found p {
-    font-size: 1.2em;
-    color: #6c757d; /* Slate Gray text */
-    margin-bottom: 10px;
-  }
-  
-  .not-found button {
-    background-color: #d8bfd8; /* Dusty Rose for button */
-    color: #faf9f6; /* Soft Ivory text */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .not-found button:hover {
-    background-color: #c6a4c6; /* Slightly darker Dusty Rose */
-  }
-  
-  /* Animation */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
+}

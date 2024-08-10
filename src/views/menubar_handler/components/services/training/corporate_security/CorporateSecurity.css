@@ -100,6 +100,10 @@
 
 /* Medium screens (1024px and above) */
 @media (max-width: 1024px) {
+  ::selection {
+    background-color: transparent;
+  }
+
   .corporate-security-container {
     padding: 20px;
     margin: 8% auto;

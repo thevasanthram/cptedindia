@@ -181,6 +181,10 @@
 
 /* Tablet devices (max-width: 1024px) */
 @media (max-width: 1024px) {
+  ::selection {
+    background-color: transparent;
+  }
+
   .founder-and-president-container {
     flex-direction: column;
     height: auto;

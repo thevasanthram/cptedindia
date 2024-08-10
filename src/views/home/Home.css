@@ -8,6 +8,7 @@
   background: #f5f5f0;
   overflow: hidden;
   gap: 5px;
+  margin-bottom: 1%;
 }
 
 /* Award container styling */
@@ -373,6 +374,10 @@
 
 /* Medium screens (1024px and below) */
 @media (max-width: 1024px) {
+  ::selection {
+    background-color: transparent;
+  }
+
   .home-container {
     width: 100vw;
     height: 75vh;
@@ -763,10 +768,10 @@
   }
 
   .home-cpted-india-content {
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     margin-right: 7%;
     width: 79%;
-    margin-top: -5%;
+    margin-top: -10%;
   }
 
   .home-cpted-india-title,

@@ -1,6 +1,178 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // Ensure this import is present
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
+
+const navBarDivisions = {
+  Services: {
+    Consulting: {
+      CPTED: {},
+      "Risk Management": {},
+      "Security Projects": {},
+    },
+    Training: {
+      CPTED: {},
+      "Corporate Security": {},
+      "Project Management": {},
+      "Internal Audit": {},
+      "Life Safety": {},
+      "Fire Safety": {},
+      "Business Continuity": {},
+      "Crime Prevention": {},
+      "Work Place Violence": {},
+      "Surveillance & CCTV": {},
+      "Third-Party vendor Training": {},
+      "Driver and Road Safety": {},
+      "Guard Force Management": {},
+      "Command Center Operations": {},
+    },
+    Certifications: {
+      "CPTED Standards (Gold & Silver)": {},
+    },
+  },
+  Media: {
+    "Print Media": {},
+    Video: {},
+    Websites: {},
+  },
+  Recognitions: {
+    Awards: {},
+    Appreciations: {},
+    Citations: {},
+    "Service Renewals": {},
+    Recommendations: {},
+  },
+  "MOU/Partners": {
+    Schools: {},
+    Colleges: {},
+    "Private Groups": {},
+    "Recognized Institutes": {},
+    "Government Department": {},
+  },
+  "Contact Us": {
+    "Founder & President": {},
+  },
+};
+
+const HamburgerMenu = ({ navBarDivisions }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [selected, setSelected] = useState([]);
+  const menuRef = useRef(null);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleSubMenuToggle = (e) => {
+    e.target.classList.toggle("active");
+  };
+
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleItemClick = (key, level) => {
+    console.log(key, level);
+    // Create a copy of the current state
+    let newSelected = [...selected];
+
+    if (newSelected.length > 0) {
+      newSelected = newSelected.slice(1, newSelected.length);
+    }
+
+    console.log("newSelected: start ", newSelected);
+
+    // Update the current level with the new key
+    newSelected[level] = key;
+
+    console.log("newSelected: ", newSelected);
+
+    // Clear out any sub-level selections if not at the last level
+    if (level < newSelected.length - 1) {
+      newSelected.fill(null, level + 1);
+    }
+
+    // Update the state with the new selection
+    setSelected(newSelected);
+  };
+
+  const renderMenu = (items, selected = [], level = 0) => (
+    <ul className="menu-list-container">
+      {Object.entries(items).map(([key, value]) => {
+        const isSelected =
+          selected[level] === key || selected.slice(0, level + 1).includes(key);
+
+        console.log("selected: render", selected);
+
+        const linkPath =
+          Object.keys(value).length === 0
+            ? key === "CPTED"
+              ? `/menu/${selected
+                  .slice(1, 2)
+                  .map((v) => v.toLowerCase().replace(/ /g, "-"))
+                  .join("-")}_${key.toLowerCase().replace(/ /g, "-")}`
+              : `/menu/${key.toLowerCase().replace(/ /g, "-")}`
+            : "#";
+
+        console.log("linkPath: ", linkPath);
+
+        return (
+          <li
+            key={key}
+            className={`menu-list-item ${isSelected ? "selected" : ""}`}
+            onClick={() => handleItemClick(key, level)}
+          >
+            {typeof value === "object" && Object.keys(value).length > 0 ? (
+              <>
+                <span
+                  onClick={(e) => handleSubMenuToggle(e)}
+                  className={`menu-link ${isSelected ? "active" : ""}`}
+                >
+                  {key}
+                </span>
+                <ul className="submenu-list-container">
+                  {renderMenu(value, [...selected, key], level + 1)}
+                </ul>
+              </>
+            ) : (
+              <Link
+                to={linkPath}
+                className="menu-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                {key}
+              </Link>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+
+  return (
+    <div
+      ref={menuRef}
+      className={`hamburger-menu-container ${menuOpen ? "open" : ""}`}
+    >
+      <div className="menu-icon-wrapper" onClick={toggleMenu}>
+        <span className="menu-bar"></span>
+        <span className="menu-bar"></span>
+        <span className="menu-bar"></span>
+      </div>
+      <div className="menu-content-wrapper">
+        {renderMenu(navBarDivisions, selected)}
+      </div>
+    </div>
+  );
+};
 
 // Helper function to render menu items recursively
 const renderMenuItems = (key, items, level = 0, selected, setSelected) => {
@@ -73,7 +245,7 @@ const Header = () => {
   const [hoveredMain, setHoveredMain] = useState(null);
 
   const handleScroll = () => {
-    setScrolled(window.scrollY > 50); // Adjust the scroll position as needed
+    setScrolled(window.scrollY > 50);
   };
 
   useEffect(() => {
@@ -81,59 +253,8 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navBarDivisions = {
-    Services: {
-      Consulting: {
-        CPTED: {},
-        "Risk Management": {},
-        "Security Projects": {},
-      },
-      Training: {
-        CPTED: {},
-        "Corporate Security": {},
-        "Project Management": {},
-        "Internal Audit": {},
-        "Life Safety": {},
-        "Fire Safety": {},
-        "Business Continuity": {},
-        "Crime Prevention": {},
-        "Work Place Violence": {},
-        "Surveillance & CCTV": {},
-        "Third-Party vendor Training": {},
-        "Driver and Road Safety": {},
-        "Guard Force Management": {},
-        "Command Center Operations": {},
-      },
-      Certifications: {
-        "CPTED Standards (Gold & Silver)": {},
-      },
-    },
-    Media: {
-      "Print Media": {},
-      Video: {},
-      Websites: {},
-    },
-    Recognitions: {
-      Awards: {},
-      Appreciations: {},
-      Citations: {},
-      "Service Renewals": {},
-      Recommendations: {},
-    },
-    "MOU/Partners": {
-      Schools: {},
-      Colleges: {},
-      "Private Groups": {},
-      "Recognized Institutes": {},
-      "Government Department": {},
-    },
-    "Contact Us": {
-      "Founder & President": {},
-    },
-  };
-
   return (
-    <header className={scrolled ? "scrolled" : ""}>
+    <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-content">
         <Link to="/" className="acronym">
           CPTEDINDIA
@@ -168,6 +289,7 @@ const Header = () => {
           ))}
         </ul>
       </nav>
+      <HamburgerMenu navBarDivisions={navBarDivisions} />
     </header>
   );
 };
