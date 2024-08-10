@@ -419,6 +419,7 @@ header {
   .hamburger-menu-container.open .menu-content-wrapper {
     width: 75%;
     top: 100%;
+    height: 89.5vh;
   }
 
   .hamburger-menu-container .menu-content-wrapper {

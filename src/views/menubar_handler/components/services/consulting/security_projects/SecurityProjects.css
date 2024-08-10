@@ -1,5 +1,5 @@
 .security-projects-container {
-  background-color: #faf9f6; /* Soft Ivory */
+  background-color: #f0fff0; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,7 +12,7 @@
 }
 
 .security-projects-section-title {
-  color: #333333; /* Slate Gray */
+  color: #4169e1; /* Dodger Blue */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 }
 
 .security-projects-section-title:hover {
-  color: #6c757d; /* Charcoal Gray */
+  color: #4682b4; /* Steel Blue */
 }
 
 .security-projects-section-description {
@@ -32,6 +32,7 @@
   margin-top: 20px;
   padding: 0 20px;
   animation: slideInUp 1s ease-in-out;
+  line-height: 2rem;
 }
 
 .security-projects-section-description:hover {
@@ -49,6 +50,7 @@
   border-radius: 10px;
 }
 
+/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -133,7 +135,7 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 80vh;
+    height: 85vh;
   }
 
   .security-projects-section-title {
@@ -158,7 +160,7 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 80vh;
+    height: 85vh;
   }
 
   .security-projects-section-title {
@@ -177,13 +179,13 @@
   }
 }
 
-/* Mobile screens (480px and above) */
+/* Mobile screens (480px and below) */
 @media (max-width: 480px) {
   .security-projects-container {
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 75vh;
+    height: 85vh;
   }
 
   .security-projects-section-title {

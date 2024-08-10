@@ -1,6 +1,6 @@
 /* Base Styles */
 .life-safety-container {
-  background-color: #f0fff0; /* Light Blue */
+  background-color: #f0fff0; /* Dodger Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
@@ -11,7 +11,7 @@
 }
 
 .training-title {
-  background-color: #f0fff0; /* Light Blue */
+  color: #1e90ff; /* Dodger Blue */
   font-size: 28px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -172,7 +172,7 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 58vh;
+    height: 68vh;
   }
 
   .training-title {

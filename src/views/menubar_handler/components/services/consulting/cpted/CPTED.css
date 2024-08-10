@@ -49,6 +49,7 @@
   border-radius: 10px;
 }
 
+/* Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -90,7 +91,7 @@
   }
 
   .consulting-cpted-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .consulting-cpted-description {
@@ -114,11 +115,11 @@
   }
 
   .consulting-cpted-title {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .consulting-cpted-description {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .consulting-cpted-image {
@@ -132,16 +133,15 @@
     padding: 15px;
     margin: 10% auto;
     width: 80%;
-    height: 80vh;
+    height: 68vh;
   }
 
   .consulting-cpted-title {
-    font-size: 25px;
-    margin-top: 10%;
+    font-size: 28px;
   }
 
   .consulting-cpted-description {
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 10%;
   }
 
@@ -151,28 +151,12 @@
   }
 }
 
-/* Tablet screens (768px and above) */
 @media (max-width: 768px) {
   .consulting-cpted-container {
     padding: 15px;
     margin: 10% auto;
     width: 80%;
     height: 80vh;
-  }
-
-  .consulting-cpted-title {
-    font-size: 30px;
-    margin-top: 10%;
-  }
-
-  .consulting-cpted-description {
-    font-size: 26px;
-    margin-top: 6%;
-  }
-
-  .consulting-cpted-image {
-    margin-top: 8%;
-    max-width: 85%;
   }
 }
 
@@ -182,16 +166,15 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 85vh;
+    height: 72vh;
   }
 
   .consulting-cpted-title {
-    font-size: 23px;
-    margin-top: 10%;
+    font-size: 25px;
   }
 
   .consulting-cpted-description {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 10%;
   }
 

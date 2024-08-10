@@ -3,9 +3,11 @@
   max-width: 60%;
   margin: 40px auto;
   overflow: hidden;
-  height: 78vh;
+  height: 80vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  margin-bottom: 4%;
+  font-family: "Roboto", sans-serif;
 }
 
 .awards-slider {
@@ -25,6 +27,7 @@
   text-align: center;
   opacity: 0;
   transition: all 1s ease-in-out;
+  font-family: "Lato", sans-serif;
 }
 
 .awards-container.active {
@@ -40,6 +43,8 @@
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: slideInDown 1s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .dri-logo,
@@ -69,6 +74,8 @@
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
 }
 
 .awards-description:hover {
@@ -85,6 +92,8 @@
   padding: 10px 20px;
   cursor: pointer;
   z-index: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .prev-button {
@@ -131,66 +140,61 @@
 }
 
 /* Media Queries */
-/* Laptop devices (max-width: 1280px) */
 @media (max-width: 1280px) {
   .awards-slider-container {
     max-width: 70%;
-    height: 76vh;
+    height: 75vh;
     margin: 30px auto;
+    margin-bottom: 6%;
   }
 
   .awards-container {
-    width: 93%; /* Adjust width for laptops */
-    height: 88%; /* Adjust height for laptops */
-    padding: 18px; /* Adjust padding for laptops */
+    width: 93%;
+    height: 88%;
+    padding: 18px;
     top: 5%;
   }
-
   .awards-title {
-    font-size: 30px; /* Adjust font size for laptops */
+    font-size: 30px;
   }
-
   .dri-logo,
   .award-photo,
   .certification-emblem {
-    width: 180px; /* Adjust size for laptops */
-    height: 180px; /* Adjust size for laptops */
-    margin: 18px; /* Adjust margin for laptops */
+    width: 180px;
+    height: 180px;
+    margin: 18px;
   }
-
   .awards-description {
-    font-size: 19px; /* Adjust font size for laptops */
-    max-width: 93%; /* Adjust width for laptops */
+    font-size: 19px;
+    max-width: 93%;
   }
-
   .slider-button {
-    padding: 9px 18px; /* Adjust padding for laptops */
+    padding: 9px 18px;
   }
 }
 
-/* Tablet devices (max-width: 1024px) */
 @media (max-width: 1024px) {
   ::selection {
     background-color: transparent;
   }
 
   .awards-slider-container {
-    max-width: 75%;
-    height: 70vh;
-    margin-top: 8%;
+    max-width: 70%;
+    height: 73vh;
+    margin: 30px auto;
+    /* margin-bottom: 12%; */
+    margin-bottom: 8%;
   }
 
   .awards-container {
-    width: 90%; /* Adjust width for tablets */
-    height: 85%; /* Adjust height for tablets */
-    padding: 15px; /* Adjust padding for tablets */
+    width: 90%;
+    height: 85%;
+    padding: 15px;
     top: 0;
   }
-
   .awards-title {
-    font-size: 24px; /* Adjust font size for tablets */
+    font-size: 24px;
   }
-
   .dri-logo,
   .award-photo,
   .certification-emblem {
@@ -198,23 +202,21 @@
     height: 145px;
     margin: 15px;
   }
-
   .awards-description {
-    font-size: 14px; /* Adjust font size for tablets */
-    max-width: 95%; /* Adjust width for tablets */
+    font-size: 14px;
+    max-width: 95%;
   }
-
   .slider-button {
     padding: 5px 10px;
   }
 }
 
-/* Mobile devices (max-width: 820px) */
 @media (max-width: 820px) {
   .awards-slider-container {
     max-width: 85%;
-    height: 80vh;
+    height: 85vh;
     margin-top: 10%;
+    margin-bottom: 9%;
   }
 
   .awards-container {
@@ -223,12 +225,10 @@
     padding: 10px;
     top: 0%;
   }
-
   .awards-title {
     font-size: 28px;
     margin-top: 15%;
   }
-
   .dri-logo,
   .award-photo,
   .certification-emblem {
@@ -237,24 +237,22 @@
     margin: 5%;
     margin-top: 10%;
   }
-
   .awards-description {
     font-size: 26px;
     max-width: 80%;
     margin-top: 5%;
   }
-
   .slider-button {
     padding: 6px 12px;
   }
 }
 
-/* Mobile devices (max-width: 767px) */
 @media (max-width: 768px) {
   .awards-slider-container {
     max-width: 90%;
-    height: 82vh;
+    height: 90vh;
     margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   .awards-container {
@@ -263,11 +261,9 @@
     padding: 10px;
     top: 0%;
   }
-
   .awards-title {
     font-size: 35px;
   }
-
   .dri-logo,
   .award-photo,
   .certification-emblem {
@@ -275,23 +271,21 @@
     height: 160px;
     margin: 25px;
   }
-
   .awards-description {
     font-size: 25px;
     max-width: 80%;
   }
-
   .slider-button {
     padding: 7px 10px;
   }
 }
 
-/* Smaller mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .awards-slider-container {
     max-width: 95%;
-    height: 78vh;
+    height: 90vh;
     margin-top: 19%;
+    margin-bottom: 20%;
   }
 
   .awards-container {
@@ -300,11 +294,9 @@
     padding: 5px;
     top: 0%;
   }
-
   .awards-title {
     font-size: 25px;
   }
-
   .dri-logo,
   .award-photo,
   .certification-emblem {
@@ -313,13 +305,11 @@
     margin: 10px;
     margin-top: 10%;
   }
-
   .awards-description {
     font-size: 17px;
     max-width: 80%;
     margin-top: 10%;
   }
-
   .slider-button {
     padding: 5px 5px;
   }
