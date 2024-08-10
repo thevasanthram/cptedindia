@@ -228,6 +228,7 @@
 @media (max-width: 480px) {
   .cpted-standards-container {
     margin-top: 18%;
+    margin-bottom: 10%;
   }
 
   .cpted-header {
@@ -243,7 +244,7 @@
 
   .cpted-certification {
     width: 90%;
-    margin-bottom: 20px; /* Adjust spacing between certifications */
+    margin-bottom: 5%; /* Adjust spacing between certifications */
   }
 
   .cpted-logos {
