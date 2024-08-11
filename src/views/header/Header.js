@@ -57,6 +57,7 @@ const HamburgerMenu = ({ navBarDivisions }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selected, setSelected] = useState([]);
   const menuRef = useRef(null);
+  const [isSelectedEver, setIsSelectedEver] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -80,20 +81,17 @@ const HamburgerMenu = ({ navBarDivisions }) => {
   }, []);
 
   const handleItemClick = (key, level) => {
-    console.log(key, level);
     // Create a copy of the current state
     let newSelected = [...selected];
+
+    setIsSelectedEver(true);
 
     if (newSelected.length > 0) {
       newSelected = newSelected.slice(1, newSelected.length);
     }
 
-    console.log("newSelected: start ", newSelected);
-
     // Update the current level with the new key
     newSelected[level] = key;
-
-    console.log("newSelected: ", newSelected);
 
     // Clear out any sub-level selections if not at the last level
     if (level < newSelected.length - 1) {
@@ -110,19 +108,28 @@ const HamburgerMenu = ({ navBarDivisions }) => {
         const isSelected =
           selected[level] === key || selected.slice(0, level + 1).includes(key);
 
-        console.log("selected: render", selected);
+        let linkPath = "";
 
-        const linkPath =
-          Object.keys(value).length === 0
-            ? key === "CPTED"
-              ? `/menu/${selected
-                  .slice(1, 2)
-                  .map((v) => v.toLowerCase().replace(/ /g, "-"))
-                  .join("-")}_${key.toLowerCase().replace(/ /g, "-")}`
-              : `/menu/${key.toLowerCase().replace(/ /g, "-")}`
-            : "#";
-
-        console.log("linkPath: ", linkPath);
+        if (isSelectedEver) {
+          linkPath =
+            Object.keys(value).length === 0
+              ? key === "CPTED"
+                ? `/menu/${selected[2].toLowerCase().replace(/ /g, "-")}_${key
+                    .toLowerCase()
+                    .replace(/ /g, "-")}`
+                : `/menu/${key.toLowerCase().replace(/ /g, "-")}`
+              : "#";
+        } else {
+          linkPath =
+            Object.keys(value).length === 0
+              ? key === "CPTED"
+                ? `/menu/${selected
+                    .slice(1, 2)
+                    .map((v) => v.toLowerCase().replace(/ /g, "-"))
+                    .join("-")}_${key.toLowerCase().replace(/ /g, "-")}`
+                : `/menu/${key.toLowerCase().replace(/ /g, "-")}`
+              : "#";
+        }
 
         return (
           <li
@@ -183,11 +190,7 @@ const renderMenuItems = (key, items, level = 0, selected, setSelected) => {
       ? "sub-dropdown"
       : "sub-sub-dropdown";
 
-  // console.log("selected: ", selected);
-
   const ContactUsClassName = key === "Contact Us" ? "contact-us-dropdown" : "";
-
-  // console.log("ContactUsClassName: ", ContactUsClassName);
 
   return (
     <ul className={`${className} ${ContactUsClassName}`}>
