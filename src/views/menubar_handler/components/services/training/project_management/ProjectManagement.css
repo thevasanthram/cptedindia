@@ -207,3 +207,12 @@
     min-width: 90%;
   }
 }
+
+@media (max-width: 400px) {
+  .project-management-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 97vh;
+  }
+}

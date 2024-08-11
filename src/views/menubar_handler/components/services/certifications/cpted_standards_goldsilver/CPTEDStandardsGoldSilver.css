@@ -54,7 +54,8 @@
 }
 
 .cpted-registered-container {
-  margin-top: 40px; /* Adjusted margin for more space */
+  margin-top: 40px;
+  margin-bottom: 5%;
 }
 
 .registered-header {
@@ -256,5 +257,22 @@
   .cpted-logo {
     width: 40%;
     margin-bottom: 20px; /* Ensure space between logos */
+  }
+}
+
+@media (max-width: 400px) {
+  .cpted-header {
+    margin-top: 0%;
+    font-size: 1.22em;
+  }
+
+  .close {
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
   }
 }

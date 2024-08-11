@@ -190,3 +190,13 @@
     max-width: 100%;
   }
 }
+
+/* Mobile screens (480px and above) */
+@media (max-width: 400px) {
+  .work-place-violence-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 90vh;
+  }
+}

@@ -203,3 +203,28 @@
     max-width: 100%;
   }
 }
+
+/* Mobile screens (480px and below) */
+@media (max-width: 400px) {
+  .risk-management-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 87vh;
+  }
+
+  .risk-management-section-title {
+    margin-top: 5%;
+    font-size: 23px;
+  }
+
+  .risk-management-section-description {
+    font-size: 18px;
+    margin-top: 10%;
+  }
+
+  .consulting-risk-management-section-image {
+    margin-top: 0%;
+    max-width: 100%;
+  }
+}

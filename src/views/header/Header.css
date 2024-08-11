@@ -435,3 +435,24 @@ header {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 400px) {
+  .hamburger-menu-container.open .menu-content-wrapper {
+    width: 75%;
+    top: 100%;
+    height: 89.5vh;
+  }
+
+  .hamburger-menu-container .menu-content-wrapper {
+    width: 75%;
+    top: 100%;
+  }
+
+  .menu-list-item .menu-link {
+    font-size: 0.9rem;
+  }
+
+  .submenu-list-container {
+    font-size: 0.8rem;
+  }
+}

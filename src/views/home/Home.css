@@ -818,3 +818,152 @@
     object-fit: contain;
   }
 }
+
+@media (max-width: 400px) {
+  .home-container {
+    width: 100vw;
+    height: 89vh;
+    margin-top: 14%;
+    margin-bottom: 4%;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .home-award-container {
+    width: 100%;
+    margin-top: 5%;
+    height: 40vh;
+  }
+
+  .home-award-title {
+    font-size: 1.3rem;
+  }
+
+  .home-award-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .home-award-image-1 {
+    width: 40%;
+  }
+
+  .home-award-image-2 {
+    width: 41%;
+  }
+
+  .home-award-image-3 {
+    width: 47%;
+  }
+
+  .home-award-image-4 {
+    width: 36%;
+  }
+
+  .home-award-image-5 {
+    width: 28%;
+  }
+
+  @keyframes slideAwards {
+    /* First three images (left to right) */
+    0% {
+      transform: translateX(5%); /* First image */
+    }
+    20% {
+      transform: translateX(5%); /* First image */
+    }
+    50% {
+      transform: translateX(-140%); /* Move to the second image */
+    }
+    70% {
+      transform: translateX(-140%);
+    }
+    100% {
+      transform: translateX(5%); /* Move to the second image */
+    }
+    130% {
+      transform: translateX(5%); /* Move to the second image */
+    }
+  }
+
+  .home-award-wrapper {
+    animation: slideAwards 10s ease-in-out infinite;
+  }
+
+  .home-carousel {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .home-carousel-slide {
+    height: 50vh;
+  }
+
+  .home-content-wrapper {
+    flex-direction: column;
+  }
+
+  .home-slide-caption {
+    bottom: 10%;
+    font-size: 8px;
+    padding: 2px 5px;
+    line-height: 1.5;
+    width: 90%;
+  }
+
+  #custom-slick-dot {
+    bottom: -25px;
+    right: 25px;
+  }
+
+  .home-cpted-india-content {
+    margin-bottom: 4%;
+    margin-right: 7%;
+    width: 79%;
+    margin-top: -10%;
+  }
+
+  .home-cpted-india-title,
+  .home-objective-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .home-cpted-india-text {
+    font-size: 0.8rem;
+  }
+
+  .home-objective-text {
+    font-size: 0.8rem;
+  }
+
+  .home-objective-content {
+    margin-right: 10%;
+    margin-top: -20%;
+  }
+
+  .home-objective-title {
+    font-size: 1.5rem;
+    margin-top: -2%;
+  }
+
+  .home-cpted-india-image img {
+    width: 80%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: -15%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .home-objective-image img {
+    width: 80%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: -21%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+}

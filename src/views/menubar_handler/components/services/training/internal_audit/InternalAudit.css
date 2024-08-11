@@ -184,3 +184,12 @@
     max-width: 150%;
   }
 }
+
+@media (max-width: 400px) {
+  .internal-audit-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 53vh;
+  }
+}

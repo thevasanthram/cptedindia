@@ -207,3 +207,13 @@
     max-width: 100%;
   }
 }
+
+/* Mobile screens (480px and above) */
+@media (max-width: 400px) {
+  .business-continuity-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 75vh;
+  }
+}

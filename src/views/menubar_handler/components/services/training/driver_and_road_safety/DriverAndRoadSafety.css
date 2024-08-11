@@ -209,3 +209,12 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .driver-road-safety-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 86vh;
+  }
+}

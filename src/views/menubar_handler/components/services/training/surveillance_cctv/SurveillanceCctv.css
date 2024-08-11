@@ -190,3 +190,12 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .surveillance-cctv-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 73vh;
+  }
+}
