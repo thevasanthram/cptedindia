@@ -183,3 +183,12 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .consulting-cpted-container {
+    padding: 15px;
+    margin: 19% auto;
+    width: 80%;
+    height: 72vh;
+  }
+}
