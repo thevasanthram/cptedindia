@@ -189,21 +189,21 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 88vh;
+    height: 80vh;
   }
 
   .training-title {
-    margin-top: 10%;
+    margin-top: 2%;
     font-size: 23px;
   }
 
   .training-description {
     font-size: 18px;
-    margin-top: 10%;
+    margin-top: -3%;
   }
 
   .training-command-center-image {
-    margin-top: 6%;
+    margin-top: -7%;
     max-width: 100%;
   }
 }
@@ -213,6 +213,6 @@
     padding: 15px;
     margin: 19% auto;
     width: 80%;
-    height: 90vh;
+    height: 80vh;
   }
 }

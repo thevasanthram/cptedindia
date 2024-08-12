@@ -3,8 +3,12 @@
 .founder-and-president-container {
   display: flex;
   height: 90vh;
-  overflow: hidden; /* Prevent overflow for the slider container */
-  font-family: "Arial", sans-serif; /* Or any other font you prefer */
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+  margin-top: -1%;
+  margin-bottom: 3%;
+  margin-left: -3%;
+  width: 99vw;
 }
 
 .slider-container-wrapper {
@@ -238,6 +242,17 @@
   }
 }
 
+@media (max-width: 820px) {
+  .founder-and-president-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    margin-top: -7%;
+    width: 96vw;
+    margin-bottom: 6%;
+  }
+}
+
 /* Mobile devices (max-width: 767px) */
 @media (max-width: 767px) {
   .founder-and-president-container {
@@ -296,7 +311,9 @@
   .founder-and-president-container {
     flex-direction: column;
     height: auto;
-    padding: 10px; /* Add padding for better spacing */
+    padding: 10px;
+    margin-top: -6%;
+    margin-bottom: 10%;
   }
 
   .slider-container-wrapper {

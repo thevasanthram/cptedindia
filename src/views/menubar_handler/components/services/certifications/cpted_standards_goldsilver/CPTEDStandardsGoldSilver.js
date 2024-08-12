@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./CPTEDStandardsGoldSilver.css";
 import goldCertification from "./../../../../../../images/gold_certification.png";
 import silverCertification from "./../../../../../../images/silver_certification.png";
-import logo1 from "./../../../../../../images/msme.jpg";
-import logo2 from "./../../../../../../images/indian_green_building_council.jpg";
-import logo3 from "./../../../../../../images/fsai.jpg";
+import logo1 from "./../../../../../../images/logos/msme.jpg";
+import logo2 from "./../../../../../../images/logos/indian_green_building_council.jpg";
+import logo3 from "./../../../../../../images/logos/fsai.jpg";
+import logo4 from "./../../../../../../images/logos/national_safety_council.jpg";
 
 const CPTEDStandardsGoldSilver = () => {
   const [modalImage, setModalImage] = useState(null);
@@ -39,13 +40,18 @@ const CPTEDStandardsGoldSilver = () => {
       <div className="cpted-registered-container">
         <h3 className="registered-header">Registered With</h3>
         <div className="cpted-logos">
-          <img src={logo1} alt="MSME Logo" className="cpted-logo" />
+          <img src={logo1} alt="MSME" className="cpted-logo" />
           <img
             src={logo2}
-            alt="Indian Green Building Council Logo"
+            alt="Indian Green Building Council"
             className="cpted-logo"
           />
-          <img src={logo3} alt="FSAI Logo" className="cpted-logo" />
+          <img src={logo3} alt="FSAI" className="cpted-logo" />
+          <img
+            src={logo4}
+            alt="National Safety Council"
+            className="cpted-logo"
+          />
         </div>
       </div>
       {modalImage && (

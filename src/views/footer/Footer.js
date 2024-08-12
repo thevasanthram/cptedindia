@@ -14,9 +14,9 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="about-us">
-          <h2>About Us</h2>
+          {/* <h2>About Us</h2> */}
           <p id="about_us_text">
-            CPTED INDIA provides top-tier services, fostering a crime-free
+            CPTEDINDIA provides top-tier services, fostering a crime-free
             society through expertise and community engagement. Our initiatives
             enhance quality of life and property values while reducing crime and
             insurance costs.
@@ -67,19 +67,19 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="tel:+1234567890">
+              <a href="tel:+919884913382">
                 <FaPhone />
               </a>
             </li>
           </ul>
-          <address>
+          {/* <address>
             123 CPTED Street,
             <br />
             Chennai, India
-          </address>
+          </address> */}
         </div>
       </div>
-      <p>&copy; 2024 CPTED INDIA</p>
+      <p>&copy; 2024 CPTEDINDIA</p>
     </footer>
   );
 };

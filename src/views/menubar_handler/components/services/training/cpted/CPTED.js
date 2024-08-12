@@ -12,11 +12,12 @@ function CPTED() {
           <br />
           <span className="training-cpted-list">
             <span className="training-cpted-list-item">
-              1. <strong>CPTED Certified Specialist</strong> (For beginners)
+              <strong> 1. CPTEDINDIA Certified Specialist</strong> (For
+              beginners)
             </span>
             <br />
             <span className="training-cpted-list-item">
-              2. <strong>CPTED Certified Professional</strong> (For
+              <strong>2. CPTEDINDIA Certified Professional</strong> (For
               Professionals)
             </span>
           </span>

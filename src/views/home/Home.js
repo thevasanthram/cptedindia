@@ -97,14 +97,14 @@ const Home = () => {
                     increases a sense of community pride.
                   </p>
                   <p className="home-cpted-india-text">
-                    We also collaborate with Business leaders/owners, Planners,
+                    We collaborate with Business leaders/owners, Planners,
                     architects, corporations, municipal leaders, community
                     residence and educational institutions in safety planning,
                     development and redevelopment projects.
                   </p>
                 </div>
                 <div className="home-cpted-india-image">
-                  <img src={aimsImage} alt="CPTED India" />
+                  <img src={aimsImage} alt="CPTEDINDIA" />
                 </div>
               </div>
             </div>

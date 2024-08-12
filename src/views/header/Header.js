@@ -37,7 +37,7 @@ const navBarDivisions = {
   Recognitions: {
     Awards: {},
     Appreciations: {},
-    Citations: {},
+    Memberships: {},
     "Service Renewals": {},
     Recommendations: {},
   },
