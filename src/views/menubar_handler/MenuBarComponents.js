@@ -23,7 +23,7 @@ import PrintMedia from "./../updated_soon/UpdatedSoon";
 import Video from "./../updated_soon/UpdatedSoon";
 import Websites from "./../updated_soon/UpdatedSoon";
 import Appreciations from "./../updated_soon/UpdatedSoon";
-import Memberships from "./../updated_soon/UpdatedSoon";
+import Memberships from "./components/recognitions/memberships/Memberships";
 import ServiceRenewals from "./../updated_soon/UpdatedSoon";
 import Recommendations from "./../updated_soon/UpdatedSoon";
 import Schools from "./../updated_soon/UpdatedSoon";

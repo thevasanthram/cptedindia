@@ -27,7 +27,7 @@ const Footer = () => {
           <ul className="social-icons">
             <li>
               <a
-                href="https://twitter.com"
+                href=" https://x.com/home"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61564452770882"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/cptedindia/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -54,7 +54,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/dinesh-elangovan-cia-ssb-cdt-pmp-cpted-0220952a/"
+                href="https://www.linkedin.com/in/cptedindia-340795322/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
