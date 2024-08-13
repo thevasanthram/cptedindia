@@ -51,9 +51,9 @@ const Home = () => {
   };
 
   return (
-    <div id="home_page">
-      <div className="home-container">
-        <div className="home-award-container">
+    <main id="home_page">
+      <section className="home-container">
+        <header className="home-award-container">
           <h2 className="home-award-title">Awards</h2>
           <div className="home-award-wrapper">
             <img
@@ -82,10 +82,10 @@ const Home = () => {
               className="home-award-image home-award-image-5"
             />
           </div>
-        </div>
-        <div className="home-carousel">
+        </header>
+        <section className="home-carousel">
           <Slider {...settings}>
-            <div className="home-carousel-slide home-slide1 home-slide-enter">
+            <article className="home-carousel-slide home-slide1 home-slide-enter">
               <div className="home-content-wrapper">
                 <div className="home-cpted-india-content">
                   <h2 className="home-cpted-india-title">CPTED</h2>
@@ -104,11 +104,11 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="home-cpted-india-image">
-                  <img src={aimsImage} alt="CPTEDINDIA" />
+                  <img src={aimsImage} alt="CPTEDINDIA aims" />
                 </div>
               </div>
-            </div>
-            <div className="home-carousel-slide home-slide2">
+            </article>
+            <article className="home-carousel-slide home-slide2">
               <div className="home-content-wrapper">
                 <div className="home-objective-image">
                   <img src={objectiveImage} alt="Objective" />
@@ -131,8 +131,8 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="home-carousel-slide home-slide3">
+            </article>
+            <article className="home-carousel-slide home-slide3">
               <img
                 src={SustainableGoals}
                 alt="Sustainable Goals"
@@ -144,32 +144,32 @@ const Home = () => {
                   the Sustainable goals listed by United Nations
                 </h2>
               </div>
-            </div>
-            <div className="home-carousel-slide home-slide4">
+            </article>
+            <article className="home-carousel-slide home-slide4">
               <img
                 src={PositiveActivity}
                 alt="Positive Activity"
                 className="home-carousel-image"
               />
-            </div>
-            <div className="home-carousel-slide home-slide5">
+            </article>
+            <article className="home-carousel-slide home-slide5">
               <img
                 src={CPTEDLocalPride}
-                alt="CPTED - Local Pride"
+                alt="CPTED Local Pride"
                 className="home-carousel-image"
               />
-            </div>
-            <div className="home-carousel-slide home-slide6">
+            </article>
+            <article className="home-carousel-slide home-slide6">
               <img
                 src={CPTEDOriginAndTheory}
                 alt="CPTED Origin and Theory"
                 className="home-carousel-image"
               />
-            </div>
+            </article>
           </Slider>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </main>
   );
 };
 
