@@ -1,0 +1,184 @@
+.professional-groups-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #faf9f6;
+  color: #333333;
+  margin-bottom: 5%;
+}
+
+.knowledge-partners-title {
+  font-family: "Merriweather", serif; /* Elegant serif font */
+  font-size: 2.5rem;
+  color: #333333; /* Charcoal Gray for title */
+  text-shadow: 1px 1px #d8bfd8; /* Light shadow in Dusty Rose */
+  font-style: italic; /* Italic style for a classic look */
+  letter-spacing: 1px; /* Slight letter spacing for a refined feel */
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.knowledge-partners-description {
+  font-family: "Lato", sans-serif; /* Clean and modern sans-serif font */
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #6c757d; /* Slate Gray for description */
+  line-height: 1.6; /* Enhanced readability */
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.knowledge-partner-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1280px) {
+  .logo-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo-wrapper {
+    width: 160px;
+    height: 160px;
+  }
+
+  .professional-groups-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #faf9f6;
+    color: #333333;
+    margin-bottom: 8%;
+    margin-top: -3%;
+  }
+}
+
+@media (max-width: 820px) {
+  .logo-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .professional-groups-container {
+    height: 57vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #faf9f6;
+    color: #333333;
+    margin-bottom: 4%;
+    margin-top: 19%;
+    /* width: 80%; */
+  }
+
+  .knowledge-partners-description {
+    margin-top: 7%;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #6c757d;
+    line-height: 1.6;
+  }
+
+  .knowledge-partners-title {
+    font-size: 3.5rem;
+  }
+
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+
+  .knowledge-partner-logo {
+    width: 120%;
+    height: 120%;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .knowledge-partners-title {
+    font-size: 3rem;
+    margin-top: 0%;
+  }
+
+  .knowledge-partners-description {
+    margin-top: 7%;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+  }
+
+  .logo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .professional-groups-container {
+    margin-bottom: 1%;
+    margin-top: 0%;
+  }
+}
+
+@media (max-width: 480px) {
+  .knowledge-partners-title {
+    font-size: 1.8rem;
+    margin-top: -3%;
+  }
+
+  .knowledge-partners-description {
+    font-size: 1rem;
+  }
+
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .professional-groups-container {
+    margin-bottom: 30%;
+    margin-top: 0%;
+    height: 65vh;
+  }
+
+  .logo-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

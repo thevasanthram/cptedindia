@@ -28,7 +28,7 @@ import ServiceRenewals from "./../updated_soon/UpdatedSoon";
 import Recommendations from "./../updated_soon/UpdatedSoon";
 import Schools from "./../updated_soon/UpdatedSoon";
 import Colleges from "./../updated_soon/UpdatedSoon";
-import PrivateGroups from "./../updated_soon/UpdatedSoon";
+import ProfessionalGroups from "./../menubar_handler/components/mou_partners/professional_groups/ProfessionalGroups";
 import RecognizedInstitutes from "./../updated_soon/UpdatedSoon";
 import GovernmentDepartment from "./../updated_soon/UpdatedSoon";
 
@@ -64,7 +64,7 @@ const componentsMap = {
   Recommendations,
   Schools,
   Colleges,
-  PrivateGroups,
+  ProfessionalGroups,
   RecognizedInstitutes,
   GovernmentDepartment,
 };

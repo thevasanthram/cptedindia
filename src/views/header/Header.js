@@ -44,7 +44,7 @@ const navBarDivisions = {
   "MOU/Partners": {
     Schools: {},
     Colleges: {},
-    "Private Groups": {},
+    "Professional Groups": {},
     "Recognized Institutes": {},
     "Government Department": {},
   },

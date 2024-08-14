@@ -7,14 +7,14 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <main className="not-found">
-      <section className="illustration">
+    <div className="not-found">
+      <div className="illustration">
         <img src={NotFoundImg} alt="404 Not Found" />
-      </section>
+      </div>
       <h1>404</h1>
       <p>Oops! The route you are looking for does not exist.</p>
       <button onClick={() => navigate("/")}>Go Back to Home</button>
-    </main>
+    </div>
   );
 };
 
