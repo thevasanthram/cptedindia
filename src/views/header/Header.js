@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import CPTEDLogo from "./../../images/logos/cpted_logo.jpeg";
 
 const navBarDivisions = {
   Services: {
@@ -258,14 +259,21 @@ const Header = () => {
 
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
-      <div className="header-content">
+      {/* <div className="header-content"> */}
+      <Link to="/" className="header-content">
+        <img
+          src={CPTEDLogo}
+          alt="CPTEDINDIA Logo"
+          className="cpted-india-logo"
+        />
         <Link to="/" className="acronym">
           CPTEDINDIA
         </Link>
-        <span className="full-text">
+      </Link>
+      {/* <span className="full-text">
           Crime Prevention through Environmental Design
-        </span>
-      </div>
+        </span> */}
+      {/* </div> */}
       <nav className="navbar">
         <ul className="navbar-menu">
           {Object.entries(navBarDivisions).map(([key, value]) => (
