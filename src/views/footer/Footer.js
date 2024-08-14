@@ -7,6 +7,7 @@ import {
   FaEnvelope,
   FaPhone,
   FaLinkedin,
+  FaWhatsapp, // Import the WhatsApp icon
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -69,6 +70,15 @@ const Footer = () => {
             <li>
               <a href="tel:+919884913382">
                 <FaPhone />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/919884913382" // WhatsApp link with the phone number
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
               </a>
             </li>
           </ul>
