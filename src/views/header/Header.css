@@ -28,14 +28,14 @@ header {
   width: 90px; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Initial shadow */
   border-radius: 8px; /* Slightly round corners */
 }
 
 /* Hover effect */
 .cpted-india-logo:hover {
   transform: scale(1.1); /* Zoom in */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); Stronger shadow */
 }
 
 /* Animation on load */
@@ -500,6 +500,13 @@ header {
     justify-content: space-between;
   }
 
+  .hamburger-menu-container.open .menu-content-wrapper {
+    width: 75%;
+    top: 100%;
+    height: 91.5vh;
+    margin-top: -1%;
+  }
+
   .header-content {
     padding: 20px 30px;
     min-width: 50%;
@@ -552,6 +559,7 @@ header {
 
   .submenu-list-container {
     font-size: 0.8rem;
+    border-top: 1px solid #dbd6d6;
   }
 }
 
@@ -559,7 +567,8 @@ header {
   .hamburger-menu-container.open .menu-content-wrapper {
     width: 75%;
     top: 100%;
-    height: 89.5vh;
+    height: 91.5vh;
+    margin-top: -1%;
   }
 
   .hamburger-menu-container .menu-content-wrapper {

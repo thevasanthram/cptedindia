@@ -32,10 +32,7 @@ const Membership = () => {
           className="membership-logo"
         />
       </div>
-      <p className="membership-description">
-        We are proud members of these prestigious organizations, reflecting our
-        commitment to excellence and innovation.
-      </p>
+      <p className="membership-description">We are registered.</p>
     </div>
   );
 };

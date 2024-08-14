@@ -133,12 +133,10 @@ const FounderAndPresident = () => {
         </p>
         <div className="contact-info-wrapper">
           <div className="contact-info">
-            <p>Dial: +91 9886333979</p>
+            {/* <p>Dial: +91 9886333979</p> */}
             <p>
               Email:{" "}
-              <a href="mailto:dinesh.elangovan@yahoo.com">
-                dinesh.elangovan@yahoo.com
-              </a>
+              <a href="mailto:office@cptedindia.com">office@cptedindia.com</a>
             </p>
           </div>
         </div>
