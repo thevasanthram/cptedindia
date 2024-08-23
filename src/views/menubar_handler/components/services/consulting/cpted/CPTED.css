@@ -1,5 +1,5 @@
 .consulting-cpted-container {
-  background-color: #faf9f6; /* Soft Ivory */
+  background-color: #fff; /* Soft Ivory */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@
 
 .consulting-cpted-description {
   font-size: 18px;
-  color: #333333; /* Charcoal Gray */
+  color: #6c757d; /* Charcoal Gray */
   margin-top: 20px;
   padding: 0 20px;
   animation: slideInUp 1s ease-in-out;

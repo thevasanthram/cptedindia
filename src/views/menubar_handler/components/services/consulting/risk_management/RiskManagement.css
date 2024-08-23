@@ -1,5 +1,5 @@
 .risk-management-container {
-  background-color: #f0fff0; /* Light Blue */
+  background-color: #fff; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12,7 +12,7 @@
 }
 
 .risk-management-section-title {
-  color: #4169e1; /* Dodger Blue */
+  color: #333333; /* Dodger Blue */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 }
 
 .risk-management-section-title:hover {
-  color: #4682b4; /* Steel Blue */
+  color: #6c757d; /* Steel Blue */
 }
 
 .risk-management-section-description {

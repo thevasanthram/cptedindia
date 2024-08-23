@@ -1,5 +1,5 @@
 .membership-container {
-  background-color: #faf9f6;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -11,7 +11,7 @@
 .membership-title {
   font-family: "Merriweather", serif; /* Elegant serif font */
   font-size: 2.5rem;
-  color: #333333; /* Charcoal Gray for title */
+  color: #6c757d; /* Charcoal Gray for title */
   text-shadow: 1px 1px #d8bfd8; /* Light shadow in Dusty Rose */
   font-style: italic; /* Italic style for a classic look */
   letter-spacing: 1px; /* Slight letter spacing for a refined feel */

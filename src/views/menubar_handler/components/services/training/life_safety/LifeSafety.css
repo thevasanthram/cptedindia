@@ -1,6 +1,6 @@
 /* Base Styles */
 .life-safety-container {
-  background-color: #f0fff0; /* Dodger Blue */
+  background-color: #fff; /* Dodger Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
@@ -11,7 +11,7 @@
 }
 
 .training-title {
-  color: #1e90ff; /* Dodger Blue */
+  color: #333333; /* Dodger Blue */
   font-size: 28px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
 }
 
 .training-title:hover {
-  color: #4682b4; /* Steel Blue */
+  color: #6c757d; /* Steel Blue */
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 

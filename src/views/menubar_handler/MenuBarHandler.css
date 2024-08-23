@@ -11,7 +11,7 @@
 }
 
 .not-found {
-  background-color: #faf9f6; /* Soft Ivory background */
+  background-color: #fff; /* Soft Ivory background */
   color: #333333; /* Charcoal Gray text */
   padding: 40px;
   border-radius: 10px;
@@ -37,7 +37,7 @@
 
 .not-found button {
   background-color: #d8bfd8; /* Dusty Rose for button */
-  color: #faf9f6; /* Soft Ivory text */
+  color: #fff; /* Soft Ivory text */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;

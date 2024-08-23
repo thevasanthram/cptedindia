@@ -1,5 +1,5 @@
 .cpted-standards-container {
-  background-color: #faf9f6; /* Soft Ivory */
+  background-color: #fff; /* Soft Ivory */
   padding: 20px;
   border-radius: 2px;
   text-align: center;
@@ -30,7 +30,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   font-family: "Georgia", serif;
-  color: #333333;
+  color: #6c757d;
   font-size: 1.2em;
   line-height: 1.6;
   text-align: justify;

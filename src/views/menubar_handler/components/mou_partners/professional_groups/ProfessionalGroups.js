@@ -11,7 +11,7 @@ const ProfessionalGroups = () => {
     <div className="professional-groups-container">
       <h2 className="knowledge-partners-title">Knowledge Partners</h2>
       <p className="knowledge-partners-description">
-        "Our esteemed Knowledge Partners collaborate with us to share insights
+        Our esteemed Knowledge Partners collaborate with us to share insights
         and their expertise. Their contributions add value in enhancing
         community safety and security.
       </p>

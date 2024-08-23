@@ -4,7 +4,8 @@
 
 .App {
   text-align: center;
-  background-color: #faf9f6; /* Soft ivory background */
+  /* background-color: #faf9f6; Soft ivory background */
+  background-color: #fff;
   color: #333333; /* Charcoal gray text */
 }
 
@@ -44,22 +45,22 @@ button:hover {
 }
 
 .border-accent {
-  border: 1px solid #f5f5f0; /* Light beige for borders and accents */
+  border: 1px solid #fff; /* Light beige for borders and accents */
 }
 
 /* Customize the scrollbar for the entire application */
 ::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+  width: 5px; /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f5f5f0; /* Background of the scrollbar track */
+  background: #fff; /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #d8bfd8; /* Scrollbar thumb color */
   border-radius: 10px; /* Roundness of the scrollbar thumb */
-  border: 3px solid #f5f5f0; /* Padding around the scrollbar thumb */
+  border: 3px solid #fff; /* Padding around the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -69,5 +70,5 @@ button:hover {
 /* Firefox scrollbar customization */
 html {
   scrollbar-width: thin; /* Make the scrollbar thinner */
-  scrollbar-color: #d8bfd8 #f5f5f0; /* Scrollbar thumb and track colors */
+  scrollbar-color: #d8bfd8 #fff; /* Scrollbar thumb and track colors */
 }

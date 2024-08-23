@@ -1,6 +1,6 @@
 /* Base Styles */
 .project-management-container {
-  background-color: #f0fff0; /* Light Blue */
+  background-color: #fff; /* Light Blue */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -11,7 +11,7 @@
 }
 
 .project-management-title {
-  color: #4169e1; /* Dodger Blue */
+  color: #333333; /* Dodger Blue */
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 }
 
 .project-management-title:hover {
-  color: #4682b4; /* Steel Blue */
+  color: #6c757d; /* Steel Blue */
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -39,7 +39,7 @@
 }
 
 .project-management-description:hover {
-  color: #4169e1; /* Dodger Blue */
+  color: #6c757d; /* Dodger Blue */
 }
 
 .project-management-image-container {
