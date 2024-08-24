@@ -99,6 +99,19 @@ header {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+#slogan {
+  color: #2fc947;
+  line-height: 0px;
+  font-size: 14px;
+}
+
+#company-name-and-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .scrolled .full-text {
   opacity: 0.8;
 }
@@ -267,7 +280,7 @@ header {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #faf9f6;
+  background-color: #fff;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
   z-index: 99;
@@ -532,6 +545,10 @@ header {
 
   .full-text {
     font-size: 0.8em;
+  }
+
+  #slogan {
+    font-size: 11px;
   }
 
   .acronym {

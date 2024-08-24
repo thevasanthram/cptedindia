@@ -266,9 +266,12 @@ const Header = () => {
           alt="CPTEDINDIA Logo"
           className="cpted-india-logo"
         />
-        <Link to="/" className="acronym">
-          CPTEDINDIA
-        </Link>
+        <div id="company-name-and-slogan">
+          <Link to="/" className="acronym">
+            CPTEDINDIA
+          </Link>
+          <p id="slogan">Enabling Safer Space by Design</p>
+        </div>
       </Link>
       {/* <span className="full-text">
           Crime Prevention through Environmental Design
