@@ -85,8 +85,25 @@
   }
 }
 
+.home-knowledge-partners-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* animation: slideKnowledgePartners 25s linear infinite; Increased duration for slower motion */
+  /* animation-delay: 2s; Reduced delay at the start */
+  width: 100%;
+  height: calc(100% - 40px); /* Adjust height to avoid overlapping with title */
+  gap: 2rem;
+}
+
 .home-award-image {
   width: 80%;
+  margin: 10px 0;
+}
+
+.home-knowledge-partners-image {
+  width: 60%;
   margin: 10px 0;
 }
 
@@ -391,12 +408,25 @@
     width: 30%;
   }
 
+  .home-knowledge-partners-wrapper {
+    gap: 1.5rem;
+  }
+
   .home-award-title {
     font-size: 1.2rem;
   }
 
+  .home-knowledge-partners-title {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
   .home-award-image {
     width: 60%;
+  }
+
+  .home-knowledge-partners-image {
+    width: 50%;
   }
 
   .home-carousel {
@@ -492,6 +522,22 @@
     130% {
       transform: translateX(5%); /* Move to the second image */
     }
+  }
+
+  .home-knowledge-partners-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .home-knowledge-partners-title {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .home-knowledge-partners-image {
+    width: 20%;
   }
 
   .home-award-wrapper {
@@ -669,13 +715,26 @@
   .home-objective-title {
     font-size: 2rem;
   }
+
+  .home-knowledge-partners-wrapper {
+    gap: 6rem;
+  }
+
+  .home-knowledge-partners-title {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+
+  .home-knowledge-partners-image {
+    width: 20%;
+  }
 }
 
 /* Mobile devices (480px and below) */
 @media (max-width: 480px) {
   .home-container {
     width: 100vw;
-    height: 89vh;
+    height: 94vh;
     margin-top: 14%;
     margin-bottom: 4%;
     flex-direction: column;
@@ -698,23 +757,23 @@
   }
 
   .home-award-image-1 {
-    width: 40%;
+    width: 23%;
   }
 
   .home-award-image-2 {
-    width: 41%;
+    width: 23%;
   }
 
   .home-award-image-3 {
-    width: 47%;
+    width: 27%;
   }
 
   .home-award-image-4 {
-    width: 36%;
+    width: 20%;
   }
 
   .home-award-image-5 {
-    width: 28%;
+    width: 15%;
   }
 
   @keyframes slideAwards {
@@ -726,10 +785,10 @@
       transform: translateX(5%); /* First image */
     }
     50% {
-      transform: translateX(-135%); /* Move to the second image */
+      transform: translateX(-53%); /* Move to the second image */
     }
     70% {
-      transform: translateX(-135%);
+      transform: translateX(-53%);
     }
     100% {
       transform: translateX(5%); /* Move to the second image */
@@ -745,7 +804,7 @@
 
   .home-carousel {
     width: 100%;
-    height: 65vh;
+    height: 100vh;
   }
 
   .home-carousel-slide {
@@ -757,15 +816,15 @@
   }
 
   .home-slide-caption {
-    bottom: 6%;
+    bottom: 13%;
     font-size: 9px;
     padding: 5px;
-    line-height: 2;
+    line-height: 1.5;
     width: 91%;
   }
 
   #custom-slick-dot {
-    bottom: -25px;
+    bottom: 15px;
     right: 25px;
   }
 
@@ -803,9 +862,9 @@
   }
 
   .home-cpted-india-image img {
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin-left: 1%;
+    margin-left: 5%;
     margin-top: -15%;
     border-radius: 10px;
     object-fit: contain;
@@ -818,6 +877,19 @@
     margin-top: -21%;
     border-radius: 10px;
     object-fit: contain;
+  }
+
+  .home-knowledge-partners-wrapper {
+    gap: 2rem;
+  }
+
+  .home-knowledge-partners-title {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+
+  .home-knowledge-partners-image {
+    width: 25%;
   }
 }
 

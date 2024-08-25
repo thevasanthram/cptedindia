@@ -16,6 +16,9 @@ import Award2 from "./../../images/awards/award-img-2.jpeg";
 import Award3 from "./../../images/awards/award-img-3.jpg";
 import Award4 from "./../../images/awards/award-img-4.jpeg";
 import Award5 from "./../../images/awards/award-img-5.jpg";
+import RakshaLogo from "./../../images/logos/raksha_logo.jpg";
+import IFESCLogo from "./../../images/logos/IFSEC_logo.jpg";
+import SecurityAndFireExpoLogo from "./../../images/logos/security_and_fire_expo.jpg";
 
 const Home = () => {
   const settings = {
@@ -167,6 +170,28 @@ const Home = () => {
               />
             </div>
           </Slider>
+        </div>
+        <div className="home-award-container">
+          <h2 className="home-award-title home-knowledge-partners-title">
+            Knowledge Partners
+          </h2>
+          <div className="home-knowledge-partners-wrapper">
+            <img
+              src={RakshaLogo}
+              alt="Partner 1"
+              className="home-knowledge-partners-image home-knowledge-partners-image-1"
+            />
+            <img
+              src={IFESCLogo}
+              alt="Partner 2"
+              className="home-knowledge-partners-image home-knowledge-partners-image-2"
+            />
+            <img
+              src={SecurityAndFireExpoLogo}
+              alt="Partner 3"
+              className="home-knowledge-partners-image home-knowledge-partners-image-3"
+            />
+          </div>
         </div>
       </div>
     </div>
