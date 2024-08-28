@@ -19,6 +19,48 @@
   animation-delay: 0.5s;
 }
 
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  margin: 0 auto;
+}
+
+.analytics-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.analytics-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d8bf68;
+  margin-bottom: 10px;
+}
+
+.analytics-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.analytics-loading {
+  font-size: 18px;
+  color: #999;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+}
+
 .about-us,
 .contact-us {
   flex: 1;

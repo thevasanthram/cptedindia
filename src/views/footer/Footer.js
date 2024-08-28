@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import {
   FaTwitter,
@@ -9,6 +9,38 @@ import {
   FaLinkedin,
   FaWhatsapp, // Import the WhatsApp icon
 } from "react-icons/fa";
+
+function GoogleAnalytics() {
+  const [userCount, setUserCount] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/ga4-user-count")
+      .then((response) => response.json())
+      .then((data) => {
+        setUserCount(data.userCount);
+        console.log("data.userCount: ", data.userCount);
+      })
+      .catch((err) => setError(err.message));
+  }, []);
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  return (
+    <div className="analytics-container">
+      {userCount !== null ? (
+        <div className="analytics-content">
+          <div className="analytics-title">User Count</div>
+          <div className="analytics-number">{userCount}</div>
+        </div>
+      ) : (
+        <div className="analytics-loading">Loading...</div>
+      )}
+    </div>
+  );
+}
 
 const Footer = () => {
   return (
@@ -23,6 +55,7 @@ const Footer = () => {
             insurance costs.
           </p>
         </div>
+        <GoogleAnalytics />
         <div className="contact-us">
           <h2>Contact Us</h2>
           <ul className="social-icons">

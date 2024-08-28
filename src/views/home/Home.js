@@ -19,6 +19,7 @@ import Award5 from "./../../images/awards/award-img-5.jpg";
 import RakshaLogo from "./../../images/logos/raksha_logo.jpg";
 import IFESCLogo from "./../../images/logos/IFSEC_logo.jpg";
 import SecurityAndFireExpoLogo from "./../../images/logos/security_and_fire_expo.jpg";
+import JianaConstructionLogo from "./../../images/logos/jiana_construction_logo.jpg";
 
 const Home = () => {
   const settings = {
@@ -190,6 +191,11 @@ const Home = () => {
               src={SecurityAndFireExpoLogo}
               alt="Partner 3"
               className="home-knowledge-partners-image home-knowledge-partners-image-3"
+            />
+            <img
+              src={JianaConstructionLogo}
+              alt="Partner 3"
+              className="home-knowledge-partners-image home-knowledge-partners-image-4"
             />
           </div>
         </div>

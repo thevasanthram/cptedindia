@@ -6,6 +6,7 @@ import Header from "./views/header/Header";
 import Footer from "./views/footer/Footer";
 import NotFound from "./views/not_found/NotFound";
 import "./App.css";
+import GoogleAnalytics from "./views/google_analytics/GoogleAnalytics";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 </div>
               }
             />
+            <Route path="/ga" element={<GoogleAnalytics />} />
           </Routes>
         </main>
         <Footer />
