@@ -25,7 +25,7 @@ function GoogleAnalytics() {
   }, []);
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div className="analytics-container">Error: {error} user count</div>;
   }
 
   return (

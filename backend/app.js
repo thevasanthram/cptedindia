@@ -27,7 +27,7 @@ app.get("/ga4-user-count", async (req, res) => {
   try {
     const [response] = await analyticsDataClient.runReport({
       property: "properties/455860054", // Replace with your GA4 property ID
-      dateRanges: [{ startDate: "30daysAgo", endDate: "today" }],
+      dateRanges: [{ startDate: "2024-01-01", endDate: "today" }],
       metrics: [{ name: "activeUsers" }],
     });
 
