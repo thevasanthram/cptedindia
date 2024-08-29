@@ -1,11 +1,22 @@
 const express = require("express");
 const { BetaAnalyticsDataClient } = require("@google-analytics/data");
 const path = require("path");
+const https = require("https");
+const fs = require("fs");
+const cors = require("cors");
 
 const app = express();
 const port = 443;
 
-const cors = require("cors");
+// Path to your SSL certificates
+const keyPath = "/etc/ssl/private/key.pem"; // Replace with the actual path to your key file
+const certPath = "/etc/ssl/certs/cert.pem"; // Replace with the actual path to your cert file
+
+// SSL options
+const sslOptions = {
+  key: fs.readFileSync(keyPath),
+  cert: fs.readFileSync(certPath),
+};
 
 // Enable CORS for all routes
 app.use(
@@ -17,18 +28,18 @@ app.use(
 );
 
 // Load the service account credentials
-const keyPath = path.join(
+const serviceAccountPath = path.join(
   __dirname,
   "bionic-truck-433912-r2-e6480aba9550.json"
 );
-const keyFile = require(keyPath);
+const keyFile = require(serviceAccountPath);
 
 const analyticsDataClient = new BetaAnalyticsDataClient({
   credentials: {
     client_email: keyFile.client_email,
     private_key: keyFile.private_key,
   },
-}); 
+});
 
 app.get("/ga4-user-count", async (req, res) => {
   try {
@@ -44,6 +55,7 @@ app.get("/ga4-user-count", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+// Start the HTTPS server
+https.createServer(sslOptions, app).listen(port, () => {
+  console.log(`Server running on https://localhost:${port}`);
 });
