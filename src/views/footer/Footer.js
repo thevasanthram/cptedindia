@@ -15,7 +15,7 @@ function GoogleAnalytics() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://51.20.55.155:5000/ga4-user-count")
+    fetch("https://cptedindia.com/ga4-user-count")
       .then((response) => response.json())
       .then((data) => {
         setUserCount(data.userCount);

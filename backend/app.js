@@ -2,12 +2,19 @@ const express = require("express");
 const { BetaAnalyticsDataClient } = require("@google-analytics/data");
 const path = require("path");
 
-const cors = require("cors");
-
 const app = express();
 const port = 5000;
 
-app.use(cors());
+const cors = require("cors");
+
+// Enable CORS for all routes
+app.use(
+  cors({
+    origin: "*", // Allow all origins
+    methods: ["GET", "POST"], // Allow only these methods
+    credentials: true, // Allow credentials if needed
+  })
+);
 
 // Load the service account credentials
 const keyPath = path.join(
