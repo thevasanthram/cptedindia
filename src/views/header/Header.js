@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import CPTEDLogo from "./../../images/logos/cpted_logo.jpeg";
+import CPTEDLogo from "./../../images/logos/cpted_new_logo.jpg";
 
 const navBarDivisions = {
   Services: {
