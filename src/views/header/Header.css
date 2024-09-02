@@ -22,7 +22,7 @@ header {
   padding: 20px 30px;
   white-space: nowrap;
   min-width: 50%;
-  gap: 2em;
+  gap: 1em;
   text-decoration: none;
 }
 
@@ -103,6 +103,7 @@ header {
   color: #2fc947;
   line-height: 0px;
   font-size: 14px;
+  font-weight: 700;
 }
 
 #company-name-and-slogan {
@@ -368,7 +369,7 @@ header {
   .header-content {
     padding: 20px 30px;
     min-width: 50%;
-    gap: 2em;
+    gap: 1em;
   }
 
   .cpted-india-logo {
@@ -407,7 +408,7 @@ header {
   .header-content {
     padding: 20px 30px;
     min-width: 50%;
-    gap: 2em;
+    gap: 1em;
   }
 
   .cpted-india-logo {
@@ -459,7 +460,7 @@ header {
   .header-content {
     padding: 20px 30px;
     min-width: 50%;
-    gap: 2em;
+    gap: 1em;
   }
 
   .cpted-india-logo {
@@ -524,10 +525,17 @@ header {
     margin-top: -1%;
   }
 
+  #company-name-and-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
   .header-content {
     padding: 20px 30px;
     min-width: 50%;
-    gap: 1em;
+    gap: 0.4em;
   }
 
   .cpted-india-logo {
