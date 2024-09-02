@@ -90,7 +90,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  animation: slideKnowledgePartners 10s linear infinite; /*Increased duration for slower motion*/
+  animation: slideKnowledgePartners 12s linear infinite; /*Increased duration for slower motion*/
   /* animation-delay: 2s; */
   width: 100%;
   height: calc(100% - 40px); /* Adjust height to avoid overlapping with title */
@@ -105,10 +105,10 @@
     transform: translateY(0); /* Show the first image */
   }
   50% {
-    transform: translateY(-35%); /* Move to the second image */
+    transform: translateY(-62%); /* Move to the second image */
   }
   60% {
-    transform: translateY(-35%); /* Wait before reversing */
+    transform: translateY(-62%); /* Wait before reversing */
   }
   100% {
     transform: translateY(0); /* Wait before reversing */
@@ -123,6 +123,14 @@
 .home-knowledge-partners-image {
   width: 60%;
   margin: 10px 0;
+}
+
+.home-knowledge-partners-image-4 {
+  width: 95%;
+}
+
+.home-knowledge-partners-image-5 {
+  width: 85%;
 }
 
 .home-carousel {
@@ -181,7 +189,6 @@
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -430,6 +437,24 @@
     gap: 1.5rem;
   }
 
+  @keyframes slideKnowledgePartners {
+    0% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(0); /* Show the first image */
+    }
+    50% {
+      transform: translateY(-75%); /* Move to the second image */
+    }
+    60% {
+      transform: translateY(-75%); /* Wait before reversing */
+    }
+    100% {
+      transform: translateY(0); /* Wait before reversing */
+    }
+  }
+
   .home-award-title {
     font-size: 1.2rem;
   }
@@ -445,6 +470,14 @@
 
   .home-knowledge-partners-image {
     width: 50%;
+  }
+
+  .home-knowledge-partners-image-4 {
+    width: 90%;
+  }
+
+  .home-knowledge-partners-image-5 {
+    width: 80%;
   }
 
   .home-carousel {
@@ -546,25 +579,25 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
-    animation: slideKnowledgePartners 5s linear infinite;
+    gap: 5rem;
+    animation: slideKnowledgePartners 12s linear infinite;
   }
 
   @keyframes slideKnowledgePartners {
     0% {
-      transform: translateX(10%);
+      transform: translateX(30%);
     }
     20% {
-      transform: translateX(10%); /* Show the first image */
+      transform: translateX(30%); /* Show the first image */
     }
     50% {
-      transform: translateX(-10%); /* Move to the second image */
+      transform: translateX(-25%); /* Move to the second image */
     }
     60% {
-      transform: translateX(-10%); /* Wait before reversing */
+      transform: translateX(-25%); /* Wait before reversing */
     }
     100% {
-      transform: translateX(10%); /* Wait before reversing */
+      transform: translateX(30%); /* Wait before reversing */
     }
   }
 
@@ -575,6 +608,14 @@
 
   .home-knowledge-partners-image {
     width: 20%;
+  }
+
+  .home-knowledge-partners-image-4 {
+    width: 25%;
+  }
+
+  .home-knowledge-partners-image-5 {
+    width: 25%;
   }
 
   .home-award-wrapper {
@@ -768,25 +809,25 @@
   }
 
   .home-knowledge-partners-wrapper {
-    gap: 6rem;
-    animation: slideKnowledgePartners 8s linear infinite;
+    gap: 4rem;
+    animation: slideKnowledgePartners 12s linear infinite;
   }
 
   @keyframes slideKnowledgePartners {
     0% {
-      transform: translateX(15%);
+      transform: translateX(35%);
     }
     20% {
-      transform: translateX(15%); /* Show the first image */
+      transform: translateX(35%); /* Show the first image */
     }
     50% {
-      transform: translateX(-15%); /* Move to the second image */
+      transform: translateX(-30%); /* Move to the second image */
     }
     60% {
-      transform: translateX(-15%); /* Wait before reversing */
+      transform: translateX(-30%); /* Wait before reversing */
     }
     100% {
-      transform: translateX(15%); /* Wait before reversing */
+      transform: translateX(35%); /* Wait before reversing */
     }
   }
 
@@ -797,6 +838,14 @@
 
   .home-knowledge-partners-image {
     width: 20%;
+  }
+
+  .home-knowledge-partners-image-4 {
+    width: 35%;
+  }
+
+  .home-knowledge-partners-image-5 {
+    width: 30%;
   }
 }
 
@@ -809,6 +858,7 @@
     margin-bottom: 4%;
     flex-direction: column;
     gap: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .home-award-container {
@@ -875,6 +925,7 @@
   .home-carousel {
     width: 100%;
     height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .home-carousel-slide {
@@ -956,24 +1007,24 @@
 
   .home-knowledge-partners-wrapper {
     gap: 2rem;
-    animation: slideKnowledgePartners 8s linear infinite;
+    animation: slideKnowledgePartners 12s linear infinite;
   }
 
   @keyframes slideKnowledgePartners {
     0% {
-      transform: translateX(15%);
+      transform: translateX(42%);
     }
     20% {
-      transform: translateX(15%); /* Show the first image */
+      transform: translateX(42%); /* Show the first image */
     }
     50% {
-      transform: translateX(-15%); /* Move to the second image */
+      transform: translateX(-42%); /* Move to the second image */
     }
     60% {
-      transform: translateX(-15%); /* Wait before reversing */
+      transform: translateX(-42%); /* Wait before reversing */
     }
     100% {
-      transform: translateX(15%); /* Wait before reversing */
+      transform: translateX(42%); /* Wait before reversing */
     }
   }
 
@@ -984,5 +1035,13 @@
 
   .home-knowledge-partners-image {
     width: 25%;
+  }
+
+  .home-knowledge-partners-image-4 {
+    width: 40%;
+  }
+
+  .home-knowledge-partners-image-5 {
+    width: 30%;
   }
 }

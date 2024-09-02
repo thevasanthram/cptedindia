@@ -20,6 +20,7 @@ import RakshaLogo from "./../../images/logos/raksha_logo.jpg";
 import IFESCLogo from "./../../images/logos/IFSEC_logo.jpg";
 import SecurityAndFireExpoLogo from "./../../images/logos/security_and_fire_expo.jpg";
 import JianaConstructionLogo from "./../../images/logos/jiana_construction_logo.jpg";
+import ISSPLogo from "./../../images/logos/ISSP lOGO.jpg";
 
 const Home = () => {
   const settings = {
@@ -179,23 +180,28 @@ const Home = () => {
           <div className="home-knowledge-partners-wrapper">
             <img
               src={RakshaLogo}
-              alt="Partner 1"
+              alt="Raksha Logo"
               className="home-knowledge-partners-image home-knowledge-partners-image-1"
             />
             <img
               src={IFESCLogo}
-              alt="Partner 2"
+              alt="IFESC Logo"
               className="home-knowledge-partners-image home-knowledge-partners-image-2"
             />
             <img
               src={SecurityAndFireExpoLogo}
-              alt="Partner 3"
+              alt="Security And Fire Expo Logo"
               className="home-knowledge-partners-image home-knowledge-partners-image-3"
             />
             <img
               src={JianaConstructionLogo}
-              alt="Partner 3"
+              alt="Jiana Constructions Logo"
               className="home-knowledge-partners-image home-knowledge-partners-image-4"
+            />
+            <img
+              src={ISSPLogo}
+              alt="ISSP Logo"
+              className="home-knowledge-partners-image home-knowledge-partners-image-5"
             />
           </div>
         </div>
