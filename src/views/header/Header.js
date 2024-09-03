@@ -9,6 +9,7 @@ const navBarDivisions = {
       CPTED: {},
       "Risk Management": {},
       "Security Projects": {},
+      "Expatriate Engagements": {},
     },
     Training: {
       CPTED: {},

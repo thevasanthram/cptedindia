@@ -4,6 +4,7 @@ import Awards from "./components/recognitions/awards/Awards";
 import Consulting_cpted from "./components/services/consulting/cpted/CPTED";
 import RiskManagement from "./components/services/consulting/risk_management/RiskManagement";
 import SecurityProjects from "./components/services/consulting/security_projects/SecurityProjects";
+import ExpatriateEngagements from "./components/services/consulting/expatriate_engagements/ExpatriateEngagements";
 import Training_cpted from "./components/services/training/cpted/CPTED";
 import CorporateSecurity from "./components/services/training/corporate_security/CorporateSecurity";
 import ProjectManagement from "./components/services/training/project_management/ProjectManagement";
@@ -40,6 +41,7 @@ const componentsMap = {
   Consulting_cpted,
   RiskManagement,
   SecurityProjects,
+  ExpatriateEngagements,
   Training_cpted,
   CorporateSecurity,
   ProjectManagement,
