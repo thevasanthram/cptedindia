@@ -52,6 +52,7 @@ const navBarDivisions = {
   },
   "Contact Us": {
     "Founder & President": {},
+    Team: {},
   },
 };
 
