@@ -30,11 +30,12 @@ const Team = () => {
         >
           <img
             src={VasanthProfilePicture}
-            alt="Vasanth Ram"
+            alt="Vasanth Ram - Web Master"
             id="vasanth-image"
           />
         </div>
         <div className="member-info" id="member-info-vasanth">
+          <h1 id="team-heading">Team</h1>
           <h2 id="member-name-vasanth">Vasanth Ram</h2>
           <p id="member-title-vasanth">(Web Master)</p>
           <p id="member-position-vasanth">Software Engineer, Bengaluru</p>
@@ -42,9 +43,9 @@ const Team = () => {
             Government College of Technology, Coimbatore
           </p>
           <p id="member-skills-vasanth" className="skills">
-            Specializing in full-stack applications using React, Node.js,
+            Specialized in full-stack applications using React, Node.js,
             JavaScript, and various databases. Proficient in cloud technologies
-            and developed websites for two companies.
+            and developing websites for companies.
           </p>
           <div className="contact-info-team" id="contact-info-vasanth">
             <h3 id="contact-header-vasanth">Contact</h3>
@@ -54,6 +55,7 @@ const Team = () => {
                 href="tel:+919791720734"
                 className="contact-link"
                 id="contact-link-phone"
+                aria-label="Call Vasanth Ram"
               >
                 +91 9791720734
               </a>
@@ -64,6 +66,7 @@ const Team = () => {
                 href="mailto:vasanthram227@gmail.com"
                 className="contact-link"
                 id="contact-link-email"
+                aria-label="Email Vasanth Ram"
               >
                 vasanthram227@gmail.com
               </a>
@@ -79,6 +82,7 @@ const Team = () => {
                 rel="noopener noreferrer"
                 className="contact-link"
                 id="contact-link-instagram"
+                aria-label="Instagram profile of Vasanth Ram"
               >
                 @thevasanthram
               </a>
@@ -91,6 +95,7 @@ const Team = () => {
                 rel="noopener noreferrer"
                 className="contact-link"
                 id="contact-link-whatsapp"
+                aria-label="WhatsApp Vasanth Ram"
               >
                 WhatsApp
               </a>
@@ -103,6 +108,7 @@ const Team = () => {
                 rel="noopener noreferrer"
                 className="contact-link"
                 id="contact-link-linkedin"
+                aria-label="LinkedIn profile of Vasanth Ram"
               >
                 LinkedIn
               </a>
@@ -120,7 +126,7 @@ const Team = () => {
           <div className="modal-content" id="modal-content-vasanth">
             <img
               src={VasanthProfilePicture}
-              alt="Vasanth Ram"
+              alt="Vasanth Ram - Web Master"
               id="modal-image-vasanth"
             />
           </div>
