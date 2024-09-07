@@ -32,7 +32,7 @@ function ExpatriateEngagements() {
       <div className="expatriate-services-container">
         {services.map((service, index) => (
           <div key={index} className="expatriate-service-item">
-            <div className="expatriate-service-icon">✔️</div>
+            <span className="expatriate-service-icon">•</span>
             <p className="expatriate-service-text">{service}</p>
           </div>
         ))}
