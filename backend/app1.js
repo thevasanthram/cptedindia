@@ -1,23 +1,11 @@
 const express = require("express");
 const { BetaAnalyticsDataClient } = require("@google-analytics/data");
 const path = require("path");
-const fs = require("fs");
-const https = require("https");
-const cors = require("cors");
 
 const app = express();
-const port = 5000;
+const port = 443;
 
-// Load SSL certificates (make sure these paths point to the correct files)
-const privateKey = fs.readFileSync(
-  "/etc/letsencrypt/live/cptedindia.com/privkey.pem",
-  "utf8"
-);
-const certificate = fs.readFileSync(
-  "/etc/letsencrypt/live/cptedindia.com/fullchain.pem",
-  "utf8"
-);
-const credentials = { key: privateKey, cert: certificate };
+const cors = require("cors");
 
 // Enable CORS for all routes
 app.use(
@@ -42,7 +30,6 @@ const analyticsDataClient = new BetaAnalyticsDataClient({
   },
 });
 
-// Define your API route
 app.get("/ga4-user-count", async (req, res) => {
   try {
     const [response] = await analyticsDataClient.runReport({
@@ -57,7 +44,6 @@ app.get("/ga4-user-count", async (req, res) => {
   }
 });
 
-// Create HTTPS server with the loaded SSL certificates
-https.createServer(credentials, app).listen(port, () => {
-  console.log(`Secure server running on https://localhost:${port}`);
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
 });
