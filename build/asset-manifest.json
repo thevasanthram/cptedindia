@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b682a4c.css",
-    "main.js": "/static/js/main.79e929c3.js",
+    "main.css": "/static/css/main.047cd737.css",
+    "main.js": "/static/js/main.119c446e.js",
     "static/media/gurad managemtn.gif": "/static/media/gurad managemtn.5356bc62d44f598ed6e7.gif",
     "static/media/business-continuity.gif": "/static/media/business-continuity.11cd37af3e05300c7d92.gif",
     "static/media/crime_prevention.gif": "/static/media/crime_prevention.7fbd30d0d4009dad1b25.gif",
@@ -65,11 +65,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.9b682a4c.css.map": "/static/css/main.9b682a4c.css.map",
-    "main.79e929c3.js.map": "/static/js/main.79e929c3.js.map"
+    "main.047cd737.css.map": "/static/css/main.047cd737.css.map",
+    "main.119c446e.js.map": "/static/js/main.119c446e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b682a4c.css",
-    "static/js/main.79e929c3.js"
+    "static/css/main.047cd737.css",
+    "static/js/main.119c446e.js"
   ]
 }

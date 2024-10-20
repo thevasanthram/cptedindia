@@ -32,7 +32,7 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     arrows: true,
     fade: true,
     appendDots: (dots) => (
@@ -202,7 +202,7 @@ const Home = () => {
             </div>
           </Slider>
         </div>
-        <div className="home-award-container">
+        {/* <div className="home-award-container">
           <h2 className="home-award-title home-knowledge-partners-title">
             Knowledge Partners
           </h2>
@@ -233,7 +233,7 @@ const Home = () => {
               className="home-knowledge-partners-image home-knowledge-partners-image-5"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
