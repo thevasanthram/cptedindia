@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Team.css";
 import VasanthProfilePicture from "./../../../../../images/contact_us/vasanth-profile-picture.jpg";
+import userImage from "./../../../../../images/user_image.png";
 
 const Team = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,7 +23,7 @@ const Team = () => {
           onClick={openModal}
         >
           <img
-            src={VasanthProfilePicture}
+            src={userImage}
             alt="Vasanth Ram - Web Master"
             id="vasanth-image"
           />
@@ -43,7 +44,7 @@ const Team = () => {
         >
           <div className="modal-content" id="modal-content-vasanth">
             <img
-              src={VasanthProfilePicture}
+              src={userImage}
               alt="Vasanth Ram - Web Master"
               id="modal-image-vasanth"
               className="modal-image-animation"
