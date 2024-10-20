@@ -11,17 +11,18 @@ import customizedTraining from "./../../images/slide_pictures/customized_trainin
 import riskManagement from "./../../images/slide_pictures/risk_management.jpeg";
 import travelSecurityAndTransportSecurity from "./../../images/slide_pictures/travel_and_transport_security.jpeg";
 import CPTEDIndiaAdvisory from "./../../images/slide_pictures/cptedindia_advisory.jpeg";
+import cptedindia_geopolitical_advisory from "./../../images/slide_pictures/cptedindia_geopolitical_advisory.jpg";
 
 import Award1 from "./../../images/awards/award-img-1.jpg";
 import Award2 from "./../../images/awards/award-img-2.jpeg";
 import Award3 from "./../../images/awards/award-img-3.jpg";
 import Award4 from "./../../images/awards/award-img-4.jpeg";
 import Award5 from "./../../images/awards/award-img-5.jpg";
-import RakshaLogo from "./../../images/logos/raksha_logo.jpg";
-import IFESCLogo from "./../../images/logos/IFSEC_logo.jpg";
-import SecurityAndFireExpoLogo from "./../../images/logos/security_and_fire_expo.jpg";
-import JianaConstructionLogo from "./../../images/logos/jiana_construction_logo.jpg";
-import ISSPLogo from "./../../images/logos/ISSP lOGO.jpg";
+// import RakshaLogo from "./../../images/logos/raksha_logo.jpg";
+// import IFESCLogo from "./../../images/logos/IFSEC_logo.jpg";
+// import SecurityAndFireExpoLogo from "./../../images/logos/security_and_fire_expo.jpg";
+// import JianaConstructionLogo from "./../../images/logos/jiana_construction_logo.jpg";
+// import ISSPLogo from "./../../images/logos/ISSP lOGO.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -121,9 +122,8 @@ const Home = () => {
               />
               <div className="home-slide-caption">
                 <h2>
-                  Expatriate Engagement - CPTEDINDIA coordinates with Corporates
-                  and Individuals to provide a safer environment for the Expat
-                  community.
+                  CPTEDINDIA coordinates with Corporates and Individuals to
+                  provide a safer environment for the Expat community.
                   <Link class="read-more" to="menu/expatriate-engagements">
                     Read More
                   </Link>
@@ -138,9 +138,9 @@ const Home = () => {
               />
               <div className="home-slide-caption">
                 <h2>
-                  Customized Training - CPTEDINDIA offers a customized approach
-                  to learning and development that's tailored to the needs and
-                  preferences of each individual or a group.
+                  CPTEDINDIA offers a customized approach to learning and
+                  development that's tailored to the needs and preferences of
+                  each individual or a group.
                   <Link class="read-more" to="menu/training_cpted">
                     Read More
                   </Link>
@@ -155,9 +155,9 @@ const Home = () => {
               />
               <div className="home-slide-caption">
                 <h2>
-                  Risk Management - Identify the risks associated with your firm
-                  before its too late. CPTEDINDIA experts offer a unique
-                  approach in identifying, mitigating and Managing risks.
+                  Identify the risks associated with your firm before its too
+                  late. CPTEDINDIA experts offer a unique approach in
+                  identifying, mitigating and Managing risks.
                   <Link class="read-more" to="menu/risk-management">
                     Read More
                   </Link>
@@ -172,11 +172,10 @@ const Home = () => {
               />
               <div className="home-slide-caption">
                 <h2>
-                  Travel Security and Transport Security - “Not all roads lead
-                  to Rome” some are broken, Traffic congested and pass by Crime
-                  Prone area. CPTEDINDIA coordinates and commits for a planned
-                  Travel safety and Travel Security along with Transport Safety
-                  and Security.
+                  “Not all roads lead to Rome” some are broken, Traffic
+                  congested and pass by Crime Prone area. CPTEDINDIA coordinates
+                  and commits for a planned Travel safety and Travel Security
+                  along with Transport Safety and Security.
                   <Link class="read-more" to="menu/driver-and-road-safety">
                     Read More
                   </Link>
@@ -191,11 +190,26 @@ const Home = () => {
               />
               <div className="home-slide-caption">
                 <h2>
-                  CPTEDINDIA Advisory - Get to know your region or your work
-                  environment and get regular updates from CPTEDINDIA on the
-                  Potential Risk but not limited to Weather, Political Unrest,
-                  Geopolitics, Network Outbreaks, Hotspot Mapping and Risk
-                  arising out of local situations.
+                  Get to know your region or your work environment and get
+                  regular updates from CPTEDINDIA on the Potential Risk but not
+                  limited to Weather, Political Unrest, Geopolitics, Network
+                  Outbreaks, Hotspot Mapping and Risk arising out of local
+                  situations.
+                  {/* <a class="read-more">Read More</a> */}
+                </h2>
+              </div>
+            </div>
+            <div className="home-carousel-slide home-slide7">
+              <img
+                src={cptedindia_geopolitical_advisory}
+                alt="Cpted india advisory"
+                className="home-carousel-image"
+              />
+              <div className="home-slide-caption">
+                <h2>
+                  CPTEDINDIA provides bespoke geopolitical advisory services and
+                  CXO briefings to enable business leaders with the tools they
+                  need to take decision in this uncertain world.
                   {/* <a class="read-more">Read More</a> */}
                 </h2>
               </div>
