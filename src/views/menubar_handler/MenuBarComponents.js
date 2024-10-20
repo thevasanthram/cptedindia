@@ -23,16 +23,13 @@ import FounderPresident from "./components/contact_us/founder_and_president/Foun
 import Team from "./components/contact_us/team/Team";
 import PrintMedia from "./../updated_soon/UpdatedSoon";
 import Video from "./../updated_soon/UpdatedSoon";
-import Websites from "./../updated_soon/UpdatedSoon";
 import Appreciations from "./../updated_soon/UpdatedSoon";
 import Memberships from "./components/recognitions/memberships/Memberships";
-import ServiceRenewals from "./../updated_soon/UpdatedSoon";
 import Recommendations from "./../updated_soon/UpdatedSoon";
 import Schools from "./../updated_soon/UpdatedSoon";
 import Colleges from "./../updated_soon/UpdatedSoon";
 import ProfessionalGroups from "./../menubar_handler/components/mou_partners/professional_groups/ProfessionalGroups";
 import RecognizedInstitutes from "./../updated_soon/UpdatedSoon";
-import GovernmentDepartment from "./../updated_soon/UpdatedSoon";
 
 // Import other components as needed
 
@@ -61,16 +58,13 @@ const componentsMap = {
   Team,
   PrintMedia,
   Video,
-  Websites,
   Appreciations,
   Memberships,
-  ServiceRenewals,
   Recommendations,
   Schools,
   Colleges,
   ProfessionalGroups,
   RecognizedInstitutes,
-  GovernmentDepartment,
 };
 
 export default componentsMap;

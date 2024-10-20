@@ -34,13 +34,11 @@ const navBarDivisions = {
   Media: {
     "Print Media": {},
     Video: {},
-    Websites: {},
   },
   Recognitions: {
     Awards: {},
     Appreciations: {},
     Memberships: {},
-    "Service Renewals": {},
     Recommendations: {},
   },
   "MOU/Partners": {
@@ -48,7 +46,6 @@ const navBarDivisions = {
     Colleges: {},
     "Professional Groups": {},
     "Recognized Institutes": {},
-    "Government Department": {},
   },
   "Contact Us": {
     "Founder & President": {},

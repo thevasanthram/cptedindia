@@ -61,14 +61,14 @@ const FounderAndPresident = () => {
       <div className="profile-container">
         <h1>About Us</h1>
         <p>
-          <b>Dinesh Elangovan</b> is a Competent expert, Critical thinker, and
-          Strategic Leader with 20 years of experience in multiple domains. A
-          strong believer that education and experience are key to handling and
-          delivering strong results. Dinesh also wears multiple hats such as a
-          trusted advisor, guide, facilitator, confidant, Leader, and mentor.
-          With his enhanced National and International experience, he promotes
-          the vision and strategy for a crime-free society in many forums and
-          avenues.
+          <b>Dinesh Elangovan</b> is a Criminologist, Competent expert, Critical
+          thinker, and Strategic Leader with 20 years of experience in multiple
+          domains. A strong believer that education and experience are key to
+          handling and delivering strong results. Dinesh also wears multiple
+          hats such as a trusted advisor, guide, facilitator, confidant, Leader,
+          and mentor. With his enhanced National and International experience,
+          he promotes the vision and strategy for a crime-free society in many
+          forums and avenues.
         </p>
         <h2>Public Speaker and Recognition</h2>
         <p>
