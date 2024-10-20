@@ -99,7 +99,7 @@ const Home = () => {
                 alt="CPTED INDIA"
                 className="home-carousel-image"
               />
-              <div className="home-slide-caption">
+              <div className="home-slide-caption cptedindia_first_slide_caption">
                 <h2>
                   CPTEDINDIA aims that fear of crime reduces with implementation
                   of crime prevention strategies. CPTEDINDIA also ensures to

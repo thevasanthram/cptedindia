@@ -901,6 +901,10 @@
     width: 98%;
   }
 
+  .cptedindia_first_slide_caption {
+    bottom: -5%;
+  }
+
   #custom-slick-dot {
     bottom: 5px;
     right: 25px;
