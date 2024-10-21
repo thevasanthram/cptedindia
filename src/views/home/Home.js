@@ -61,7 +61,7 @@ const Home = () => {
   return (
     <div id="home_page">
       <div className="home-container">
-        <div className="home-award-container">
+        {/* <div className="home-award-container">
           <h2 className="home-award-title">Awards</h2>
           <div className="home-award-wrapper">
             <img
@@ -90,7 +90,7 @@ const Home = () => {
               className="home-award-image home-award-image-5"
             />
           </div>
-        </div>
+        </div> */}
         <div className="home-carousel">
           <Slider {...settings}>
             <div className="home-carousel-slide home-slide1 home-slide-enter">

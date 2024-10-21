@@ -25,127 +25,6 @@
   text-decoration: none;
 }
 
-/* Award container styling */
-.home-award-container {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  position: relative;
-}
-
-.home-award-title {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  color: #333333;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 10px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #ddd;
-  z-index: 1;
-}
-
-.home-award-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  animation: slideAwards 25s linear infinite; /* Increased duration for slower motion */
-  /* animation-delay: 2s; Reduced delay at the start */
-  width: 100%;
-  height: calc(100% - 40px); /* Adjust height to avoid overlapping with title */
-}
-
-@keyframes slideAwards {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0); /* Show the first image */
-  }
-  40% {
-    transform: translateY(-90%); /* Move to the second image */
-  }
-  70% {
-    transform: translateY(-90%); /* Hold the second image */
-  }
-  85% {
-    transform: translateY(-150%); /* Move to the third image */
-  }
-  100% {
-    transform: translateY(-150%); /* Hold the third image */
-  }
-  110% {
-    transform: translateY(-150%); /* Wait before reversing */
-  }
-  120% {
-    transform: translateY(-90%); /* Move back to the second image */
-  }
-  130% {
-    transform: translateY(0); /* Return to the first image */
-  }
-  150% {
-    transform: translateY(0); /* Hold the first image after returning */
-  }
-}
-
-.home-knowledge-partners-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  animation: slideKnowledgePartners 12s linear infinite; /*Increased duration for slower motion*/
-  /* animation-delay: 2s; */
-  width: 100%;
-  height: calc(100% - 40px); /* Adjust height to avoid overlapping with title */
-  gap: 2rem;
-}
-
-@keyframes slideKnowledgePartners {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0); /* Show the first image */
-  }
-  50% {
-    transform: translateY(-62%); /* Move to the second image */
-  }
-  60% {
-    transform: translateY(-62%); /* Wait before reversing */
-  }
-  100% {
-    transform: translateY(0); /* Wait before reversing */
-  }
-}
-
-.home-award-image {
-  width: 80%;
-  margin: 10px 0;
-}
-
-.home-knowledge-partners-image {
-  width: 60%;
-  margin: 10px 0;
-}
-
-.home-knowledge-partners-image-4 {
-  width: 95%;
-}
-
-.home-knowledge-partners-image-5 {
-  width: 85%;
-}
-
 .home-carousel {
   width: 98vw;
   height: 90vh;
@@ -363,18 +242,6 @@
     margin-bottom: 1%;
   }
 
-  .home-award-container {
-    width: 25%;
-  }
-
-  .home-award-title {
-    font-size: 1.3rem;
-  }
-
-  .home-award-image {
-    width: 70%;
-  }
-
   .home-carousel {
     width: 96vw;
     height: 80vh;
@@ -405,57 +272,6 @@
     height: 75vh;
     margin-top: 8%;
     margin-bottom: 1%;
-  }
-
-  .home-award-container {
-    width: 30%;
-  }
-
-  .home-knowledge-partners-wrapper {
-    gap: 1.5rem;
-  }
-
-  @keyframes slideKnowledgePartners {
-    0% {
-      transform: translateY(0);
-    }
-    20% {
-      transform: translateY(0); /* Show the first image */
-    }
-    50% {
-      transform: translateY(-75%); /* Move to the second image */
-    }
-    60% {
-      transform: translateY(-75%); /* Wait before reversing */
-    }
-    100% {
-      transform: translateY(0); /* Wait before reversing */
-    }
-  }
-
-  .home-award-title {
-    font-size: 1.2rem;
-  }
-
-  .home-knowledge-partners-title {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-
-  .home-award-image {
-    width: 60%;
-  }
-
-  .home-knowledge-partners-image {
-    width: 50%;
-  }
-
-  .home-knowledge-partners-image-4 {
-    width: 90%;
-  }
-
-  .home-knowledge-partners-image-5 {
-    width: 80%;
   }
 
   .home-carousel {
@@ -493,114 +309,6 @@
     margin-bottom: 1%;
     flex-direction: column;
     gap: 1em;
-  }
-
-  .home-award-container {
-    width: 100%;
-    margin-top: 2%;
-    height: 40vh;
-  }
-
-  .home-award-title {
-    font-size: 1.2rem;
-  }
-
-  .home-award-wrapper {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  @keyframes slideAwards {
-    /* First three images (left to right) */
-    0% {
-      transform: translateX(5%); /* First image */
-    }
-    20% {
-      transform: translateX(5%); /* First image */
-    }
-    50% {
-      transform: translateX(-43%); /* Move to the second image */
-    }
-    70% {
-      transform: translateX(-43%);
-    }
-    100% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-    130% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-  }
-
-  .home-knowledge-partners-wrapper {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    animation: slideKnowledgePartners 12s linear infinite;
-  }
-
-  @keyframes slideKnowledgePartners {
-    0% {
-      transform: translateX(30%);
-    }
-    20% {
-      transform: translateX(30%); /* Show the first image */
-    }
-    50% {
-      transform: translateX(-25%); /* Move to the second image */
-    }
-    60% {
-      transform: translateX(-25%); /* Wait before reversing */
-    }
-    100% {
-      transform: translateX(30%); /* Wait before reversing */
-    }
-  }
-
-  .home-knowledge-partners-title {
-    font-size: 1.2rem;
-    line-height: 1;
-  }
-
-  .home-knowledge-partners-image {
-    width: 20%;
-  }
-
-  .home-knowledge-partners-image-4 {
-    width: 25%;
-  }
-
-  .home-knowledge-partners-image-5 {
-    width: 25%;
-  }
-
-  .home-award-wrapper {
-    animation: slideAwards 10s ease-in-out infinite;
-  }
-
-  .home-award-image {
-    margin: 0px 1%;
-  }
-
-  .home-award-image-1 {
-    width: 24%;
-  }
-
-  .home-award-image-2 {
-    width: 25%;
-  }
-
-  .home-award-image-3 {
-    width: 28%;
-  }
-
-  .home-award-image-4 {
-    width: 21%;
-  }
-
-  .home-award-image-5 {
-    width: 16%;
   }
 
   .home-content-wrapper {
@@ -672,49 +380,6 @@
     margin-bottom: 1%;
     flex-direction: column;
     gap: 1em;
-  }
-
-  .home-award-container {
-    width: 100%;
-    margin-top: 2%;
-    height: 40vh;
-  }
-
-  .home-award-title {
-    font-size: 1.2rem;
-  }
-
-  .home-award-wrapper {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .home-award-wrapper {
-    animation: slideAwards 10s ease-in-out infinite;
-  }
-
-  .home-award-image {
-    margin: 0px 1%;
-  }
-
-  .home-award-image-1 {
-    width: 24%;
-  }
-
-  .home-award-image-2 {
-    width: 25%;
-  }
-
-  .home-award-image-3 {
-    width: 28%;
-  }
-
-  .home-award-image-4 {
-    width: 21%;
-  }
-
-  .home-award-image-5 {
-    width: 16%;
   }
 
   .home-content-wrapper {
@@ -810,7 +475,7 @@
 @media (max-width: 480px) {
   .home-container {
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     margin-top: 14%;
     margin-bottom: 4%;
     flex-direction: column;
@@ -818,75 +483,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
-  .home-award-container {
-    width: 100%;
-    margin-top: 5%;
-    height: 40vh;
-  }
-
-  .home-award-title {
-    font-size: 1.3rem;
-  }
-
-  .home-award-wrapper {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .home-award-image-1 {
-    width: 23%;
-  }
-
-  .home-award-image-2 {
-    width: 23%;
-  }
-
-  .home-award-image-3 {
-    width: 27%;
-  }
-
-  .home-award-image-4 {
-    width: 20%;
-  }
-
-  .home-award-image-5 {
-    width: 15%;
-  }
-
-  @keyframes slideAwards {
-    /* First three images (left to right) */
-    0% {
-      transform: translateX(5%); /* First image */
-    }
-    20% {
-      transform: translateX(5%); /* First image */
-    }
-    50% {
-      transform: translateX(-53%); /* Move to the second image */
-    }
-    70% {
-      transform: translateX(-53%);
-    }
-    100% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-    130% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-  }
-
-  .home-award-wrapper {
-    animation: slideAwards 10s ease-in-out infinite;
-  }
-
   .home-carousel {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .home-carousel-slide {
-    height: 45vh;
+    height: 48vh;
   }
 
   .home-content-wrapper {
