@@ -69,7 +69,7 @@
 .home-carousel-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Adjusted to maintain aspect ratio */
+  object-fit: fill; /* Adjusted to maintain aspect ratio */
 }
 
 .home-content-wrapper {
