@@ -31,21 +31,21 @@ const navBarDivisions = {
       "CPTED Standards (Gold & Silver)": {},
     },
   },
-  Media: {
-    "Print Media": {},
-    Video: {},
-  },
+  // Media: {
+  //   "Print Media": {},
+  //   Video: {},
+  // },
   Recognitions: {
     Awards: {},
-    Appreciations: {},
+    // Appreciations: {},
     Memberships: {},
-    Recommendations: {},
+    // Recommendations: {},
   },
   "MOU/Partners": {
-    Schools: {},
-    Colleges: {},
+    // Schools: {},
+    // Colleges: {},
     "Professional Groups": {},
-    "Recognized Institutes": {},
+    // "Recognized Institutes": {},
   },
   "Contact Us": {
     "Founder & President": {},

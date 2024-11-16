@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import "./Team.css";
-import VasanthProfilePicture from "./../../../../../images/contact_us/vasanth-profile-picture.jpg";
 import userImage from "./../../../../../images/user_image.png";
 
 const Team = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
 
-  const openModal = () => {
+  const teamMembers = [
+    { name: "Kavitha J", title: "Admin", image: userImage },
+    { name: "Gayathri G", title: "Finance", image: userImage },
+    { name: "Divya P", title: "Architect", image: userImage },
+    { name: "Vasanth Ram", title: "Web Master", image: userImage },
+    { name: "Vinoth Kumar", title: "Real Estate", image: userImage },
+  ];
+
+  const openModal = (image) => {
+    setModalImage(image);
     setIsModalOpen(true);
   };
 
@@ -15,43 +24,38 @@ const Team = () => {
   };
 
   return (
-    <div className="team-container" id="team-container">
-      <div className="team-member" id="team-member-vasanth">
-        <div
-          className="profile-image"
-          id="profile-image-vasanth"
-          onClick={openModal}
-        >
-          <img
-            src={userImage}
-            alt="Vasanth Ram - Web Master"
-            id="vasanth-image"
-          />
-        </div>
-        <div className="member-info" id="member-info-vasanth">
-          <h1 id="team-heading">Team</h1>
-          <h2 id="member-name-vasanth">Vasanth Ram</h2>
-          <p id="member-title-vasanth">(Web Master)</p>
-          <p id="member-position-vasanth">Software Engineer, Bengaluru</p>
-        </div>
-      </div>
-
-      {isModalOpen && (
-        <div
-          className="modal-overlay"
-          id="modal-overlay-vasanth"
-          onClick={closeModal}
-        >
-          <div className="modal-content" id="modal-content-vasanth">
-            <img
-              src={userImage}
-              alt="Vasanth Ram - Web Master"
-              id="modal-image-vasanth"
-              className="modal-image-animation"
-            />
+    <div className="team-section">
+      <h1 className="team-heading">Team</h1>
+      <div className="team-container">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="team-member">
+            <div
+              className="profile-image"
+              onClick={() => openModal(member.image)}
+            >
+              <img
+                src={member.image}
+                alt={`${member.name} - ${member.title}`}
+              />
+            </div>
+            <div className="member-info">
+              <h2 className="member-name">{member.name}</h2>
+              <p className="member-title">{member.title}</p>
+            </div>
           </div>
-        </div>
-      )}
+        ))}
+        {isModalOpen && (
+          <div className="modal-overlay" onClick={closeModal}>
+            <div className="modal-content">
+              <img
+                src={modalImage}
+                alt="Team Member"
+                className="modal-image-animation"
+              />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

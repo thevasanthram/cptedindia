@@ -4,6 +4,7 @@ import "./ExpatriateEngagements.css";
 function ExpatriateEngagements() {
   const services = [
     "Groups and Individual briefings for specific requirements and assignments",
+    "Property Management",
     "Training in Life safety",
     "Training in Fire safety",
     "Hotel and Restaurant Audits prior to and post expat visits",
