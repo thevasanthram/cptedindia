@@ -280,7 +280,7 @@ footer p {
 /* Smaller mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .footer-container {
-    padding: 5px 0;
+    padding: 5px 0px;
   }
 
   .footer-content {
@@ -293,7 +293,12 @@ footer p {
   .about-us,
   .contact-us {
     padding: 5px;
+    margin-bottom: -5%;
     text-align: center;
+  }
+
+  .about-us {
+    margin-bottom: -8%;
   }
 
   .about-us h2,
@@ -318,6 +323,10 @@ footer p {
     margin-top: 5px;
     padding-top: 3px;
     font-size: 0.8em;
+  }
+
+  .analytics-container {
+    margin-bottom: -8%;
   }
 
   .analytics-number {
