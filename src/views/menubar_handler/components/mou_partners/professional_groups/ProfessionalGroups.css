@@ -50,10 +50,26 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.JianaConstructionLogoWrapper {
+  width: 250px;
+}
+
+.JianaConstructionLogo {
+  width: 100%;
+}
+
 @media (max-width: 1280px) {
   .logo-wrapper {
     width: 180px;
     height: 180px;
+  }
+
+  .JianaConstructionLogoWrapper {
+    width: 300px;
+  }
+
+  .JianaConstructionLogo {
+    width: 100%;
   }
 }
 
@@ -61,6 +77,14 @@
   .logo-wrapper {
     width: 160px;
     height: 160px;
+  }
+
+  .JianaConstructionLogoWrapper {
+    width: 300px;
+  }
+
+  .JianaConstructionLogo {
+    width: 100%;
   }
 
   .professional-groups-container {
@@ -79,8 +103,16 @@
     height: 140px;
   }
 
+  .JianaConstructionLogoWrapper {
+    width: 300px;
+  }
+
+  .JianaConstructionLogo {
+    width: 100%;
+  }
+
   .professional-groups-container {
-    height: 57vh;
+    height: 70vh;
     text-align: center;
     padding: 20px;
     background-color: #fff;
@@ -136,6 +168,14 @@
     height: 120px;
   }
 
+  .JianaConstructionLogoWrapper {
+    width: 300px;
+  }
+
+  .JianaConstructionLogo {
+    width: 100%;
+  }
+
   .professional-groups-container {
     margin-bottom: 1%;
     margin-top: 0%;
@@ -164,12 +204,20 @@
   .professional-groups-container {
     margin-bottom: 30%;
     margin-top: 0%;
-    height: 60vh;
+    height: 76vh;
   }
 
   .logo-wrapper {
     width: 100px;
     height: 100px;
+  }
+
+  .JianaConstructionLogoWrapper {
+    width: 250px;
+  }
+
+  .JianaConstructionLogo {
+    width: 100%;
   }
 }
 

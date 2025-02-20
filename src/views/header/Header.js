@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import CPTEDLogo from "./../../images/logos/cpted_logo.jpeg";
+import CPTEDLogo from "./../../images/logos/cpted_new_logo.jpg";
 
 const navBarDivisions = {
   Services: {
@@ -9,6 +9,7 @@ const navBarDivisions = {
       CPTED: {},
       "Risk Management": {},
       "Security Projects": {},
+      "Expatriate Engagements": {},
     },
     Training: {
       CPTED: {},
@@ -30,27 +31,25 @@ const navBarDivisions = {
       "CPTED Standards (Gold & Silver)": {},
     },
   },
-  Media: {
-    "Print Media": {},
-    Video: {},
-    Websites: {},
-  },
+  // Media: {
+  //   "Print Media": {},
+  //   Video: {},
+  // },
   Recognitions: {
     Awards: {},
-    Appreciations: {},
+    // Appreciations: {},
     Memberships: {},
-    "Service Renewals": {},
-    Recommendations: {},
+    // Recommendations: {},
   },
   "MOU/Partners": {
-    Schools: {},
-    Colleges: {},
+    // Schools: {},
+    // Colleges: {},
     "Professional Groups": {},
-    "Recognized Institutes": {},
-    "Government Department": {},
+    // "Recognized Institutes": {},
   },
   "Contact Us": {
     "Founder & President": {},
+    Team: {},
   },
 };
 

@@ -5,6 +5,8 @@ import "./ProfessionalGroups.css";
 import RakshaLogo from "./../../../../../images/logos/raksha_logo.jpg";
 import IFESCLogo from "./../../../../../images/logos/IFSEC_logo.jpg";
 import SecurityAndFireExpoLogo from "./../../../../../images/logos/security_and_fire_expo.jpg";
+import JianaConstructionLogo from "./../../../../../images/logos/jiana_construction_logo.jpg";
+import ISSPLogo from "./../../../../../images/logos/ISSP lOGO.jpg";
 
 const ProfessionalGroups = () => {
   return (
@@ -19,22 +21,28 @@ const ProfessionalGroups = () => {
         <div className="logo-wrapper">
           <img
             src={RakshaLogo}
-            alt="Partner 1"
+            alt="Raksha"
             className="knowledge-partner-logo"
           />
         </div>
         <div className="logo-wrapper">
-          <img
-            src={IFESCLogo}
-            alt="Partner 2"
-            className="knowledge-partner-logo"
-          />
+          <img src={IFESCLogo} alt="IFESC" className="knowledge-partner-logo" />
         </div>
         <div className="logo-wrapper">
           <img
             src={SecurityAndFireExpoLogo}
-            alt="Partner 3"
+            alt="Security And Fire Expo"
             className="knowledge-partner-logo"
+          />
+        </div>
+        <div className="logo-wrapper">
+          <img src={ISSPLogo} alt="ISSP" className="knowledge-partner-logo" />
+        </div>
+        <div className="logo-wrapper JianaConstructionLogoWrapper">
+          <img
+            src={JianaConstructionLogo}
+            alt="Jiana Construction"
+            className="knowledge-partner-logo JianaConstructionLogo"
           />
         </div>
       </div>

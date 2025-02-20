@@ -2,8 +2,8 @@
 .home-container {
   display: flex;
   width: 98vw;
-  height: 85vh;
-  margin: 5.6% auto;
+  height: 90vh;
+  margin: 4.6% auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   /* background: #f5f5f0; */
   background: #fff;
@@ -12,122 +12,22 @@
   margin-bottom: 1%;
 }
 
-/* Award container styling */
-.home-award-container {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  position: relative;
-}
-
-.home-award-title {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  color: #333333;
-  font-size: 1.5rem;
+.read-more {
+  color: #007bff;
+  cursor: pointer;
   font-weight: bold;
-  margin: 0;
-  padding: 10px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #ddd;
-  z-index: 1;
+  text-decoration: underline;
+  margin-left: 10px;
 }
 
-.home-award-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  animation: slideAwards 25s linear infinite; /* Increased duration for slower motion */
-  /* animation-delay: 2s; Reduced delay at the start */
-  width: 100%;
-  height: calc(100% - 40px); /* Adjust height to avoid overlapping with title */
-}
-
-@keyframes slideAwards {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0); /* Show the first image */
-  }
-  40% {
-    transform: translateY(-90%); /* Move to the second image */
-  }
-  70% {
-    transform: translateY(-90%); /* Hold the second image */
-  }
-  85% {
-    transform: translateY(-150%); /* Move to the third image */
-  }
-  100% {
-    transform: translateY(-150%); /* Hold the third image */
-  }
-  110% {
-    transform: translateY(-150%); /* Wait before reversing */
-  }
-  120% {
-    transform: translateY(-90%); /* Move back to the second image */
-  }
-  130% {
-    transform: translateY(0); /* Return to the first image */
-  }
-  150% {
-    transform: translateY(0); /* Hold the first image after returning */
-  }
-}
-
-.home-knowledge-partners-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  animation: slideKnowledgePartners 10s linear infinite; /*Increased duration for slower motion*/
-  /* animation-delay: 2s; */
-  width: 100%;
-  height: calc(100% - 40px); /* Adjust height to avoid overlapping with title */
-  gap: 2rem;
-}
-
-@keyframes slideKnowledgePartners {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0); /* Show the first image */
-  }
-  50% {
-    transform: translateY(-35%); /* Move to the second image */
-  }
-  60% {
-    transform: translateY(-35%); /* Wait before reversing */
-  }
-  100% {
-    transform: translateY(0); /* Wait before reversing */
-  }
-}
-
-.home-award-image {
-  width: 80%;
-  margin: 10px 0;
-}
-
-.home-knowledge-partners-image {
-  width: 60%;
-  margin: 10px 0;
+.read-more:hover {
+  color: #0056b3;
+  text-decoration: none;
 }
 
 .home-carousel {
   width: 98vw;
-  height: 85vh;
+  height: 90vh;
   background: #fff;
   padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -158,7 +58,7 @@
 
 .home-carousel-slide {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +69,7 @@
 .home-carousel-image {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Adjusted to maintain aspect ratio */
+  object-fit: fill; /* Adjusted to maintain aspect ratio */
 }
 
 .home-content-wrapper {
@@ -181,45 +81,7 @@
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-}
-
-.home-cpted-india-content,
-.home-objective-content {
-  flex: 1;
-  padding: 20px;
-}
-
-.home-cpted-india-image,
-.home-objective-image {
-  flex: 1;
-  padding: 20px;
-}
-
-.home-cpted-india-image img,
-.home-objective-image img {
-  width: 110%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: contain; /* Adjusted to maintain aspect ratio */
-}
-
-.home-cpted-india-title,
-.home-objective-title {
-  font-size: 2em;
-  margin-bottom: 15px;
-  color: #333333;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.home-cpted-india-text,
-.home-objective-text {
-  font-size: 1.2em;
-  color: #333333;
-  margin: 10px 0;
-  line-height: 1.5;
-  text-align: left;
 }
 
 .slick-prev:before,
@@ -258,8 +120,10 @@
 .home-slide-caption {
   position: absolute;
   bottom: 19px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* background-color: #eee; */
+  color: #eee;
   padding: 15px;
   text-align: left;
   font-size: 10px;
@@ -378,18 +242,6 @@
     margin-bottom: 1%;
   }
 
-  .home-award-container {
-    width: 25%;
-  }
-
-  .home-award-title {
-    font-size: 1.3rem;
-  }
-
-  .home-award-image {
-    width: 70%;
-  }
-
   .home-carousel {
     width: 96vw;
     height: 80vh;
@@ -422,31 +274,6 @@
     margin-bottom: 1%;
   }
 
-  .home-award-container {
-    width: 30%;
-  }
-
-  .home-knowledge-partners-wrapper {
-    gap: 1.5rem;
-  }
-
-  .home-award-title {
-    font-size: 1.2rem;
-  }
-
-  .home-knowledge-partners-title {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-
-  .home-award-image {
-    width: 60%;
-  }
-
-  .home-knowledge-partners-image {
-    width: 50%;
-  }
-
   .home-carousel {
     width: 94vw;
     height: 75vh;
@@ -467,27 +294,6 @@
   #custom-slick-dot {
     bottom: -20px;
   }
-
-  .home-cpted-india-content {
-    margin-bottom: 5%;
-    margin-left: 1%;
-  }
-
-  .home-cpted-india-text {
-    font-size: 1rem;
-  }
-
-  .home-objective-text {
-    font-size: 1rem;
-  }
-
-  .home-objective-content {
-    margin-right: 5%;
-  }
-
-  .home-objective-title {
-    font-size: 1.5rem;
-  }
 }
 
 /* Tablets (820px and below) */
@@ -503,106 +309,6 @@
     margin-bottom: 1%;
     flex-direction: column;
     gap: 1em;
-  }
-
-  .home-award-container {
-    width: 100%;
-    margin-top: 2%;
-    height: 40vh;
-  }
-
-  .home-award-title {
-    font-size: 1.2rem;
-  }
-
-  .home-award-wrapper {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  @keyframes slideAwards {
-    /* First three images (left to right) */
-    0% {
-      transform: translateX(5%); /* First image */
-    }
-    20% {
-      transform: translateX(5%); /* First image */
-    }
-    50% {
-      transform: translateX(-43%); /* Move to the second image */
-    }
-    70% {
-      transform: translateX(-43%);
-    }
-    100% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-    130% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-  }
-
-  .home-knowledge-partners-wrapper {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
-    animation: slideKnowledgePartners 5s linear infinite;
-  }
-
-  @keyframes slideKnowledgePartners {
-    0% {
-      transform: translateX(10%);
-    }
-    20% {
-      transform: translateX(10%); /* Show the first image */
-    }
-    50% {
-      transform: translateX(-10%); /* Move to the second image */
-    }
-    60% {
-      transform: translateX(-10%); /* Wait before reversing */
-    }
-    100% {
-      transform: translateX(10%); /* Wait before reversing */
-    }
-  }
-
-  .home-knowledge-partners-title {
-    font-size: 1.2rem;
-    line-height: 1;
-  }
-
-  .home-knowledge-partners-image {
-    width: 20%;
-  }
-
-  .home-award-wrapper {
-    animation: slideAwards 10s ease-in-out infinite;
-  }
-
-  .home-award-image {
-    margin: 0px 1%;
-  }
-
-  .home-award-image-1 {
-    width: 24%;
-  }
-
-  .home-award-image-2 {
-    width: 25%;
-  }
-
-  .home-award-image-3 {
-    width: 28%;
-  }
-
-  .home-award-image-4 {
-    width: 21%;
-  }
-
-  .home-award-image-5 {
-    width: 16%;
   }
 
   .home-content-wrapper {
@@ -676,49 +382,6 @@
     gap: 1em;
   }
 
-  .home-award-container {
-    width: 100%;
-    margin-top: 2%;
-    height: 40vh;
-  }
-
-  .home-award-title {
-    font-size: 1.2rem;
-  }
-
-  .home-award-wrapper {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .home-award-wrapper {
-    animation: slideAwards 10s ease-in-out infinite;
-  }
-
-  .home-award-image {
-    margin: 0px 1%;
-  }
-
-  .home-award-image-1 {
-    width: 24%;
-  }
-
-  .home-award-image-2 {
-    width: 25%;
-  }
-
-  .home-award-image-3 {
-    width: 28%;
-  }
-
-  .home-award-image-4 {
-    width: 21%;
-  }
-
-  .home-award-image-5 {
-    width: 16%;
-  }
-
   .home-content-wrapper {
     height: 81%;
   }
@@ -768,25 +431,25 @@
   }
 
   .home-knowledge-partners-wrapper {
-    gap: 6rem;
-    animation: slideKnowledgePartners 8s linear infinite;
+    gap: 4rem;
+    animation: slideKnowledgePartners 12s linear infinite;
   }
 
   @keyframes slideKnowledgePartners {
     0% {
-      transform: translateX(15%);
+      transform: translateX(35%);
     }
     20% {
-      transform: translateX(15%); /* Show the first image */
+      transform: translateX(35%); /* Show the first image */
     }
     50% {
-      transform: translateX(-15%); /* Move to the second image */
+      transform: translateX(-30%); /* Move to the second image */
     }
     60% {
-      transform: translateX(-15%); /* Wait before reversing */
+      transform: translateX(-30%); /* Wait before reversing */
     }
     100% {
-      transform: translateX(15%); /* Wait before reversing */
+      transform: translateX(35%); /* Wait before reversing */
     }
   }
 
@@ -798,87 +461,36 @@
   .home-knowledge-partners-image {
     width: 20%;
   }
+
+  .home-knowledge-partners-image-4 {
+    width: 35%;
+  }
+
+  .home-knowledge-partners-image-5 {
+    width: 30%;
+  }
 }
 
 /* Mobile devices (480px and below) */
 @media (max-width: 480px) {
   .home-container {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     margin-top: 14%;
     margin-bottom: 4%;
     flex-direction: column;
     gap: 1em;
-  }
-
-  .home-award-container {
-    width: 100%;
-    margin-top: 5%;
-    height: 40vh;
-  }
-
-  .home-award-title {
-    font-size: 1.3rem;
-  }
-
-  .home-award-wrapper {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .home-award-image-1 {
-    width: 23%;
-  }
-
-  .home-award-image-2 {
-    width: 23%;
-  }
-
-  .home-award-image-3 {
-    width: 27%;
-  }
-
-  .home-award-image-4 {
-    width: 20%;
-  }
-
-  .home-award-image-5 {
-    width: 15%;
-  }
-
-  @keyframes slideAwards {
-    /* First three images (left to right) */
-    0% {
-      transform: translateX(5%); /* First image */
-    }
-    20% {
-      transform: translateX(5%); /* First image */
-    }
-    50% {
-      transform: translateX(-53%); /* Move to the second image */
-    }
-    70% {
-      transform: translateX(-53%);
-    }
-    100% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-    130% {
-      transform: translateX(5%); /* Move to the second image */
-    }
-  }
-
-  .home-award-wrapper {
-    animation: slideAwards 10s ease-in-out infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .home-carousel {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .home-carousel-slide {
-    height: 50vh;
+    height: 48vh;
   }
 
   .home-content-wrapper {
@@ -890,7 +502,12 @@
     font-size: 9px;
     padding: 5px;
     line-height: 1.5;
-    width: 91%;
+    width: 98%;
+  }
+
+  .cptedindia_first_slide_caption {
+    bottom: -5%;
+    font-size: 8px;
   }
 
   #custom-slick-dot {
@@ -898,82 +515,26 @@
     right: 25px;
   }
 
-  .home-cpted-india-content {
-    margin-bottom: 4%;
-    margin-right: 7%;
-    width: 79%;
-    margin-top: -13%;
-  }
-
-  .home-cpted-india-title,
-  .home-objective-title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #333333;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  }
-
-  .home-objective-title {
-    font-size: 1.1rem;
-  }
-
-  .home-cpted-india-text {
-    font-size: 0.8rem;
-    margin-top: -2%;
-  }
-
-  .home-objective-text {
-    font-size: 0.7rem;
-  }
-
-  .home-objective-content {
-    margin-right: 10%;
-    margin-top: -25%;
-  }
-
-  .home-objective-title {
-    font-size: 1.5rem;
-    margin-top: -2%;
-  }
-
-  .home-cpted-india-image img {
-    width: 80%;
-    height: auto;
-    margin-left: 5%;
-    margin-top: -17%;
-    border-radius: 10px;
-    object-fit: contain;
-  }
-
-  .home-objective-image img {
-    width: 90%;
-    height: auto;
-    margin-left: 1%;
-    margin-top: -21%;
-    border-radius: 10px;
-    object-fit: contain;
-  }
-
   .home-knowledge-partners-wrapper {
     gap: 2rem;
-    animation: slideKnowledgePartners 8s linear infinite;
+    animation: slideKnowledgePartners 12s linear infinite;
   }
 
   @keyframes slideKnowledgePartners {
     0% {
-      transform: translateX(15%);
+      transform: translateX(42%);
     }
     20% {
-      transform: translateX(15%); /* Show the first image */
+      transform: translateX(42%); /* Show the first image */
     }
     50% {
-      transform: translateX(-15%); /* Move to the second image */
+      transform: translateX(-42%); /* Move to the second image */
     }
     60% {
-      transform: translateX(-15%); /* Wait before reversing */
+      transform: translateX(-42%); /* Wait before reversing */
     }
     100% {
-      transform: translateX(15%); /* Wait before reversing */
+      transform: translateX(42%); /* Wait before reversing */
     }
   }
 
@@ -984,5 +545,13 @@
 
   .home-knowledge-partners-image {
     width: 25%;
+  }
+
+  .home-knowledge-partners-image-4 {
+    width: 40%;
+  }
+
+  .home-knowledge-partners-image-5 {
+    width: 30%;
   }
 }

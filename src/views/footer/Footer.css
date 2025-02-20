@@ -280,24 +280,31 @@ footer p {
 /* Smaller mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .footer-container {
-    padding: 5px 0;
+    padding: 5px 0px;
   }
 
   .footer-content {
     flex-direction: column;
     align-items: center;
+    gap: -5px;
     padding: 0 5px;
   }
 
   .about-us,
   .contact-us {
     padding: 5px;
+    margin-bottom: -5%;
     text-align: center;
+  }
+
+  .about-us {
+    margin-bottom: -8%;
   }
 
   .about-us h2,
   .contact-us h2 {
     font-size: 1em;
+    
   }
 
   .about-us p,
@@ -317,5 +324,13 @@ footer p {
     margin-top: 5px;
     padding-top: 3px;
     font-size: 0.8em;
+  }
+
+  .analytics-container {
+    margin-bottom: -8%;
+  }
+
+  .analytics-number {
+    font-size: 35px;
   }
 }

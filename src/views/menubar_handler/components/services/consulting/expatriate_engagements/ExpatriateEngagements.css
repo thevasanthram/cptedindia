@@ -1,0 +1,154 @@
+/* Container Styles */
+.expatriate-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Title Styles */
+.expatriate-title {
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* Description Styles */
+.expatriate-description {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  line-height: 1.5;
+}
+
+/* Services Container */
+.expatriate-services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0 10px;
+  margin-bottom: 3%;
+}
+
+/* Service Item */
+.expatriate-service-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.2;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.expatriate-service-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Service Icon */
+.expatriate-service-icon {
+  font-size: 14px;
+  color: #2c3e50;
+  margin-right: 8px;
+}
+
+/* Service Text */
+.expatriate-service-text {
+  font-size: 14px;
+  color: #333333;
+  text-align: left;
+  flex: 1 1;
+}
+
+/* Media Queries */
+
+/* Large screens (1280px and above) */
+@media (max-width: 1280px) {
+  .expatriate-services-container {
+    grid-template-columns: repeat(2, 1fr); /* Two-column grid */
+  }
+
+  .expatriate-title {
+    font-size: 20px;
+  }
+
+  .expatriate-description {
+    font-size: 13px;
+  }
+}
+
+/* Medium screens (1024px and below) */
+@media (max-width: 1024px) {
+  .expatriate-services-container {
+    grid-template-columns: repeat(2, 1fr); /* Two-column grid */
+  }
+
+  .expatriate-title {
+    font-size: 18px;
+  }
+
+  .expatriate-description {
+    font-size: 12px;
+  }
+}
+
+/* Tablet screens (820px and below) */
+@media (max-width: 820px) {
+  .expatriate-container {
+    margin-bottom: 4%;
+  }
+
+  .expatriate-services-container {
+    grid-template-columns: 1fr; /* Single-column grid */
+  }
+
+  .expatriate-title {
+    font-size: 25px;
+  }
+
+  .expatriate-description {
+    font-size: 11px;
+  }
+}
+
+/* Mobile screens (768px and below) */
+@media (max-width: 768px) {
+  .expatriate-title {
+    font-size: 25px;
+  }
+
+  .expatriate-description {
+    font-size: 10px;
+  }
+
+  .expatriate-service-item {
+    font-size: 10px;
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .expatriate-container {
+    margin-top: -10%;
+    margin-bottom: 12%;
+  }
+
+  .expatriate-title {
+    font-size: 20px;
+  }
+
+  .expatriate-description {
+    font-size: 13px;
+  }
+
+  .expatriate-service-item {
+    font-size: 9px;
+  }
+}
