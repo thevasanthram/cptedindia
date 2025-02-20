@@ -55,7 +55,7 @@ const Footer = () => {
             insurance costs.
           </p>
         </div>
-        <GoogleAnalytics />
+        {/* <GoogleAnalytics /> */}
         <div className="contact-us">
           <h2>Contact Us</h2>
           <ul className="social-icons">
