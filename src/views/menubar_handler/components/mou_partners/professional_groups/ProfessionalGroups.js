@@ -25,9 +25,9 @@ const ProfessionalGroups = () => {
             className="knowledge-partner-logo"
           />
         </div>
-        <div className="logo-wrapper">
+        {/* <div className="logo-wrapper">
           <img src={IFESCLogo} alt="IFESC" className="knowledge-partner-logo" />
-        </div>
+        </div> */}
         <div className="logo-wrapper">
           <img
             src={SecurityAndFireExpoLogo}
